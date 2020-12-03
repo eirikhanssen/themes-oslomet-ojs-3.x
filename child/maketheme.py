@@ -35,20 +35,15 @@ def makeTheme(name,slug):
         shutil.copytree(childpath, newthemepath)
         os.remove(os.path.join(newthemepath,'maketheme.py'))
         os.rename(os.path.join(newthemepath,'ChildThemePlugin.inc.php'), os.path.join(newthemepath,newthemepluginname))
-        date = "<date>" + str(datetime.now())[:10] + "</date>"
+        todaysdate = "<date>" + str(datetime.now())[:10] + "</date>"
         os.chdir(newthemepath)
-#        replace1 = "find . -type f -exec sed -i s'#<date>[0-9-]+</date>#" + date + "#' \"{}\" \\;"
-#        subprocess.run(replace1.split())
-#        replace2 = "find . -type f -exec sed -i s'#Child#" + name + "#' \"{}\" \\;"
-#        subprocess.run(replace2.split())
-#        replace3 = "find . -type f -exec sed -i s'#child#" + slug + "#' \"{}\" \\;"
-#        subprocess.run(replace3.split())
-        replaceInFiles(newthemepath, "Child", "CareBears")
+        replaceInFiles(newthemepath, "Child", name)
+        replaceInFiles(newthemepath, "child", slug)
+        replaceRegexInFiles(newthemepath, r"<date>[-0-9]+</date>", todaysdate)        
 
 def replaceInFiles(path, pattern, replacement):
     for filepath in glob.iglob(os.path.join(path,'**','*'), recursive=True):
         if os.path.isfile(filepath):
-            print(filepath)
             with open(filepath) as file:
                 s = file.read()
                 file.close()
@@ -56,5 +51,17 @@ def replaceInFiles(path, pattern, replacement):
             with open(filepath, "w") as file:
                 file.write(s)
                 file.close()
+
+def replaceRegexInFiles(path, regexpattern, replacement):
+    for filepath in glob.iglob(os.path.join(path,'**','*'), recursive=True):
+        if os.path.isfile(filepath):
+            with open(filepath) as file:
+                s = file.read()
+                file.close()
+                s = re.sub(regexpattern, replacement, s)
+            with open(filepath, "w") as file:
+                file.write(s)
+                file.close()
+
     
 main()
