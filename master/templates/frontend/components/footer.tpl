@@ -11,7 +11,17 @@
  *       represents a page-level override, and doesn't indicate whether or not
  *       sidebars have been configured for thesite.
  *}
-
+{strip}
+        {if $currentJournal && $currentJournal->getSetting('onlineIssn')}
+                {assign var=onlineIssn value=$currentJournal->getSetting('onlineIssn')}
+                {assign var=footerIssnPrefix value='ISSN: '}
+                {assign var=footerISSN value="`$footerIssnPrefix``$onlineIssn`"}
+        {elseif $currentJournal && $currentJournal->getSetting('printIssn')}
+                {assign var=printIssn value=$currentJournal->getSetting('printIssn')}
+                {assign var=footerIssnPrefix value='ISSN (print): '}
+                {assign var=footerISSN value="`$footerIssnPrefix``$printIssn`"}
+        {/if}
+{/strip}
 	</div><!-- pkp_structure_main -->
 
 	{* Sidebars *}
@@ -28,20 +38,21 @@
 <div class="pkp_structure_footer_wrapper" role="contentinfo">
 	<a id="pkp_content_footer"></a>
 
-	<div class="pkp_structure_footer">
-
-		{if $pageFooter}
-			<div class="pkp_footer_content">
-				{$pageFooter}
-			</div>
-		{/if}
-
-		<div class="pkp_brand_footer" role="complementary">
-			<a href="{url page="about" op="aboutThisPublishingSystem"}">
-				<img alt="{translate key="about.aboutThisPublishingSystem"}" src="{$baseUrl}/{$brandImage}">
-			</a>
-		</div>
-	</div>
+	<footer class="pkp_structure_footer">
+	{if $footerISSN}<p class="issn">{$footerISSN}</p>{/if}
+		<div class="columns">
+		    {if $pageFooter}{$pageFooter}{/if}			
+			<div class="column">
+				<h4>{translate|escape key="plugins.themes.master.hostedby.heading"}</h4>
+				<div class="inst-branding oslomet">
+					<p><a class="logotext" href="{translate|escape key="plugins.themes.master.hostedby.url"}" target="_blank" rel="noopener">{translate|escape key="plugins.themes.master.hostedby.name"}</a></p>
+					<div class="info">
+						<p><a href="{translate|escape key="plugins.themes.master.cookieinfo.url"}">{translate|escape key="plugins.themes.master.cookieinfo.linktext"}</a></p>
+					</div><!-- .info -->
+				</div><!-- .column.inst-branding -->
+			</div><!-- .column -->
+		</div><!-- columns -->
+	</footer>
 </div><!-- pkp_structure_footer_wrapper -->
 
 </div><!-- pkp_structure_page -->

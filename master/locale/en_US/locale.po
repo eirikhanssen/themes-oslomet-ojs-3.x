@@ -16,3 +16,18 @@ msgstr "Master Theme"
 
 msgid "plugins.themes.master.description"
 msgstr "This theme implements the master theme."
+
+msgid "plugins.themes.master.hostedby.heading"
+msgstr "Hosted by"
+
+msgid "plugins.themes.master.hostedby.name"
+msgstr "OsloMet University Library"
+
+msgid "plugins.themes.master.hostedby.url"
+msgstr "https://www.oslomet.no/en/ul"
+
+msgid "plugins.themes.master.cookieinfo.url"
+msgstr "https://journals.oslomet.no/help/cookies-en_US.html"
+
+msgid "plugins.themes.master.cookieinfo.linktext"
+msgstr "About cookies used at journals.oslomet.no"

@@ -19,3 +19,18 @@ msgstr "Master layout-tema"
 
 msgid "plugins.themes.master.description"
 msgstr "Dette tema implementerer master layout-temaet."
+
+msgid "plugins.themes.master.hostedby.heading"
+msgstr "Driftes af"
+
+msgid "plugins.themes.master.hostedby.name"
+msgstr "Universitetsbiblioteket OsloMet"
+
+msgid "plugins.themes.master.hostedby.url"
+msgstr "https://oslomet.no/ub"
+
+msgid "plugins.themes.master.cookieinfo.url"
+msgstr "https://journals.oslomet.no/help/cookies-no_NO.html"
+
+msgid "plugins.themes.master.cookieinfo.linktext"
+msgstr "Om informasjonskapsler på journals.oslomet.no"

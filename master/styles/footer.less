@@ -7,3 +7,29 @@
  *
  * @brief Classes for the page footer elements
  */
+
+ .pkp_structure_footer_wrapper {
+    background: @bg;
+    border-top: 2px solid @bg-shade;
+    margin-top:2rem;
+}
+
+footer a.logotext {
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(/plugins/themes/master/svg/OsloMet-logo-black.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 4rem auto;
+    background-origin: border-box;
+    padding-left: 4rem;
+    min-height: 3rem;
+}
+
+footer .issn {text-align: left; margin-left: .5rem;}
+
+footer .column h4 {margin-top: 0; margin-bottom: .5rem;}

@@ -7,3 +7,25 @@
  *
  * @brief Classes for site-wide elements and layout scaffolding
  */
+
+ .pkp_structure_page {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+  }
+  .pkp_structure_content {
+    flex-grow: 1;
+  }
+
+ .columns {
+    display:flex; 
+    flex-flow: row wrap; 
+    justify-content: center; 
+    align-items: stretch; 
+    align-content: flex-start;
+}
+.columns > div {
+    flex-grow: 1;
+    padding: .5rem;
+    text-align: left;
+}
