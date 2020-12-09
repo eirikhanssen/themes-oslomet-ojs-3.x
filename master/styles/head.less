@@ -9,3 +9,112 @@
  *
  * @brief Classes for the page header structural elements
  */
+ .pkp_structure_head {
+	background-color: @bg-head;
+	border-bottom: @bg-border;
+
+	.pkp_head_wrapper {
+		margin:0;
+		width: 100%;
+		padding:0;
+
+		.pkp_site_name_wrapper {
+            display:flex;
+
+			.pkp_site_name {
+				flex-grow:1;
+				display:flex; 
+				flex-flow: row wrap;
+				margin:0;
+				padding:0;
+				
+                @media (min-width: @medium-header-width) {}
+                
+				& > a {
+					flex-grow:1;
+					display:flex;
+					flex-direction: column;
+                    padding:0;
+                    margin:0;
+                    padding-left: .25rem;
+                    margin-left: .25rem;
+					color: @head-titlecolor;
+					&:hover, &:focus {}
+                & h1 {
+                    padding:0;
+                    margin:0;
+                    //color: black;
+                    }    
+				}
+			}
+		}
+	}
+}
+
+.pkp_navigation_primary > li > a {
+	border-bottom: none;
+}
+
+.pkp_navigation_primary_row {
+    @media screen and (min-width: @screen-desktop) {
+        background: @primary-nav-bg;
+    }
+}
+.pkp_navigation_user_wrapper,
+.pkp_navigation_primary_row {
+	z-index: 10;
+	.pkp_nav_list {
+		ul {
+			width: 14em;
+		}
+	}
+	.pkp_nav_list {
+		li {
+			font-weight: bold;
+			.dropdown-menu li {
+				text-shadow: none;
+			}
+		}
+		.profile {
+			
+		}
+	} 
+}
+
+.pkp_navigation_user_wrapper {
+	left: auto;
+	right: .25rem;
+	top: .25rem;
+    padding:0;
+    transform: none;
+	.pkp_nav_list {
+		padding:0;
+	}
+	.pkp_nav_list > li:hover ul {
+		right: 0;
+		left:auto;
+	}
+}
+
+.pkp_navigation_user_wrapper > .pkp_nav_list > .profile > a {
+	text-shadow:none;
+	border-radius: .25em;
+	padding: .2em .4em;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+#navigationPrimary > li {
+	text-shadow: 1px 1px 0px #333;
+}
+
+.pkp_navigation_primary > li:hover ul {
+	right: 50%;
+	left:auto;
+	transform:translate(55%,0);
+}
+
+.pkp_nav_list ul a:hover, .pkp_nav_list ul a:focus {
+	color: rgb(3, 64, 105);
+	background: #eee;
+}
+
