@@ -16,3 +16,6 @@ msgstr "Child Theme"
 
 msgid "plugins.themes.child.description"
 msgstr "This theme implements the child theme."
+
+msgid "plugins.themes.master.header.html"
+msgstr ""

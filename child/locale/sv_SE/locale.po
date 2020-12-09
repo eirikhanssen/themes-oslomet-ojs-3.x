@@ -19,3 +19,6 @@ msgstr "Child-tema"
 
 msgid "plugins.themes.child.description"
 msgstr "Det här temat applicerar child-temat."
+
+msgid "plugins.themes.master.header.html"
+msgstr ""

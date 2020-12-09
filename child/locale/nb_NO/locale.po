@@ -17,5 +17,8 @@ msgstr ""
 msgid "plugins.themes.child.name"
 msgstr "Child tema"
 
-msgid "plugins.themes.master.description"
+msgid "plugins.themes.child.description"
 msgstr "Dette programtillegget implementerer child temaet."
+
+msgid "plugins.themes.master.header.html"
+msgstr ""

@@ -19,3 +19,6 @@ msgstr "Child layout-tema"
 
 msgid "plugins.themes.child.description"
 msgstr "Dette tema implementerer Child layout-temaet."
+
+msgid "plugins.themes.master.header.html"
+msgstr ""

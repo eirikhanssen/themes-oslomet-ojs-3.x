@@ -31,3 +31,6 @@ msgstr "https://journals.oslomet.no/help/cookies-en_US.html"
 
 msgid "plugins.themes.master.cookieinfo.linktext"
 msgstr "About cookies used at journals.oslomet.no"
+
+msgid "plugins.themes.master.header.html"
+msgstr ""
