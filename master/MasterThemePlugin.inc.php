@@ -34,6 +34,7 @@ class MasterThemePlugin extends ThemePlugin {
 		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_MANAGER, LOCALE_COMPONENT_APP_MANAGER);
 		$this->setParent('defaultthemeplugin');
 		$this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
+		$this->addScript('svgxuse', 'js/svgxuse.min.js');
 	}
 
 	/**
