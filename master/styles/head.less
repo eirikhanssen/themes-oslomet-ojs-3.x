@@ -19,7 +19,10 @@
 		padding:0;
 
 		.pkp_site_name_wrapper {
-            display:flex;
+			display:flex;
+			@media (min-width: @screen-desktop) {
+				height: 6rem;		
+			}
 
 			.pkp_site_name {
 				flex-grow:1;
@@ -27,8 +30,6 @@
 				flex-flow: row wrap;
 				margin:0;
 				padding:0;
-				
-                @media (min-width: @medium-header-width) {}
                 
 				& > a {
 					flex-grow:1;
@@ -39,11 +40,12 @@
                     padding-left: .25rem;
                     margin-left: .25rem;
 					color: @head-titlecolor;
-					&:hover, &:focus {}
+					&:hover, &:focus {
+						color: @menu-text-hover-color;
+					}
                 & h1 {
                     padding:0;
                     margin:0;
-                    //color: black;
                     }    
 				}
 			}
@@ -55,9 +57,20 @@
 	border-bottom: none;
 }
 
+.pkp_navigation_primary > li > a:hover,
+.pkp_navigation_primary > li > a:focus {
+	color: @menu-text-hover-color;
+}
+
+.pkp_site_nav_menu a:hover,
+.pkp_site_nav_menu a:focus {
+	color: @menu-text-hover-color;
+}
+
+
 .pkp_navigation_primary_row {
     @media screen and (min-width: @screen-desktop) {
-        background: @primary-nav-bg;
+        background: @darken;
     }
 }
 .pkp_navigation_user_wrapper,
@@ -65,7 +78,7 @@
 	z-index: 10;
 	.pkp_nav_list {
 		ul {
-			width: 14em;
+			//width: 14em;
 		}
 	}
 	.pkp_nav_list {
@@ -82,11 +95,7 @@
 }
 
 .pkp_navigation_user_wrapper {
-	left: auto;
-	right: .25rem;
-	top: .25rem;
-    padding:0;
-    transform: none;
+
 	.pkp_nav_list {
 		padding:0;
 	}
@@ -96,25 +105,30 @@
 	}
 }
 
-.pkp_navigation_user_wrapper > .pkp_nav_list > .profile > a {
-	text-shadow:none;
-	border-radius: .25em;
-	padding: .2em .4em;
-    border: 1px solid rgba(255,255,255,0.5);
+.pkp_navigation_user_wrapper > .pkp_nav_list > .profile > a {}
+
+#navigationPrimary > li {}
+
+.pkp_navigation_primary > li:hover ul {}
+
+@media screen and (min-width: @screen-desktop) {
+	.pkp_nav_list ul a:hover,
+	.pkp_nav_list ul a:focus {
+		//color: rgb(3, 64, 105);
+		//background: #eee;
+	}
 }
 
-#navigationPrimary > li {
-	text-shadow: 1px 1px 0px #333;
+.pkp_navigation_user > li > ul a .task_count,
+.pkp_navigation_user > li > ul a .task_count,
+.pkp_navigation_user .task_count {
+	background-color: @darken;
 }
 
-.pkp_navigation_primary > li:hover ul {
-	right: 50%;
-	left:auto;
-	transform:translate(55%,0);
+.pkp_navigation_user > li > ul a:hover .task_count,
+.pkp_navigation_user > li > ul a:focus .task_count,
+.pkp_navigation_user a:hover .task_count,
+.pkp_navigation_user a:focus .task_count {
+	background-color: @darken;
+	color: @menu-text-hover-color;
 }
-
-.pkp_nav_list ul a:hover, .pkp_nav_list ul a:focus {
-	color: rgb(3, 64, 105);
-	background: #eee;
-}
-
