@@ -11,12 +11,16 @@
  */
 
 
- @darken: rgba(0,0,0,0.2);
+ @darken: rgba(0,0,0,0.1);
+ @lighten:  rgba(255,255,255,0.1);
+ @tint: @darken; // lighten for dark text, darken for light text
+ @usermenu-tint: transparent; // transparent or @tint are good values
+ @mainmenu-tint: @tint;
+ @header-inner-height: 6rem;
+ @header-menu-height: 2rem;
  @menu-text-hover-color: rgb(255, 255, 77);
- @medium-header-width: 40em;
- @header-min-height: 5rem;
  @bg-head: @bg-base;
- @bg-shade-light:               #eee; // new light bg-shade
+ @bg-shade-light:#eee; // new light bg-shade
  @head-shadow-color: black;
  @head-titlecolor: white;
  @breadcrumbs-height: 2.5rem;

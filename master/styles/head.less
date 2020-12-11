@@ -17,11 +17,12 @@
 		margin:0;
 		width: 100%;
 		padding:0;
+		overflow-x: clip;
 
 		.pkp_site_name_wrapper {
 			display:flex;
 			@media (min-width: @screen-desktop) {
-				height: 6rem;		
+				height: @header-inner-height + @header-menu-height;		
 			}
 
 			.pkp_site_name {
@@ -30,15 +31,32 @@
 				flex-flow: row wrap;
 				margin:0;
 				padding:0;
+				overflow: visible;
+				@media (min-width: @screen-desktop) {
+					margin-top: @header-menu-height;
+					margin-bottom: @header-menu-height;
+					height: @header-inner-height;
+					display:flex;
+					flex-flow: row wrap;
+					align-items:stretch;	
+				}
                 
 				& > a {
+					
+					position:relative;
 					flex-grow:1;
 					display:flex;
 					flex-direction: column;
                     padding:0;
                     margin:0;
                     padding-left: .25rem;
-                    margin-left: .25rem;
+					margin-left: .25rem;
+					
+					@media screen and (min-width: @screen-desktop) {
+						padding-left: 0;
+						margin-left: 0;
+					}
+
 					color: @head-titlecolor;
 					&:hover, &:focus {
 						color: @menu-text-hover-color;
@@ -70,17 +88,13 @@
 
 .pkp_navigation_primary_row {
     @media screen and (min-width: @screen-desktop) {
-        background: @darken;
+        background: @mainmenu-tint;
     }
 }
 .pkp_navigation_user_wrapper,
 .pkp_navigation_primary_row {
 	z-index: 10;
-	.pkp_nav_list {
-		ul {
-			//width: 14em;
-		}
-	}
+
 	.pkp_nav_list {
 		li {
 			font-weight: bold;
@@ -88,20 +102,54 @@
 				text-shadow: none;
 			}
 		}
-		.profile {
-			
-		}
 	} 
 }
 
-.pkp_navigation_user_wrapper {
+@media screen and (min-width: @screen-desktop) {
 
-	.pkp_nav_list {
-		padding:0;
+	.pkp_navigation_user_wrapper {
+		z-index: 1;
+		height: @header-menu-height;
+		background-color: @usermenu-tint;
+		.pkp_nav_list {
+			padding:0;
+		}
+		.pkp_nav_list > li:hover ul {
+			right: 0;
+			left:auto;
+		}
 	}
-	.pkp_nav_list > li:hover ul {
-		right: 0;
-		left:auto;
+}
+
+@media screen and (min-width: @screen-desktop) {
+
+	.pkp_navigation_user_wrapper::before,
+	.pkp_navigation_user_wrapper::after {
+		background-color: @usermenu-tint;
+	}
+
+	.pkp_navigation_user_wrapper::before,
+	.pkp_navigation_user_wrapper::after,
+	.pkp_site_name > a::before,
+	.pkp_site_name > a::after {
+		content: "";
+		display: block;
+		height: 100%;
+		width: 50vw;
+		position: absolute;
+		top:0;
+		right: 100%;
+		left: auto;
+	}
+	.pkp_navigation_user_wrapper::after,
+	.pkp_site_name > a::after {
+		right: auto;
+		left: 100%;
+	}
+
+	.pkp_site_name > a::before,
+	.pkp_site_name > a::after {
+		z-index: 10;
 	}
 }
 
@@ -112,23 +160,26 @@
 .pkp_navigation_primary > li:hover ul {}
 
 @media screen and (min-width: @screen-desktop) {
-	.pkp_nav_list ul a:hover,
-	.pkp_nav_list ul a:focus {
-		//color: rgb(3, 64, 105);
-		//background: #eee;
+
+	.pkp_site_name a > * {
+		height: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: left;
+		align-content: center;
 	}
 }
 
 .pkp_navigation_user > li > ul a .task_count,
 .pkp_navigation_user > li > ul a .task_count,
 .pkp_navigation_user .task_count {
-	background-color: @darken;
+	background-color: @tint;
 }
 
 .pkp_navigation_user > li > ul a:hover .task_count,
 .pkp_navigation_user > li > ul a:focus .task_count,
 .pkp_navigation_user a:hover .task_count,
 .pkp_navigation_user a:focus .task_count {
-	background-color: @darken;
+	background-color: @tint;
 	color: @menu-text-hover-color;
 }
