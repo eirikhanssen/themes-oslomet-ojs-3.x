@@ -15,6 +15,7 @@
   }
   .pkp_structure_content {
     flex-grow: 1;
+    padding-top: 0rem;
   }
 
  .columns {
@@ -28,4 +29,42 @@
     flex-grow: 1;
     padding: .5rem;
     text-align: left;
+}
+
+@media screen and (min-width: @screen-desktop) {
+  .pkp_structure_main {
+    padding-left: 0; 
+    width: @main-content-width-desktop;
+  }
+}
+
+@media screen and (min-width: @screen-lg-desktop) {
+  .pkp_structure_main {
+    padding-left: 0; 
+    width: @main-content-width-lg-desktop;
+  }
+}
+
+
+// override size
+.pkp_structure_main:first-child:last-child {
+  background-color: yellow;
+  @media(min-width: @screen-desktop) {
+    background-color: gold;
+    float: none;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 0;
+
+    // Aligns the left and right borders
+    @no-sidebar-margins: @sidebar-width / 2;
+    &:before {
+            display:none;
+    }
+
+    &:after {
+            left: auto;
+            right: @no-sidebar-margins;
+    }
+  }
 }
