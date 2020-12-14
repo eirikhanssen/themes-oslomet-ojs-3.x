@@ -8,3 +8,35 @@
  * @brief Styles applying to a view of an article with all details
  * @link templates/frontend/objects/article_details.tpl
  */
+
+.entry_details.entry_details {
+     background-color: gold;
+     @media screen and (min-width: @screen-desktop) {
+         width: auto;
+         max-width: 50%;
+         min-width: @sidebar-width;
+     }
+ }
+
+ .entry_details ol, .entry_details ul {
+     padding-left: @colgap;
+ }
+
+ .obj_article_details .row {
+    display: flex;
+    flex-flow: column nowrap;
+    @media screen and (min-width: @screen-desktop) {
+      
+      flex-flow: row nowrap;
+      .entry_details {
+        padding-left: @colgap;
+      }
+    }
+ }
+
+ a.block_make_submission_link {
+    text-align: center;
+     @media screen and (min-width: @screen-desktop) {
+         display: block;
+     }
+ }
