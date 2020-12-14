@@ -8,15 +8,44 @@
  * @brief Classes for site-wide elements and layout scaffolding
  */
 
+
+
  .pkp_structure_page {
     display: flex;
     flex-flow: column nowrap;
     min-height: 100vh;
   }
+
   .pkp_structure_content {
     flex-grow: 1;
     padding-top: 1rem;
   }
+  
+  .pkp_structure_main {
+    background:yellow;
+    
+  }
+  
+  .pkp_structure_sidebar {
+    width: @sidebar-width;
+  }
+  
+  
+  .pkp_structure_content.has_sidebar {
+    
+  }
+  
+  .pkp_structure_content.has_sidebar .pkp_structure_main {
+    // mindre bredde
+  }
+  
+  .pkp_structure_content.has_sidebar .pkp_structure_sidebar {
+   
+  }
+  
+
+
+
 
  .columns {
     display:flex; 
