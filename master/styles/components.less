@@ -8,4 +8,55 @@
  * @brief Reusable components
  */
 
- 
+ .cmp_breadcrumbs a {
+     text-decoration: underline;
+ }
+
+ .cmp_breadcrumbs .current {
+     color: black;
+ }
+
+ .cmp_breadcrumbs .separator {
+     padding: 0;
+     color: #777;
+ }
+
+ .cmp_breadcrumbs a
+ .pkp_structure_main a,
+ .pkp_structure_sidebar a,
+ .pkp_structure_footer_wrapper a,
+ .pkp_structure_footer_wrapper a  {
+    background-color: @bg;
+    color: @primary;
+  }
+
+  .cmp_breadcrumbs a,
+  .pkp_structure_sidebar li a,
+  .pkp_structure_footer_wrapper a,
+  .pkp_structure_footer_wrapper a {
+     border-radius: .25rem;
+     padding: 0 .25rem;
+   }
+
+  .cmp_breadcrumbs a:hover,
+  .cmp_breadcrumbs a:focus,
+  .pkp_structure_main a:hover,
+  .pkp_structure_main a:focus,
+  .pkp_structure_sidebar a:hover,
+  .pkp_structure_sidebar a:focus,
+  .pkp_structure_footer_wrapper a:hover,
+  .pkp_structure_footer_wrapper a:focus {
+    color: @bg;
+    background-color: @primary;
+    text-decoration: none;
+  }
+
+a.cover:focus,
+a.cover:hover,
+.cover a:focus,
+.cover a:hover {
+  outline:orange;
+  outline-offset: 5px;
+  outline-width: 5px;
+  outline-style: solid;
+}

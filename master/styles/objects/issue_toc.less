@@ -8,3 +8,66 @@
  * @brief Styles applying to an issue table of contents view
  * @link templates/frontend/objects/issue_toc.tpl
  */
+.obj_article_summary>.title a {
+    display: block;
+    outline:none;
+}
+
+.obj_issue_toc.obj_issue_toc>h2 {
+    font-size: 1.5rem;
+}
+
+.obj_issue_toc.obj_issue_toc h3 {
+    font-size: 1.25rem;
+}
+
+.obj_issue_toc.obj_issue_toc h3 .subtitle {
+    font-size: 1rem;
+    color: inherit;
+    background-color: inherit;
+}
+
+.obj_issue_toc .galleys>h2,
+.obj_issue_toc .section>h2,
+.obj_issue_toc .galleys>h3,
+.obj_issue_toc .section>h3 {
+    color: black;
+    font-weight: bold;
+    margin-bottom: .25rem;
+    margin-top: 1.5rem;
+}
+
+.obj_article_summary .subtitle {
+    color: black;
+    font-weight: bold;
+}
+
+.obj_issue_toc .galleys::before,
+.obj_issue_toc .section::before {
+    display: none;
+}
+
+.cover img {
+    border: 1px solid black;
+}
+
+.obj_issue_toc .cover {
+    margin-bottom: .5rem;
+
+    @media screen and (min-width: @screen-tablet) {
+        margin-bottom: 0;
+    }
+}
+
+.cmp_article_list>li {
+    padding: .5rem;
+    margin-left: -.5rem;
+    margin-bottom: 0;
+    background-color: @bg-shade-light;
+}
+
+.cmp_article_list>li:nth-child(2n+1) {}
+
+.cmp_article_list>li+li {
+    margin-top: .5rem;
+}
