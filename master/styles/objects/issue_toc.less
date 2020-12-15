@@ -13,15 +13,17 @@
     outline:none;
 }
 
-.obj_issue_toc.obj_issue_toc>h2 {
+.obj_issue_toc.obj_issue_toc>h2,
+.obj_issue_toc.obj_issue_toc .section>h3 {
     font-size: 1.5rem;
 }
 
-.obj_issue_toc.obj_issue_toc h3 {
+.obj_issue_toc.obj_issue_toc h3,
+.obj_issue_toc.obj_issue_toc .title {
     font-size: 1.25rem;
 }
 
-.obj_issue_toc.obj_issue_toc h3 .subtitle {
+.obj_issue_toc.obj_issue_toc a .subtitle {
     font-size: 1rem;
     color: inherit;
     background-color: inherit;
@@ -52,7 +54,7 @@
 }
 
 .obj_issue_toc .cover {
-    margin-bottom: .5rem;
+    margin-bottom: .75rem;
 
     @media screen and (min-width: @screen-tablet) {
         margin-bottom: 0;
@@ -70,4 +72,13 @@
 
 .cmp_article_list>li+li {
     margin-top: .5rem;
+}
+
+
+.pkp_page_index .current_issue .read_more,
+.pkp_page_index .current_issue .read_more {
+    padding-left: .5rem;
+    margin-left: -.5rem;
+    margin-top: 1rem;
+    border-radius: .25rem;
 }
