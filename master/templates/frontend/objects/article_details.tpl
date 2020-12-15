@@ -86,14 +86,13 @@
 			}
 		</div>
 	{/if}
-	<h1 class="page_title">
-		{$publication->getLocalizedTitle()|escape}
-	</h1>
+	<header class="submission_title">
+		<h1 class="page_title">{$publication->getLocalizedTitle()|escape}</h1>
 	{if $publication->getLocalizedData('subtitle')}
-		<h2 class="subtitle">
-			{$publication->getLocalizedData('subtitle')|escape}
-		</h2>
+		<p class="subtitle">{$publication->getLocalizedData('subtitle')|escape}</p>
 	{/if}
+	</header>
+	
 
 	<div class="row">
 		<div class="main_entry">
