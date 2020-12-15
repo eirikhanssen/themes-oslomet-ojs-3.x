@@ -8,10 +8,41 @@
  * @brief Styles applying to issue archive page
  * @link templates/frontend/pages/issueArchive.tpl
  */
-
+ .obj_issue_summary h2 {
+    font-size: 1.25rem;
+ }
  .page_issue_archive .issues_archive {
     margin-left: 0;
     margin-right: 0;
     padding-left:0;
     padding-right:0;
+    border:none;
  }
+
+ .page_issue_archive .issues_archive > li {
+   border:none;
+ }
+
+ .issues_archive.issues_archive>li {
+   padding: .5rem;
+   margin-left: -.5rem;
+   margin-bottom: 0;
+   background-color: @bg-shade-light;
+}
+
+.issues_archive.issues_archive>li+li{
+   margin-top: .5rem;
+}
+
+
+.obj_issue_summary .cover {
+   margin-bottom: @covermargin;
+
+   @media screen and (min-width: @screen-tablet) {
+       margin-bottom: 0;
+   }
+}
+
+.obj_issue_summary .series {color:black; margin-top: .5rem; font-weight:bold;}
+
+.obj_issue_summary .description {font-size: 1rem;}
