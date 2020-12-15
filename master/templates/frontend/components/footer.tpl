@@ -43,7 +43,7 @@
 		<div class="columns">
 		    {if $pageFooter}{$pageFooter}{/if}			
 			<div class="column">
-				<h4>{translate|escape key="plugins.themes.master.hostedby.heading"}</h4>
+				<h1>{translate|escape key="plugins.themes.master.hostedby.heading"}</h1>
 				<div class="inst-branding oslomet">
 					<p><a class="logotext" href="{translate|escape key="plugins.themes.master.hostedby.url"}" target="_blank" rel="noopener">{translate|escape key="plugins.themes.master.hostedby.name"}</a></p>
 					<div class="info">

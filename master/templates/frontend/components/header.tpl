@@ -39,7 +39,6 @@
 						<span>Open Menu</span>
 					</button>
 					{capture assign="currentPageTitle"}{if !$requestedPage || $requestedPage === 'index'}{if $currentContext}		{$displayPageHeaderTitle|escape}{else}{$siteTitle|escape}{/if}{/if}{/capture}
-					{*<h1 class="pkp_screen_reader">{$currentPageTitle}</h1>*}
 					<div class="pkp_site_name">
 					{capture assign="homeUrl"}
 						{url page="index" router=$smarty.const.ROUTE_PAGE}
@@ -64,8 +63,8 @@
 					{load_menu name="primary" id="navigationPrimary" ulClass="pkp_navigation_primary"}
 				{/capture}
 
-				<nav class="pkp_site_nav_menu" aria-label="{translate|escape key="common.navigation.site"}">
-					<a id="siteNav"></a>
+				<nav id="siteNav" class="pkp_site_nav_menu" aria-label="{translate|escape key="common.navigation.site"}">
+
 					<div class="pkp_navigation_primary_row">
 						<div class="pkp_navigation_primary_wrapper">
 							{* Primary navigation menu for current application *}
@@ -93,5 +92,4 @@
 			{assign var=hasSidebar value=0}
 		{/if}
 		<div class="pkp_structure_content{if $hasSidebar} has_sidebar{/if}">
-			<div class="pkp_structure_main" role="main">
-				<a id="pkp_content_main"></a>
+			<div id="pkp_content_main" class="pkp_structure_main" role="main">

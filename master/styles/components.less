@@ -8,6 +8,7 @@
  * @brief Reusable components
  */
 
+
  .cmp_breadcrumbs a {
      text-decoration: underline;
  }
@@ -18,11 +19,10 @@
 
  .cmp_breadcrumbs .separator {
      padding: 0;
-     color: #777;
+     color: #444;
  }
-
- .cmp_breadcrumbs a
- .pkp_structure_main a,
+ .cmp_skip_to_content a:focus,
+ .cmp_breadcrumbs a,
  .pkp_structure_sidebar a,
  .pkp_structure_footer_wrapper a,
  .pkp_structure_footer_wrapper a,
@@ -58,9 +58,11 @@
 a.cover:focus,
 a.cover:hover,
 .cover a:focus,
-.cover a:hover {
+.cover a:hover,
+.cmp_skip_to_content a:focus {
   outline:orange;
   outline-offset: 5px;
   outline-width: 5px;
   outline-style: solid;
 }
+.cmp_skip_to_content a:focus {outline-offset:0px;}
