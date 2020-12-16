@@ -15,10 +15,10 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 
 msgid "plugins.themes.formakademisk.name"
-msgstr "FormAkademisk tema"
+msgstr "FormAkademisk theme"
 
 msgid "plugins.themes.formakademisk.description"
-msgstr "Dette programtillegget implementerer formakademisk temaet."
+msgstr "Dette programtillegget implementerer formakademisk theme."
 
 msgid "plugins.themes.master.header.html"
 msgstr ""

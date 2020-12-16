@@ -7,7 +7,7 @@
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
- * @class ChildThemePlugin
+ * @class FormAkademiskThemePlugin
  * @ingroup plugins_themes_formakademisk
  *
  * @brief FormAkademisk theme
