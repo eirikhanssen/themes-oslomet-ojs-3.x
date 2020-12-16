@@ -35,6 +35,8 @@ class MasterThemePlugin extends ThemePlugin {
 		$this->setParent('defaultthemeplugin');
 		$this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
 		$this->addScript('svgxuse', 'js/svgxuse.min.js');
+		$this->addStyle('mediaelementcss', 'js/mediaelement/mediaelementplayer.min.css');
+		$this->addScript('mediaelementjs', 'js/mediaelement/mediaelement.min.js');
 	}
 
 	/**
