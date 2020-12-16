@@ -15,10 +15,10 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 
 msgid "plugins.themes.child.name"
-msgstr "Child tema"
+msgstr "Child theme"
 
 msgid "plugins.themes.child.description"
-msgstr "Dette programtillegget implementerer child temaet."
+msgstr "Dette programtillegget implementerer child theme."
 
 msgid "plugins.themes.master.header.html"
 msgstr ""
