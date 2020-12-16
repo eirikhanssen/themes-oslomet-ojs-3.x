@@ -14,6 +14,8 @@
 	border-bottom: @bg-border;
 
 	.pkp_head_wrapper {
+		position: relative;
+        z-index: 1;
 		margin:0;
 		width: 100%;
 		padding:0;
@@ -21,11 +23,26 @@
 
 		.pkp_site_name_wrapper {
 			display:flex;
+			position: relative;
+			z-index: 1;
+			
+			@media (min-width: @screen-phone) {
+                height: @header-inner-height;
+                background-repeat: no-repeat;
+                background-position: left 7rem center;
+                background-size: auto 5rem;
+            }
+
 			@media (min-width: @screen-desktop) {
-				height: @header-inner-height + @header-menu-height;		
+				height: @header-height;
+                background-position: left 1rem center;	
 			}
 
 			.pkp_site_name {
+				font-family: Corbel, Arial, sans-serif;
+                font-weight: bold;
+                font-size: 3rem;
+                position: relative;
 				flex-grow:1;
 				display:flex; 
 				flex-flow: row wrap;
@@ -51,6 +68,7 @@
                     margin:0;
                     padding-left: .25rem;
 					margin-left: .25rem;
+					text-align: left;
 					
 					@media screen and (min-width: @screen-desktop) {
 						padding-left: .5rem;
@@ -85,7 +103,6 @@
 .pkp_site_nav_menu a:focus {
 	color: @menu-text-hover-color;
 }
-
 
 .pkp_navigation_primary_row {
     @media screen and (min-width: @screen-desktop) {

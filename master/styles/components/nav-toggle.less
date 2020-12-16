@@ -37,8 +37,8 @@
 
   @media screen and (min-width: @screen-phone) {
     .pkp_site_nav_toggle {
-        outline: 1px solid rgba(0,0,0,0.5);
-        border: 3px double white;
+        border-right: 1px solid white;
+        outline:none;
         box-shadow: none;
         width: 6rem;
         height: 6rem;
@@ -48,4 +48,23 @@
         right:auto;
         margin: auto;
       }
+
+      .pkp_site_nav_toggle--transform {
+        border: 1px solid white;
+      }
+
+      .pkp_site_nav_toggle > span {
+        left:0;
+        top:9%;
+        transform:  scale(3) translate(50%,50%);
+      }
+      .pkp_site_nav_toggle--transform > span {
+        top:5%;
+      }
     }
+@media screen and (min-width: @screen-tablet) {
+  .pkp_navigation_user_wrapper {
+    right:0;
+    transform: translate(0,0);
+  }
+}

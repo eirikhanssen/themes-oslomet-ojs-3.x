@@ -35,11 +35,9 @@
 	{/if}
 </div><!-- pkp_structure_content -->
 
-<div class="pkp_structure_footer_wrapper" role="contentinfo">
-	<a id="pkp_content_footer"></a>
-
+<div id="pkp_content_footer" class="pkp_structure_footer_wrapper" role="contentinfo">
+{if $footerISSN}<aside class="issn"><p><strong>{$footerISSN}</strong></p></aside>{/if}
 	<footer class="pkp_structure_footer">
-	{if $footerISSN}<p class="issn">{$footerISSN}</p>{/if}
 		<div class="columns">
 		    {if $pageFooter}{$pageFooter}{/if}			
 			<div class="column">
