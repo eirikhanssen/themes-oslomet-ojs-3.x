@@ -2,9 +2,15 @@
   color: white;
 }
 
+.pkp_site_nav_toggle:hover, 
+.pkp_site_nav_toggle:focus {
+  background-color: @head-hover-bgcolor;
+}
+
 .pkp_site_nav_toggle:hover > span, 
 .pkp_site_nav_toggle:focus > span {
-	border-color: @menu-text-hover-color;
+  border-color: @menu-text-hover-color;
+  
 }
 
 .pkp_site_nav_toggle:hover > span::before,
@@ -67,4 +73,9 @@
     right:0;
     transform: translate(0,0);
   }
+}
+
+.pkp_site_nav_menu a:hover,
+.pkp_site_nav_menu a:focus {
+  color: @head-color;
 }

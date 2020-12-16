@@ -1,0 +1,55 @@
+/**
+ * @file styles/head.less
+ *
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_structure_head
+ *
+ * @brief Classes for the page header structural elements
+ */
+
+ .pkp_structure_head {
+
+    .pkp_head_wrapper {
+
+        .pkp_site_name_wrapper {
+            
+            @media( min-width: @screen-phone ) {
+                padding: 0;
+                background-image: url(/plugins/themes/nordicjournalofartandresearch/svg/ar-logo-sort-10px-padding.svg), url(/plugins/themes/nordicjournalofartandresearch/svg/ar-tittelhode-grafisk-element1.svg);
+                background-position: left 7rem center, left 30rem center;
+                background-size: auto 100%;
+                background-repeat:no-repeat, no-repeat;
+            }
+        
+            @media( min-width: @screen-desktop ) {
+                background-image: url(/plugins/themes/nordicjournalofartandresearch/svg/ar-logo-sort-10px-padding.svg), url(/plugins/themes/nordicjournalofartandresearch/svg/ar-tittelhode-grafisk-element1.svg);
+                background-position: left .5rem center, left 30rem center;
+                background-size: auto 100%;
+                background-repeat:no-repeat, no-repeat;
+            }
+        
+            @media( min-width: @screen-lg-desktop ) {
+                background-image: url(/plugins/themes/nordicjournalofartandresearch/svg/ar-logo-sort-10px-padding.svg), url(/plugins/themes/nordicjournalofartandresearch/svg/ar-tittelhode-grafisk-element1.svg);
+                background-position: left .5rem center, right center;
+                background-size: auto 100%;
+                background-repeat:no-repeat, no-repeat;
+            }
+
+            .pkp_site_name a > h1 {
+                @media (min-width: @screen-phone) {
+                    position: relative;
+                    left: -9999px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: @screen-phone) {
+	.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a:hover {
+		background-color:transparent;
+	}
+}
