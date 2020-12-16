@@ -1,4 +1,4 @@
-# ChildThemePlugin
+# FormAkademiskThemePlugin
 
 This theme is a descendant theme of MasterThemePlugin and default theme in OJS 3.2.1-2
 

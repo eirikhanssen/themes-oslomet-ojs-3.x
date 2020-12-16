@@ -14,11 +14,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.9.1\n"
 
-msgid "plugins.themes.child.name"
-msgstr "Child tema"
+msgid "plugins.themes.formakademisk.name"
+msgstr "FormAkademisk tema"
 
-msgid "plugins.themes.child.description"
-msgstr "Dette programtillegget implementerer child temaet."
+msgid "plugins.themes.formakademisk.description"
+msgstr "Dette programtillegget implementerer formakademisk temaet."
 
 msgid "plugins.themes.master.header.html"
 msgstr ""

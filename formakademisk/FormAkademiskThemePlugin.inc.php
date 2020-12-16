@@ -1,21 +1,21 @@
 <?php
 
 /**
- * @file plugins/themes/child/ChildThemePlugin.inc.php
+ * @file plugins/themes/formakademisk/FormAkademiskThemePlugin.inc.php
  *
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * @class ChildThemePlugin
- * @ingroup plugins_themes_child
+ * @ingroup plugins_themes_formakademisk
  *
- * @brief Child theme
+ * @brief FormAkademisk theme
  */
 
 import('lib.pkp.classes.plugins.ThemePlugin');
 
-class ChildThemePlugin extends ThemePlugin {
+class FormAkademiskThemePlugin extends ThemePlugin {
 	/**
 	 * @copydoc ThemePlugin::isActive()
 	 */
@@ -59,7 +59,7 @@ class ChildThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDisplayName() {
-		return __('plugins.themes.child.name');
+		return __('plugins.themes.formakademisk.name');
 	}
 
 	/**
@@ -67,6 +67,6 @@ class ChildThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDescription() {
-		return __('plugins.themes.child.description');
+		return __('plugins.themes.formakademisk.description');
 	}
 }
