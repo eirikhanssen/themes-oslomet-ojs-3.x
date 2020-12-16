@@ -18,4 +18,4 @@ msgid "plugins.themes.formakademisk.description"
 msgstr "This theme implements the formakademisk theme."
 
 msgid "plugins.themes.master.header.html"
-msgstr ""
+msgstr "<div class="title_fa"><span class="title_fa_form">Form</span><span class="title_fa_akademisk">Akademisk</span><br /><span class="title_fa_desc">research journal of design and design education</span></div>"

@@ -9,3 +9,86 @@
  *
  * @brief Classes for the page header structural elements
  */
+
+.pkp_structure_head {
+
+    .pkp_head_wrapper {
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            background-color: transparent;
+
+            @media (min-width: @screen-phone) {
+                background-color: transparent;
+            }
+        }
+
+        .pkp_site_name_wrapper {
+            position: relative;
+            z-index: 1;
+
+            @media (min-width: @screen-phone) {
+                height: @header-inner-height;
+                background-image: url("/plugins/themes/formakademisk/img/formakademisk-logo-opt.svg");
+                background-repeat: no-repeat;
+                background-position: left 7rem center;
+                background-size: auto 5rem;
+            }
+
+            @media (min-width: @screen-desktop) {
+                height: @header-height;
+                background-position: left 1rem center;
+            }
+
+            .pkp_site_name {
+                font-family: Corbel, Arial, sans-serif;
+                font-weight: bold;
+                font-size: 3rem;
+                position: relative;
+
+
+
+                .title_fa {
+                    position: relative;
+                    top: .125rem;
+                    font-size:1rem;
+                    line-height:1rem;
+                    @media (min-width: @screen-phone) {
+                        position: relative;
+                        left: -9999px;
+                    }
+                }
+
+                .title_fa_desc {
+                    font-size: .75rem;
+                    @media (min-width: @screen-phone) {
+                        position: relative;
+                        left: -9999px;
+                    }
+                }
+
+                &>a {
+                    text-align: left;
+                }
+
+                a::after {
+                    margin-left: auto;
+                    margin-right: auto;
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
