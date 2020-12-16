@@ -2,13 +2,13 @@
 <!DOCTYPE plugin_settings SYSTEM "../../../lib/pkp/dtd/pluginSettings.dtd">
 
 <!--
-  * plugins/themes/formakademisk/settings.xml
+  * plugins/themes/child/settings.xml
   *
   * Copyright (c) 2014-2020 Simon Fraser University
   * Copyright (c) 2003-2020 John Willinsky
   * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
   *
-  * FormAkademisk plugin settings.
+  * Child plugin settings.
   *
   -->
 
