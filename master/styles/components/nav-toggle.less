@@ -6,8 +6,7 @@
 }
 
 .pkp_site_nav_toggle > span {
-  color: white;
-
+  color: @site_nav_toggle_color;
 }
 
 .pkp_site_nav_toggle:hover, 
@@ -50,15 +49,22 @@
   }
 
   .pkp_site_nav_toggle {
-    border-right: 1px solid white;
+    border-right: @site_nav_toggle_border;
     outline:none;
     box-shadow: none;
+  }
+
+  .pkp_site_nav_toggle:hover,
+  .pkp_site_nav_toggle:focus {
+    color: @site_nav_toggle_color_hover;
+    background: @site_nav_toggle_bg_hover;
   }
 
   @media screen and (min-width: @screen-phone) {
 
     .pkp_site_nav_toggle--transform {
-        border: 1px solid white;
+        border: @site_nav_toggle_border;
+        background: @site_nav_toggle_bg_transform;
       }
 
       .pkp_site_nav_toggle > span {}
