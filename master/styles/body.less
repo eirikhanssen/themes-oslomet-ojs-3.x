@@ -8,22 +8,14 @@
  * @brief Classes for site-wide elements and layout scaffolding
  */
 
-html {
+html, body {
   width: 100vw;
   overflow-x:hidden;
 }
 
-body {
-  //background-color: #ccc;
+.pkp_structure_page {
   max-width: @max-page-width;
   margin: auto;
-
-  @media screen and (min-width: @screen-desktop) {
-  }
-}
-
-.pkp_structure_page {
-  //background: cyan;
   display: flex;
   flex-flow: column nowrap;
   min-height: 100vh;
