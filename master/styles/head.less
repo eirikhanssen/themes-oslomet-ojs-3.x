@@ -28,7 +28,7 @@
 	}
 
 	@media (min-width: @screen-desktop) {
-		min-height: calc(@header-height + 1px);
+		//min-height: calc(@header-height + 2px);
 	}
 
 
@@ -198,10 +198,9 @@ nav .pkp_navigation_user {
 		position:relative;
 	}
 	.pkp_navigation_primary_wrapper::before {
-		
 		position:absolute;
 		top:0;
-		bottom:0;
+		bottom:-2px;
 		left: -100vw;
 		right: -100vw;
 		background: @screen-desktop-primary-nav-bg;
@@ -209,7 +208,6 @@ nav .pkp_navigation_user {
 		border-top:@primary-nav-border-top;
 		border-bottom: @primary-nav-border-bottom;
 		display: block;
-
 	}
 
 	.pkp_navigation_primary_wrapper::before {

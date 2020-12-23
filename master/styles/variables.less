@@ -20,12 +20,15 @@
 @header-menu-height: 2rem;
 
 @header-text-color: black;
-@header-text-color-hover: black;
+@header-text-color-hover: @menu-text-hover-color;
 @header-bgcolor: @bg-head; /* set from theme settings ? */
 @header-bgcolor-hover: black;
 
-@primary-nav-border-top: 2px solid black; 
-@primary-nav-border-bottom:1px solid @bg-shade;
+@menu-borderwidth: 1px;
+
+@primary-nav-border: @menu-borderwidth solid black;
+@primary-nav-border-top: @primary-nav-border; 
+@primary-nav-border-bottom: @menu-borderwidth solid transparent;
 
 @primary-nav-text-color: white; /* works well for dark header background. for light header bg, use black */
 @primary-nav-text-color-hover: white;
@@ -37,7 +40,9 @@
 @screen-desktop-primary-nav-text-bg: transparent;
 @screen-desktop-primary-nav-text-bg-hover:transparent;
 @screen-desktop-primary-nav-bg: white;
-@screen-desktop-primary-nav-border-bottom: 2px solid transparent;
+@screen-desktop-primary-nav-border: @menu-borderwidth solid transparent;
+@screen-desktop-primary-nav-border-bottom: @menu-borderwidth solid transparent;
+@screen-desktop-primary-nav-border-is-open: @menu-borderwidth solid black;
 
 @header-height: @header-menu-height+@header-inner-height;
 @header-phone-height: 3rem;
@@ -59,7 +64,7 @@
 @bordercolor: #777;
 @bg-shade: #eee;
 @bg-border-color: black;
-@bg-border: 1px solid @bg-border-color;
+@bg-border: @menu-borderwidth solid @bg-border-color;
 @primary: #1e6292; /* link color */
 @covermargin: .75rem;
 @screen-tablet:                600px; /*768*/
