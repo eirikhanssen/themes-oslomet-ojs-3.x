@@ -16,9 +16,11 @@
         
         .pkp_site_name_wrapper {
             background-image: url("/plugins/themes/nat/img/nat-logo-sort-en-linje.svg");
-            background-size: auto 70%;
+            background-position: left calc(@header-phone-height ~" + .25rem") center;
+            background-size: calc(~"100vw - " (@header-phone-height + 2rem)) auto, auto 100%;
+            
             @media (min-width: @screen-phone) {
-                
+                background-size: auto 70%;
             }
 
             @media (min-width: @screen-desktop) {
