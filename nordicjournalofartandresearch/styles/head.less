@@ -17,19 +17,23 @@
         .pkp_site_name_wrapper {
             padding: 0;
             background-image: url(/plugins/themes/nordicjournalofartandresearch/svg/ar-logo-sort-small.svg), url(/plugins/themes/nordicjournalofartandresearch/svg/ar-tittelhode-grafisk-element1.svg);
-            background-position: left calc(@header-phone-height + 1rem) center, left calc(@header-phone-height + 18rem) center;
-            background-size: auto 80%, auto 100%;
+            background-position: left @header-phone-height center, left calc(@header-phone-height + 18rem) center;
+            background-size: calc(~"100vw - " (@header-phone-height + 1rem)) auto, auto 100%;
             background-repeat:no-repeat, no-repeat;
 
+            @media screen and (min-width: @screen-small-phone) {
+                background-position: left @header-phone-height center, left calc(@header-phone-height + 18rem) center;
+                background-size: auto 80%, auto 100%;
+            }
+
             @media screen and (min-width: @screen-tablet) {
-                background-position: left calc(@header-phone-height + 1rem) center, right center;
+                background-position: left @header-phone-height center, right center;
             }
             
             @media screen and (min-width: @screen-desktop) {
                 background-image: url(/plugins/themes/nordicjournalofartandresearch/svg/ar-logo-sort-10px-padding.svg), url(/plugins/themes/nordicjournalofartandresearch/svg/ar-tittelhode-grafisk-element1.svg);
                 background-position: left .5rem center, right center;
                 background-size: auto 90%, auto 100%;
-                
             }
         
             /*@media screen and (min-width: @screen-lg-desktop) {
