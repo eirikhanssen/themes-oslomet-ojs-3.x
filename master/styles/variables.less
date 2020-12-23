@@ -18,7 +18,29 @@
 @mainmenu-tint: @tint;
 @header-inner-height: 6rem;
 @header-menu-height: 2rem;
+
+@header-text-color: black;
+@header-text-color-hover: black;
+@header-bgcolor: @bg-head; /* set from theme settings ? */
+@header-bgcolor-hover: black;
+
+@primary-nav-border-top: 2px solid black; 
+@primary-nav-border-bottom:1px solid @bg-shade;
+
+@primary-nav-text-color: white; /* works well for dark header background. for light header bg, use black */
+@primary-nav-text-color-hover: white;
+@primary-nav-text-bg: transparent;
+@primary-nav-text-bg-hover: transparent;
+
+@screen-desktop-primary-nav-text-color: black;
+@screen-desktop-primary-nav-text-color-hover: black;
+@screen-desktop-primary-nav-text-bg: transparent;
+@screen-desktop-primary-nav-text-bg-hover:transparent;
+@screen-desktop-primary-nav-bg: white;
+@screen-desktop-primary-nav-border-bottom: 2px solid transparent;
+
 @header-height: @header-menu-height+@header-inner-height;
+@header-phone-height: 3rem;
 @menu-text-hover-color: rgb(255, 243, 138);
 @main-content-width-desktop: 800px;
 @main-content-width-lg-desktop: 1010px;
@@ -26,6 +48,7 @@
 @bg-shade-light:#eee; // new light bg-shade
 @head-shadow-color: black;
 @head-titlecolor: white;
+
 @breadcrumbs-height: 2.5rem;
 @breadcrumbs-margin: 1.5rem;
 @toc-items-vertical-margin: 2rem;
@@ -34,13 +57,18 @@
 @max-page-width: 80rem;
 @colgap: 1rem;
 @bordercolor: #777;
+@bg-shade: #eee;
+@bg-border-color: black;
+@bg-border: 1px solid @bg-border-color;
 @primary: #1e6292; /* link color */
 @covermargin: .75rem;
-@bg-shade: #eee;
 @screen-tablet:                600px; /*768*/
 @head-color: white; /* for dark bg */
 @head-hover-color: rgb(255, 243, 138);
-@head-hover-bgcolor: transparent;
+@head-hover-bg: transparent;
+@search-controls-bg: transparent;
+@search-hover-bg: @screen-desktop-primary-nav-text-color;
+@search-hover-color: white;
 // Text
 // @text:                   black;
 // @text-light:             rgba(0,0,0,0.54);

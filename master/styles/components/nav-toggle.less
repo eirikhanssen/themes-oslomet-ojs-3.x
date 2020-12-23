@@ -1,10 +1,17 @@
+.pkp_site_nav_toggle {
+  width: @header-phone-height;
+  height: @header-phone-height;
+  position:relative;
+}
+
 .pkp_site_nav_toggle > span {
   color: white;
+
 }
 
 .pkp_site_nav_toggle:hover, 
 .pkp_site_nav_toggle:focus {
-  background-color: @head-hover-bgcolor;
+  background: @primary-nav-text-bg-hover;
 }
 
 .pkp_site_nav_toggle:hover > span, 
@@ -46,13 +53,6 @@
         border-right: 1px solid white;
         outline:none;
         box-shadow: none;
-        width: 6rem;
-        height: 6rem;
-        top:0;
-        bottom:0;
-        left:0;
-        right:auto;
-        margin: auto;
       }
 
       .pkp_site_nav_toggle--transform {
@@ -60,12 +60,12 @@
       }
 
       .pkp_site_nav_toggle > span {
-        left:0;
-        top:9%;
-        transform:  scale(3) translate(50%,50%);
+        //left:0;
+        //top:9%;
+        //transform:  scale(3) translate(50%,50%);
       }
       .pkp_site_nav_toggle--transform > span {
-        top:5%;
+        //top:5%;
       }
     }
 @media screen and (min-width: @screen-tablet) {

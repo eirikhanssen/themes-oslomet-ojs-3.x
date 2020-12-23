@@ -19,10 +19,10 @@
 			<input type="hidden" name="{$paramKey|escape}" value="{$paramValue|escape}"/>
 		{/foreach}
 		{block name=searchQuerySimple}
-			<input tabindex="-1" name="query" value="{$searchQuery|escape}" type="text" aria-label="{translate|escape key="common.searchQuery"}">
+			<input name="query" value="{$searchQuery|escape}" type="text" aria-label="{translate|escape key="common.searchQuery"}">
 		{/block}
 
-		<button tabindex="-1" type="submit">
+		<button type="submit">
 			{translate key="common.search"}
 		</button>
 		<div class="search_controls" aria-hidden="true">
