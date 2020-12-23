@@ -15,11 +15,18 @@
     .pkp_head_wrapper {
 
         .pkp_site_name_wrapper {
+            background-image: url("/plugins/themes/formakademisk/img/formakademisk-logo-phone-fat-small-text.svg");
+            background-repeat: no-repeat;
+            background-size: auto 80%;
+            background-position: left calc(@header-phone-height ~" + .75rem") center;
             @media (min-width: @screen-phone) {
-                background-image: url("/plugins/themes/formakademisk/img/formakademisk-logo-opt.svg");
+                //background-image: url("/plugins/themes/formakademisk/img/formakademisk-logo-phone.svg");
+                //background-image: url("/plugins/themes/formakademisk/img/formakademisk-logo-fat-small-text.svg");
             }
 
-            @media (min-width: @screen-desktop) {}
+            @media (min-width: @screen-desktop) {
+                background-image: url("/plugins/themes/formakademisk/img/formakademisk-logo-opt.svg");
+            }
 
             .pkp_site_name {
                 .title_fa {
@@ -27,6 +34,8 @@
                     top: .125rem;
                     font-size:1rem;
                     line-height:1rem;
+                    position:relative;
+                    left:-9999px;
                     @media (min-width: @screen-phone) {
                         position: relative;
                         left: -9999px;
