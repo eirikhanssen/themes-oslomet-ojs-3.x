@@ -47,13 +47,13 @@
 			height: @header-phone-height;
 			background-repeat: no-repeat;
             background-size: auto 80%;
-            background-position: left calc(@header-phone-height ~" + .75rem") center;
+            background-position: left calc(@header-phone-height ~" + .25rem") center;
 			
-			@media (min-width: @screen-desktop) {
+			@media screen and (min-width: @screen-desktop) {
 				height: @header-height;
 			}
 			
-			@media (min-width: @screen-desktop) {
+			@media screen and (min-width: @screen-desktop) {
 				background-position: left .75rem center;
 			}
 
