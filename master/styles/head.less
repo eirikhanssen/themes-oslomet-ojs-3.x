@@ -37,18 +37,24 @@
 		margin:0;
 		width: 100%;
 		padding:0;
+		border-bottom: @header-bottom-border;
+		@media screen and (min-width: @screen-desktop) {
+			border-bottom: @screen-desktop-header-bottom-border;
+		}
 
 		.pkp_site_name_wrapper {
 			display:flex;
 			height: @header-phone-height;
+			background-repeat: no-repeat;
+            background-size: auto 80%;
+            background-position: left calc(@header-phone-height ~" + .75rem") center;
 			
 			@media (min-width: @screen-desktop) {
 				height: @header-height;
-                background-repeat: no-repeat;
-                background-position: left 7rem center;
-                background-size: auto 5rem;
-            }
+			}
+			
 			@media (min-width: @screen-desktop) {
+				background-position: left .75rem center;
 			}
 
 			.pkp_site_name {
@@ -231,6 +237,13 @@ nav .pkp_navigation_user {
 		}
 	}
 }
+
+@media screen and (min-width: @screen-tablet) {
+	.pkp_navigation_user_wrapper {
+	  right:0;
+	  transform: translate(-.75rem,0);
+	}
+  }
 
 @media screen and (min-width: @screen-desktop) {
 
