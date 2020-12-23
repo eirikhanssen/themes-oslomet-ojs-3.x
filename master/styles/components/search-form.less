@@ -4,8 +4,10 @@
 
 .pkp_search {
 	overflow: hidden;
-	left:-8px;
-	right:4px;
+	@media screen and (min-width: @screen-desktop) {
+		left:-8px;
+		right:4px;	
+	}
 }
 
 .pkp_search.is_open.is_open.is_open .search_prompt {
@@ -15,7 +17,6 @@
 .search_controls {
 	background: @search-controls-bg;
 	z-index: 1;
-	//right:4px;
 }
 
 .pkp_search_desktop input[type="text"] {
