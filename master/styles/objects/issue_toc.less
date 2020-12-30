@@ -30,7 +30,7 @@
 .obj_issue_toc.obj_issue_toc h3,
 .obj_issue_toc.obj_issue_toc .title,
 .obj_article_summary.obj_article_summary h3.title {
-    margin-top: 1.25rem;
+    margin-top: @toc-item-heading-margin-top;
     font-size: 1.25rem;
     line-height: 1.25em;
 }
@@ -61,10 +61,6 @@
     display: none;
 }
 
-.cover img {
-    border: 1px solid black;
-}
-
 .obj_issue_toc .cover {
     margin-bottom: @covermargin;
 
@@ -73,25 +69,36 @@
     }
 }
 
-.cmp_article_list>li,
+.cmp_article_list > li,
 .obj_issue_toc .heading {
     padding: .5rem;
     margin-bottom: 0;
-    background-color: @bg-shade-light;
-    border: 1px solid gray;
+    background-color: @toc-bg;
+    border: @toc-border;
+    box-shadow: @toc-item-box-shadow-vignette;
+    @media screen and (min-width: @screen-tablet) {
+        //margin-right: .75rem;
+    }
 }
+
+
 
 .cmp_article_list>li:nth-child(2n+1) {}
 
 .cmp_article_list>li+li {
-    margin-top: 1rem;
+    margin-top: @toc-item-gap;
 }
 
 .obj_issue_toc .cover {
-    background: #666;
+    background: @toc-cover-bg;
     display: flex;
     justify-content: center;
-//    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+
+.obj_issue_toc .cover a,
+.obj_issue_toc a.cover {
+    border: @toc-cover-border;
+    overflow: hidden;
 }
 
 .obj_issue_toc .cover a,
@@ -100,7 +107,8 @@
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset, 0 0 100px rgba(0,0,0,0.9) inset;
+    box-shadow: @toc-cover-box-shadow-vignette;
+    z-index: 1;
 }
 
 .obj_issue_toc .cover a:hover,
@@ -109,5 +117,39 @@
 .obj_issue_summary a.cover:focus,
 .obj_issue_toc a.cover:hover,
 .obj_issue_toc a.cover:focus {
-    box-shadow: 0 0 200px rgba(0,0,0,0.5) inset, 0 0 100px rgba(0,0,0,0.9) inset;
+    box-shadow: @toc-cover-hover-box-shadow-vignette;
 }
+
+.obj_issue_toc .cover img {
+    width: calc(~"100vw - 2rem");
+    height: calc(~"100vw - 2rem");
+    max-height: calc(~"100vw - 2rem");
+    max-width: calc(~"100vw - 2rem");
+}
+
+@media screen and (min-width: @screen-phone) {
+    .obj_issue_toc a.cover {
+        position: relative;
+        height: calc(~"66vw - 1rem");
+        overflow: hidden;
+    }
+    .obj_issue_toc .cover img {
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+ }
+
+ @media screen and (min-width: @screen-tablet) {
+    .obj_issue_toc .cover,
+    .obj_issue_toc a.cover {
+        width: @toc-image-max-size;
+        height: @toc-image-max-size;
+    }
+    .obj_issue_toc .cover,
+    .obj_issue_toc .cover img {
+        width: @toc-image-max-size;
+        height: @toc-image-max-size;
+    }
+ }
