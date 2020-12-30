@@ -87,10 +87,7 @@
 		</div>
 	{/if}
 	<header class="submission_title">
-		<h1 class="page_title">{$publication->getLocalizedTitle()|escape}</h1>
-	{if $publication->getLocalizedData('subtitle')}
-		<p class="subtitle">{$publication->getLocalizedData('subtitle')|escape}</p>
-	{/if}
+		<h1 class="page_title">{$publication->getLocalizedTitle()|escape}{if $publication->getLocalizedData('subtitle')} <span class="subtitle">{$publication->getLocalizedData('subtitle')|escape}</span>{/if}</h1>
 	</header>
 	
 

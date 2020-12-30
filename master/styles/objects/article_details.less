@@ -11,9 +11,8 @@
 
 .entry_details.entry_details {
      @media screen and (min-width: @screen-desktop) {
-         width: auto;
-         max-width: 50%;
-         min-width: @inner-sidebar-width;
+         width: 40%;
+         flex-shrink: 0;
      }
  }
 
@@ -45,7 +44,7 @@
 }
 
 header.submission_title h1 {font-size: 2rem; margin:0;}
-header.submission_title p.subtitle {font-size: 1.5rem; font-weight: bold; margin:0; margin-top: .25rem;}
+header.submission_title .subtitle {font-size: 1.5rem; line-height: 1.25em; font-weight: bold; margin:0; margin-top: .25rem; display:block;}
 
 
 .pkp_structure_page.pkp_structure_page section,
@@ -73,6 +72,14 @@ header.submission_title p.subtitle {font-size: 1.5rem; font-weight: bold; margin
   color:black;
 }
 
+.entry_details .cover_image img {
+  border: @toc-cover-border;
+}
+
 .entry_details .item.item {
   margin-top: .75rem;
+}
+
+.obj_article_details .abstract p {
+  padding-right: 0.5rem;
 }
