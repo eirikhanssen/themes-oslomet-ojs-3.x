@@ -11,7 +11,7 @@
 
 .obj_issue_summary h2 {
     font-size: 1.25rem;
-    margin-top: 1.25rem;
+    //margin-top: 1.25rem;
     line-height: 1.35em;
 }
 
@@ -42,15 +42,11 @@
 }
 
 .obj_issue_summary .cover img {
-    width: calc(~"100vw - 2rem");
-    height: calc(~"100vw - 2rem");
-    max-height: calc(~"100vw - 2rem");
-    max-width: calc(~"100vw - 2rem");
+    .master-coversize;
 }
 
 @media screen and (min-width: @screen-phone) {
-    .obj_issue_summary a.cover,
-     {
+    .obj_issue_summary a.cover {
         position: relative;
         height: calc(~"66vw - 1rem");
     }
@@ -76,11 +72,36 @@
 }
 
 .obj_issue_summary .series {
-    color: black;
-    margin-top: .5rem;
-    font-weight: bold;
+    color: inherit;
+    background-color: inherit;
+    margin-bottom: 0;
 }
 
 .obj_issue_summary .description {
     font-size: 1rem;
 }
+
+.obj_issue_summary a.title {
+    display: block;
+    padding: 0;
+    padding-bottom: .25rem;
+}
+
+@media screen and (min-width: @screen-tablet) {
+    .obj_issue_summary a.cover + h2 {
+        margin-left: calc(@toc-image-max-size ~' + 1rem');
+    }
+}
+
+.issues_archive.issues_archive.issues_archive > li {
+    margin:0;
+    padding: .75rem 0;
+  }
+  .issues_archive.issues_archive.issues_archive > li + li {
+    margin-top: @toc-item-gap;
+    @media screen and (min-width: @screen-tablet) {
+        margin-top: calc(@toc-item-gap ~' - 1rem');
+    }
+    
+  }
+  

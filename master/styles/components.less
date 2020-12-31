@@ -8,7 +8,6 @@
  * @brief Reusable components
  */
 
-
  .cmp_breadcrumbs a {
      text-decoration: underline;
  }
@@ -78,4 +77,21 @@ a.cover:hover,
   margin-left:0;
   margin-right:0;
   border: 1px solid @bordercolor;
+}
+
+.cmp_article_list > li {
+  //padding: .5rem;
+  margin-bottom: 0;
+  background-color: @toc-bg;
+  //border: @toc-border;
+  //box-shadow: @toc-item-box-shadow-vignette;
+}
+
+.cmp_article_list>li:nth-child(2n+1) {}
+
+.cmp_article_list>li+li {
+    margin-top: @toc-item-gap + 1rem;
+    @media screen and(min-width: @screen-tablet) {
+      margin-top: @toc-item-gap + 1rem;
+    }
 }

@@ -25,17 +25,19 @@
 
 	<h2>
 		<a class="title" href="{url op="view" path=$issue->getBestIssueId()}">
+			{if $issueTitle && $issueSeries}
+			<div class="series">
+				{$issueSeries|escape}
+			</div>
+			{$issueTitle|escape}
+			{else}
 			{if $issueTitle}
 				{$issueTitle|escape}
 			{else}
 				{$issueSeries|escape}
 			{/if}
+		{/if} 
 		</a>
-		{if $issueTitle && $issueSeries}
-			<div class="series">
-				{$issueSeries|escape}
-			</div>
-		{/if}
 	</h2>
 
 	<div class="description">

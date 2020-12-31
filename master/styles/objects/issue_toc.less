@@ -56,6 +56,10 @@
     font-weight: bold;
 }
 
+.obj_article_summary > .meta {
+    padding-top:0;
+}
+
 .obj_issue_toc .galleys::before,
 .obj_issue_toc .section::before {
     display: none;
@@ -67,26 +71,6 @@
     @media screen and (min-width: @screen-tablet) {
         margin-bottom: 0;
     }
-}
-
-.cmp_article_list > li,
-.obj_issue_toc .heading {
-    padding: .5rem;
-    margin-bottom: 0;
-    background-color: @toc-bg;
-    border: @toc-border;
-    box-shadow: @toc-item-box-shadow-vignette;
-    @media screen and (min-width: @screen-tablet) {
-        //margin-right: .75rem;
-    }
-}
-
-
-
-.cmp_article_list>li:nth-child(2n+1) {}
-
-.cmp_article_list>li+li {
-    margin-top: @toc-item-gap;
 }
 
 .obj_issue_toc .cover {
@@ -118,10 +102,7 @@
 }
 
 .obj_issue_toc .cover img {
-    width: calc(~"100vw - 2rem");
-    height: calc(~"100vw - 2rem");
-    max-height: calc(~"100vw - 2rem");
-    max-width: calc(~"100vw - 2rem");
+    .master-coversize;
 }
 
 @media screen and (min-width: @screen-phone) {
@@ -150,3 +131,9 @@
         height: @toc-image-max-size;
     }
  }
+
+ @media screen and (min-width: @screen-tablet) {
+    .obj_issue_toc .cover + .title {
+        margin-left: calc(@toc-image-max-size ~' + 1rem');
+    }
+}
