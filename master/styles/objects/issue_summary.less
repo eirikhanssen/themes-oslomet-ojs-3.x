@@ -9,44 +9,78 @@
  * @link templates/frontend/objects/issue_summary.tpl
  */
 
- .obj_issue_summary h2 {
-     margin-top: 1.25rem;
-     line-height: 1.35em;
- }
+.obj_issue_summary h2 {
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+    line-height: 1.35em;
+}
 
- .obj_issue_summary .cover a,
- .obj_issue_summary a.cover {
+.obj_issue_summary .cover {
+    margin-bottom: @covermargin;
+
+    @media screen and (min-width: @screen-tablet) {
+        margin-bottom: 0;
+    }
+}
+
+.obj_issue_summary a.cover {
     border: @toc-cover-border;
     overflow: hidden;
- }
+}
 
- .obj_issue_summary .cover img {
+.obj_issue_summary a.cover {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    box-shadow: @toc-cover-box-shadow-vignette;
+    z-index: 1;
+}
+
+.obj_issue_summary a.cover:hover,
+.obj_issue_summary a.cover:focus {
+    box-shadow: @toc-cover-hover-box-shadow-vignette;
+}
+
+.obj_issue_summary .cover img {
     width: calc(~"100vw - 2rem");
     height: calc(~"100vw - 2rem");
     max-height: calc(~"100vw - 2rem");
     max-width: calc(~"100vw - 2rem");
- }
+}
 
- @media screen and (min-width: @screen-phone) {
-    .obj_issue_summary .cover a {
+@media screen and (min-width: @screen-phone) {
+    .obj_issue_summary a.cover,
+     {
         position: relative;
         height: calc(~"66vw - 1rem");
     }
+
     .obj_issue_summary .cover img {
         position: absolute;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%);
-     }
- }
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
 
- @media screen and (min-width: @screen-tablet) {
-    .obj_issue_summary .cover a {
+@media screen and (min-width: @screen-tablet) {
+    .obj_issue_summary a.cover {
         width: @toc-image-max-size;
         height: @toc-image-max-size;
     }
+
     .obj_issue_summary .cover img {
         width: @toc-image-max-size;
         height: @toc-image-max-size;
     }
- }
+}
+
+.obj_issue_summary .series {
+    color: black;
+    margin-top: .5rem;
+    font-weight: bold;
+}
+
+.obj_issue_summary .description {
+    font-size: 1rem;
+}
