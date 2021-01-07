@@ -9,13 +9,70 @@
  */
 
 .pkp_structure_footer_wrapper {
-    background: @bg;
-    border: none;
+    background: @footer-wrapper-bg;
+    color: @footer-wrapper-color;
+    border-top: @footer-wrapper-border-top;
     margin-top:1rem;
 }
 
+.pkp_structure_footer_wrapper.pkp_structure_footer_wrapper  {
+    border-top-color: @footer-wrapper-border-color;
+}
+
+.pkp_structure_footer_wrapper,
+.pkp_structure_footer {
+    position: relative;
+    z-index: 1;
+}
+
+.pkp_structure_footer {
+    background: @footer-bg;
+    color: @footer-color;
+    border-top: @footer-border-top;
+}
+
+.pkp_structure_footer.pkp_structure_footer {
+    border-top-color: @footer-border-color;
+}
+
+.pkp_structure_footer_wrapper::before,
+.pkp_structure_footer_wrapper::after,
+.pkp_structure_footer::before,
+.pkp_structure_footer::after  {
+    content:"";
+    display: block;
+    height: 100%;
+    width: 50vw;
+    position: absolute;
+    top:-1px;
+    right: 100%;
+    left: auto;
+    z-index: -2;
+    background:@footer-wrapper-bg;
+}
+
+.pkp_structure_footer_wrapper::before,
+.pkp_structure_footer_wrapper::after {
+    border-top: @footer-wrapper-pseudo-content-border-top;
+    border-color: @footer-wrapper-pseudo-content-border-color;
+}
+
+.pkp_structure_footer::before,
+.pkp_structure_footer::after {
+    background: @footer-bg;
+    color: @footer-color;
+    z-index: -1;
+    border-top: @footer-pseudo-content-border-top;
+    border-color: @footer-pseudo-content-border-color;
+}
+.pkp_structure_footer_wrapper::after,
+.pkp_structure_footer::after {
+    right: auto;
+	left: 100%;
+}
+
 .pkp_structure_footer_wrapper footer {
-    border-top: 1px solid @bordercolor;
+    border-top: @footer-border-top;
 }
 
 footer a.logotext {
@@ -25,7 +82,7 @@ footer a.logotext {
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    background-image: url(/plugins/themes/master/svg/OsloMet-logo-black.svg);
+    background-image: @footer-hosted-by-logo;
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 4rem auto;
@@ -37,7 +94,7 @@ footer a.logotext {
 
 footer a.logotext:hover,
 footer a.logotext:focus {
-    background-image: url(/plugins/themes/master/svg/OsloMet-logo-white.svg);
+    background-image: @footer-hosted-by-logo-hover;
 }
 
 aside.issn {text-align: left; margin-left: .5rem; margin-bottom: .5rem;}
@@ -49,7 +106,14 @@ footer .column h1 {margin-top: 0; margin-bottom: .5rem;}
     font-size: 1.25rem;
 }
 
-.pkp_structure_footer_wrapper a,
 .pkp_structure_footer_wrapper a {
    border-radius: .25rem;
+   color: @footer-link-color;
+   background-color: @footer-link-bg;
+ }
+
+ .pkp_structure_footer_wrapper a:hover,
+ .pkp_structure_footer_wrapper a:focus {
+     color:@footer-link-hover-color;
+     background-color:@footer-link-bg-hover;
  }

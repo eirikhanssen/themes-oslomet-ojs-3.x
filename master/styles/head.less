@@ -19,18 +19,14 @@
 	&::after {
 		content:"";
 		position: absolute;
-		left:-100vw;
-		right:-100vw;
+		left:50%;
 		top:0;
 		bottom:0;
 		background:inherit;
 		z-index: -1;
+		width:100vw;
+		transform: translateX(-50%);
 	}
-
-	@media (min-width: @screen-desktop) {
-		//min-height: calc(@header-height + 2px);
-	}
-
 
 	.pkp_head_wrapper {
         z-index: 1;
@@ -69,16 +65,14 @@
 				padding:0;
 				overflow: visible;
 				@media (min-width: @screen-desktop) {
-					margin-top: @header-menu-height;
 					margin-bottom: @header-menu-height;
-					height: @header-inner-height;
+					height: @header-inner-height + @header-menu-height;;
 					display:flex;
 					flex-flow: row wrap;
 					align-items:stretch;	
 				}
                 
 				& > a {
-					
 					position:relative;
 					flex-grow:1;
 					display:flex;
@@ -101,8 +95,6 @@
 
                 & h1 {
 					font-size: 1.25rem;
-					//line-height: 1.25rem;
-					//font-size: 4.8vw;
 					display:flex;
 					flex-flow: row wrap;
                     padding:0;
@@ -116,8 +108,24 @@
 }
 
 
-nav .pkp_navigation_user {
+nav .pkp_navigation_usernav .pkp_navigation_user.pkp_navigation_user {
 	margin-bottom: 1rem;
+	
+	@media screen and (min-width: @screen-desktop) {
+		margin-top: .5rem;
+		padding-right: .5rem;
+		border-radius: .25rem;
+		background: @pkp-navigation-user-bg;
+	}
+}
+
+@media screen and (min-width: @screen-desktop) {
+	.pkp_navigation_user.pkp_navigation_user a {
+		padding-right: .5rem;
+	}
+	.pkp_nav_list ul {
+		margin-right: 0;
+	}
 }
 
 .pkp_navigation_primary > li > a {
@@ -154,17 +162,6 @@ nav .pkp_navigation_user {
 	.pkp_navigation_primary > li > a:hover::before,
 	.pkp_navigation_primary > li > a:focus::before {
 		content: "";
-		/*block of rounded corners below*/
-		/*position: absolute;
-		display: block;
-		left: -.5rem;
-		right:-.5rem;
-		top: .25rem;
-		bottom:.25rem;
-		background: @header-primary-nav-text-bgcolor-hover;
-		border-radius: 1rem;
-		z-index: -1;*/
-		
 		position: absolute;
 		display: block;
 		left: -.5rem;
@@ -174,10 +171,8 @@ nav .pkp_navigation_user {
 		background: @screen-desktop-primary-nav-text-color;
 		border-radius: 2px;
 		z-index: -1;
-
 	}
 }
-
 
 .pkp_navigation_primary_row {
     @media screen and (min-width: @screen-desktop) {
@@ -216,18 +211,13 @@ nav .pkp_navigation_user {
 		display: block;
 	}
 
-	.pkp_navigation_primary_wrapper::before {
-		
-	}
-
-	.pkp_navigation_primary_wrapper::after {
-		
-	}
-
 	.pkp_navigation_user_wrapper {
 		z-index: 1;
 		height: @header-menu-height;
 		background-color: @usermenu-tint;
+		right:0;
+		left:auto;
+		transform: translate(-.75rem,.5rem);
 		.pkp_nav_list {
 			padding:0;
 		}
@@ -239,21 +229,6 @@ nav .pkp_navigation_user {
 }
 
 @media screen and (min-width: @screen-desktop) {
-	.pkp_navigation_user_wrapper {
-	  right:0;
-	  transform: translate(-.75rem,0);
-	}
-  }
-
-@media screen and (min-width: @screen-desktop) {
-
-	.pkp_navigation_user_wrapper::before,
-	.pkp_navigation_user_wrapper::after {
-		background-color: @usermenu-tint;
-	}
-
-	.pkp_navigation_user_wrapper::before,
-	.pkp_navigation_user_wrapper::after,
 	.pkp_site_name > a::before,
 	.pkp_site_name > a::after {
 		content: "";
@@ -265,7 +240,6 @@ nav .pkp_navigation_user {
 		right: 100%;
 		left: auto;
 	}
-	.pkp_navigation_user_wrapper::after,
 	.pkp_site_name > a::after {
 		right: auto;
 		left: 100%;
@@ -276,12 +250,6 @@ nav .pkp_navigation_user {
 		z-index: 10;
 	}
 }
-
-.pkp_navigation_user_wrapper > .pkp_nav_list > .profile > a {}
-
-#navigationPrimary > li {}
-
-.pkp_navigation_primary > li:hover ul {}
 
 @media screen and (min-width: @screen-desktop) {
 
@@ -300,12 +268,36 @@ nav .pkp_navigation_user {
 	background-color: @tint;
 }
 
+@media screen and (min-width:@screen-desktop) {
+
+	.pkp_navigation_user ul {
+		width: auto;
+		min-width: 10rem;
+	}
+	.pkp_navigation_user.pkp_navigation_user > .profile > a {
+		border-radius: .25rem;
+		color: @profilebutton-color;
+		background-color: @profilebutton-bg;
+		padding-right: .5rem;
+		border: @profilebutton-border;
+	}
+	
+	.pkp_navigation_user.pkp_navigation_user > .profile > a:focus, 
+	.pkp_navigation_user.pkp_navigation_user > .profile > a:hover {
+		border: @profilebutton-border-hover;
+		color: @profilebutton-color-hover;
+		background-color: @profilebutton-bg-hover;
+	} 
+}
+
+
+
 .pkp_navigation_user > li > ul a:hover .task_count,
 .pkp_navigation_user > li > ul a:focus .task_count,
 .pkp_navigation_user a:hover .task_count,
 .pkp_navigation_user a:focus .task_count {
 	background-color: @tint;
-	color: @menu-text-hover-color;
+	color: inherit;
 }
 
 .pkp_navigation_user > li > a:hover,
@@ -320,4 +312,30 @@ nav .pkp_navigation_user {
 .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a:hover,
 .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a:focus {
     background:@head-hover-bg;
+}
+
+@media screen and (min-width: @screen-desktop) {
+	ul.dropdown-menu,
+	ul.dropdown-menu.show {
+			top: calc(~"100% + .5rem") !important;
+			right:0!important;
+			left:auto!important;
+		}
+	ul.dropdown-menu.show {
+			transform:translate(0rem,0rem) !important;
+	 }
+.dropdown-menu::after {
+	content:"";
+	top: -.5rem;
+	left:0;
+	bottom:0;
+	right:0;
+	background-color:transparent;
+	display: block;
+	position: absolute;
+	z-index: -1;
+	border-bottom: inherit;
+  }
+  
+
 }

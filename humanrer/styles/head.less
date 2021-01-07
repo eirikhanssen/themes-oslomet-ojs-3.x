@@ -11,36 +11,42 @@
  */
 
  .pkp_structure_head {
+     background-image: url("/plugins/themes/humanrer/img/hrer-left-corner.png"), url("/plugins/themes/humanrer/img/hrer-right-corner.png");
+     background-repeat: no-repeat, no-repeat;
+     background-position: left @header-phone-height center, right center;
+     background-size: auto 100%, auto 100%;
 
-    .pkp_head_wrapper {
+     @media screen and (min-width: @screen-desktop) {
+         background-position: left center, right center;
+     }
+ }
 
-        .pkp_site_name_wrapper {
-            @media (min-width: @screen-phone) {
-                //background-image: url("/plugins/themes/humanrer/img/logo.svg");
-            }
 
-            @media (min-width: @screen-desktop) {}
+ .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name a {
+     background-image: url("/plugins/themes/humanrer/img/hrer-logo-text-as-path-thick.svg");
+     background-position: center center;
+     background-size: auto 90%;
+     background-repeat: no-repeat;
 
-            .pkp_site_name {
-                .journal_main_title {
-                    position: relative;
-                    top: .125rem;
-                    font-size:1rem;
-                    line-height:1rem;
-                    @media (min-width: @screen-phone) {
-                        position: relative;
-                        left: -9999px;
-                    }
-                }
+     @media screen and (min-width: @screen-desktop) {
+         background-image: url("/plugins/themes/humanrer/img/hrer-logo-text-as-path.svg");
+     }
+ }
 
-                .journal_sub_title {
-                    font-size: .75rem;
-                    @media (min-width: @screen-phone) {
-                        position: relative;
-                        left: -9999px;
-                    }
-                }
-            }
-        }
-    }
-}
+ .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name a:hover,
+ .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name a:focus {
+     background-image: url("/plugins/themes/humanrer/img/hrer-logo-text-as-path-thick-hover.svg");
+     background-position: center center;
+     background-size: auto 90%;
+     background-repeat: no-repeat;
+
+     @media screen and (min-width: @screen-desktop) {
+         background-image: url("/plugins/themes/humanrer/img/hrer-logo-text-as-path-hover.svg");
+     }
+ }
+
+
+ .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name h1 {
+     position: relative;
+     left: -9999px;
+ }

@@ -105,6 +105,66 @@
     max-width: calc(~"100vw - 1rem");
 }
 
+
+
+@pkp-navigation-user-bg: rgba(0,0,0,0.5);
+
+@footer-wrapper-bg: inherit; // inherit | black | white | custom
+@footer-wrapper-color: inherit; // inherit | black | white | custom
+@footer-wrapper-border-top: 1px solid transparent; // Do not change. Instead change the color of @footer-wrapper-border-color
+@footer-wrapper-border-color: transparent; // transparent | black | custom
+@footer-wrapper-pseudo-content-bg: inherit; // inherit | transparent
+@footer-wrapper-pseudo-content-border-top: @footer-wrapper-border-top; // none | @footer-wrapper-top-border
+@footer-wrapper-pseudo-content-border-color: transparent; // black | white | transparent
+
+@footer-color: inherit; // inherit | black | white
+@footer-bg: transparent;
+@footer-border-top: 1px solid transparent; // Do not change. Instead change the color of @footer-border-color
+@footer-border-color: black; // black | transparent | white
+@footer-pseudo-content-bg: inherit; // inherit | transparent
+@footer-pseudo-content-border-top: @footer-border-top; // none | @footer-border-top
+@footer-pseudo-content-border-color: transparent; // transparent | inherit | @footer-border-color
+
+@footer-link-color:@primary;
+@footer-link-hover-color:@bg;
+@footer-link-bg:transparent;
+@footer-link-bg-hover:@primary;
+
+@footer-hosted-by-logo:url(/plugins/themes/master/svg/OsloMet-logo-black.svg);
+@footer-hosted-by-logo-hover:url(/plugins/themes/master/svg/OsloMet-logo-white.svg);
+
+@fakebutton-color:@primary;
+@fakebutton-bg:@bg;
+@fakebutton-border:1px solid @primary;
+
+@fakebutton-color-hover:@bg;
+@fakebutton-bg-hover:@primary;
+@fakebutton-border-hover:1px solid @primary;
+
+.fakebutton {
+    color:@fakebutton-color;
+    background-color:@fakebutton-bg;
+    border:@fakebutton-border;
+    border-radius: .25rem;
+    font-weight: bold;
+}
+
+.fakebutton-hover {
+    color:@fakebutton-color-hover;
+    background-color:@fakebutton-bg-hover;
+    border:@fakebutton-border-hover;
+    border-radius: .25rem;
+    font-weight: bold;
+}
+
+@profilebutton-color: white;
+@profilebutton-bg: rgba(0,0,0,0.25);
+@profilebutton-border: 1px solid transparent;
+
+@profilebutton-color-hover: black;
+@profilebutton-bg-hover: white;
+@profilebutton-border-hover: 1px solid white;
+
 // Text
 // @text:                   black;
 // @text-light:             rgba(0,0,0,0.54);
