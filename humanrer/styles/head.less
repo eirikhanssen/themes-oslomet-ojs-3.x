@@ -21,32 +21,30 @@
      }
  }
 
-
  .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name a {
-     background-image: url("/plugins/themes/humanrer/img/hrer-logo-text-as-path-thick.svg");
-     background-position: center center;
-     background-size: auto 90%;
+     background-image: @journal-logo, @journal-logo-hover;
+     background-position: center center, -9999px -9999px;
      background-repeat: no-repeat;
-
+     background-size: auto 90%;
      @media screen and (min-width: @screen-desktop) {
-         background-image: url("/plugins/themes/humanrer/img/hrer-logo-text-as-path.svg");
-     }
+        background-image: @journal-logo-screen-desktop, @journal-logo-screen-desktop-hover;
+    }
  }
 
- .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name a:hover,
- .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name a:focus {
-     background-image: url("/plugins/themes/humanrer/img/hrer-logo-text-as-path-thick-hover.svg");
-     background-position: center center;
-     background-size: auto 90%;
-     background-repeat: no-repeat;
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name a:hover,
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name a:focus {
+    background-image: @journal-logo-hover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 90%;
 
-     @media screen and (min-width: @screen-desktop) {
-         background-image: url("/plugins/themes/humanrer/img/hrer-logo-text-as-path-hover.svg");
-     }
- }
+    @media screen and (min-width: @screen-desktop) {
+        background-image: @journal-logo-screen-desktop-hover;
+    }
+}
 
 
- .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name h1 {
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name h1 {
      position: relative;
      left: -9999px;
- }
+}
