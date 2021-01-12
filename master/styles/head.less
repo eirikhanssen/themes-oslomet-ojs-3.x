@@ -29,13 +29,28 @@
 	}
 
 	.pkp_head_wrapper {
+		position:relative;
         z-index: 1;
 		margin:0;
 		width: 100%;
 		padding:0;
 		border-bottom: @header-bottom-border;
+
 		@media screen and (min-width: @screen-desktop) {
 			border-bottom: @screen-desktop-header-bottom-border;
+		}
+
+		&::after {
+			content:"";
+			position: absolute;
+			left:50%;
+			top:0;
+			bottom:0;
+			background:inherit;
+			z-index: -1;
+			width:100vw;
+			transform: translateX(-50%);
+			background: @header-gradient;
 		}
 
 		.pkp_site_name_wrapper {

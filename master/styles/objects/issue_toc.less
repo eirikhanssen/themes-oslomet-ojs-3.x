@@ -9,8 +9,8 @@
  * @link templates/frontend/objects/issue_toc.tpl
  */
 .obj_article_summary>.title a {
-    display: block;
-    outline:none;
+    //display: block;
+    //outline:none;
 }
 
 .current_issue h2,
@@ -47,7 +47,7 @@
 .obj_issue_toc .section>h3 {
     color: black;
     font-weight: bold;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
     margin-top: 2rem;
 }
 
@@ -66,6 +66,7 @@
 }
 
 .obj_issue_toc .cover {
+    display: inline-block;
     margin-bottom: @covermargin;
 
     @media screen and (min-width: @screen-tablet) {
@@ -73,67 +74,7 @@
     }
 }
 
-.obj_issue_toc .cover {
-    background: @toc-cover-bg;
-    display: flex;
-    justify-content: center;
-}
-
-.obj_issue_toc .cover a,
-.obj_issue_toc a.cover {
+.obj_issue_toc a.cover img,
+.obj_issue_toc .cover > a.file img  {
     border: @toc-cover-border;
-    overflow: hidden;
-}
-
-.obj_issue_toc .cover a,
-.obj_issue_toc a.cover{
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    box-shadow: @toc-cover-box-shadow-vignette;
-    z-index: 1;
-}
-
-.obj_issue_toc .cover a:hover,
-.obj_issue_toc .cover a:focus,
-.obj_issue_toc a.cover:hover,
-.obj_issue_toc a.cover:focus {
-    box-shadow: @toc-cover-hover-box-shadow-vignette;
-}
-
-.obj_issue_toc .cover img {
-    .master-coversize;
-}
-
-@media screen and (min-width: @screen-phone) {
-    .obj_issue_toc a.cover {
-        position: relative;
-        height: calc(~"66vw - 1rem");
-        overflow: hidden;
-    }
-    .obj_issue_toc .cover img {
-        position: absolute;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%);
-    }
- }
-
- @media screen and (min-width: @screen-tablet) {
-    .obj_issue_toc .cover,
-    .obj_issue_toc a.cover {
-        width: @toc-image-max-size;
-        height: @toc-image-max-size;
-    }
-    .obj_issue_toc .cover,
-    .obj_issue_toc .cover img {
-        width: @toc-image-max-size;
-        height: @toc-image-max-size;
-    }
- }
-
- @media screen and (min-width: @screen-tablet) {
-    .obj_issue_toc .cover + .title {
-        margin-left: calc(@toc-image-max-size ~' + 1rem');
-    }
 }

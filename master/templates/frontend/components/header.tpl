@@ -43,7 +43,7 @@
 					{capture assign="homeUrl"}
 						{url page="index" router=$smarty.const.ROUTE_PAGE}
 					{/capture}
-						{if $header_translation_html != ""}
+						{if $header_translation_html != "" or true}
 							<a href="{$homeUrl}" class="is_text"><h1>{$header_translation_html|unescape:'html'}</h1></a>
 							{else}
 								{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
