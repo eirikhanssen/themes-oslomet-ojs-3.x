@@ -13,8 +13,8 @@
 <version>
 	<application>master</application>
 	<type>plugins.themes</type>
-	<release>1.0.0.0</release>
-	<date>2020-12-03</date>
+	<release>3.2.1.2</release>
+	<date>2021-01-22</date>
 	<lazy-load>1</lazy-load>
 	<class>MasterThemePlugin</class>
 </version>

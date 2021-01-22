@@ -31,10 +31,6 @@
  }
 
  .fleks-bg-props-sm-hover {
-    /*background-image: url("/plugins/themes/fleks/img/fleks-banner-sm.svg");
-    background-position: left 1rem center;
-    background-repeat: no-repeat;
-    background-size: auto 80%;*/
     background-image: url("/plugins/themes/fleks/img/fleks-banner-sm.svg"),
     url("/plugins/themes/fleks/img/fleks-banner-sm-hover.svg");
     background-position: right -9999px top -9999px, left .5rem bottom 45%;
@@ -103,7 +99,9 @@
 }
 
 .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name a::after {
-    .fleks-horizontal-line;
+    @media screen and (min-width: @screen-desktop) {
+        .fleks-horizontal-line;
+   }
 }
 
 .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name h1 {
