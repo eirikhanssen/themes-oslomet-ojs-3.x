@@ -18,4 +18,4 @@ msgid "plugins.themes.njsr.description"
 msgstr "This theme implements the njsr theme."
 
 msgid "plugins.themes.master.header.html"
-msgstr "<div class="headertext"><span class="abbrev">NJSR</span><span class="nordic">NORDIC JOURNAL of </span><span class="social">SOCIAL RESEARCH</span></div>"
+msgstr "<div class='headertext'><span class='abbrev'>NJSR</span><span class='nordic'>NORDIC JOURNAL of </span><span class='social'>SOCIAL RESEARCH</span></div>"
