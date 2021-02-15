@@ -10,10 +10,9 @@
 
  /* increase the size of the journal selection menu in the editorial backend */
  .pkp_nav_context .pkp_contexts {
-    padding-bottom: .25rem;
-    padding-top:.25rem;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
   }
-  .pkp_nav_context .pkp_contexts li+li {
+  .pkp_nav_context .pkp_contexts li {
     border-top: 1px solid rgba(255,255,255,0.2);
   }
   .pkp_nav_context .pkp_contexts a {
@@ -28,11 +27,10 @@
     max-width: none;
     width:100%;
     margin-top:0rem;
-    padding-top:.5rem;
   }
   
   #navigationContextMenu {
-    width: 25rem;
+    width: 26rem;
     max-width: 50vw;
   }
   
@@ -51,4 +49,9 @@
   
   .pkp_nav_context > [aria-expanded="true"] > a {
     background-color: #002C40;
+  }
+
+  .pkp_nav_context .pkp_contexts li > a {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
   }
