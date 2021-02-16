@@ -1,21 +1,21 @@
 <?php
 
 /**
- * @file plugins/themes/master/MasterThemePlugin.inc.php
+ * @file plugins/themes/seminarnet/SeminarnetThemePlugin.inc.php
  *
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
- * @class MasterThemePlugin
- * @ingroup plugins_themes_master
+ * @class SeminarnetThemePlugin
+ * @ingroup plugins_themes_seminarnet
  *
- * @brief Master theme
+ * @brief Seminarnet theme
  */
 
 import('lib.pkp.classes.plugins.ThemePlugin');
 
-class MasterThemePlugin extends ThemePlugin {
+class SeminarnetThemePlugin extends ThemePlugin {
 	/**
 	 * @copydoc ThemePlugin::isActive()
 	 */
@@ -32,13 +32,8 @@ class MasterThemePlugin extends ThemePlugin {
 	 */
 	public function init() {
 		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_MANAGER, LOCALE_COMPONENT_APP_MANAGER);
-		$this->setParent('defaultthemeplugin');
+		$this->setParent('masterthemeplugin');
 		$this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
-		$this->addScript('svgxuse', 'js/svgxuse.min.js');
-		$this->addStyle('mediaelementcss', 'js/mediaelement/mediaelementplayer.min.css');
-		$this->addScript('mediaelementjs', 'js/mediaelement/mediaelement.min.js');
-		$this->addScript('ojsenhancer', 'js/ojsenhancer.js');
-		$this->addStyle('masterbackend', 'styles/backend.less', array('contexts' => 'backend'));
 	}
 
 	/**
@@ -64,7 +59,7 @@ class MasterThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDisplayName() {
-		return __('plugins.themes.master.name');
+		return __('plugins.themes.seminarnet.name');
 	}
 
 	/**
@@ -72,6 +67,6 @@ class MasterThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDescription() {
-		return __('plugins.themes.master.description');
+		return __('plugins.themes.seminarnet.description');
 	}
 }

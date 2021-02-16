@@ -453,3 +453,8 @@
 	</div><!-- .row -->
 
 </article>
+{capture assign="abstractvideolist"}{translate|escape key="plugins.themes.master.abstract.videolist"}{/capture}	
+{if $abstractvideolist != "" or true}
+<!-- ol#abstractVideoList is defined in child theme's locale.po files for key="plugins.themes.master.abstract.videolist"
+This list is hidden from users but is accessed by a scipt to display the appropriate video abstracts -->
+{$abstractvideolist|unescape:'html'}{/if}

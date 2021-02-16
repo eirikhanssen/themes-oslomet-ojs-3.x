@@ -43,17 +43,17 @@
 					{capture assign="homeUrl"}
 						{url page="index" router=$smarty.const.ROUTE_PAGE}
 					{/capture}
-						{if $header_translation_html != "" or true}
-							<a href="{$homeUrl}" class="is_text"><h1>{$header_translation_html|unescape:'html'}</h1></a>
+						{if $header_translation_html != ""}
+							<a href="{$homeUrl}" class="is_text"><h1>{$header_translation_html|unescape:'html'}<!--#0#--></h1></a>
 							{else}
 								{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
-									<a href="{$homeUrl}" class="is_img"><h1><span class="pkp_screen_reader">{$currentPageTitle}</span><img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" width="{$displayPageHeaderLogo.width|escape}" height="{$displayPageHeaderLogo.height|escape}" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{/if} /></h1></a>
+									<a href="{$homeUrl}" class="is_img"><h1><span class="pkp_screen_reader">{$currentPageTitle}</span><img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" width="{$displayPageHeaderLogo.width|escape}" height="{$displayPageHeaderLogo.height|escape}" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{/if} /><!--#1#--></h1></a>
 								{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
-									<a href="{$homeUrl}" class="is_text"><h1>{$displayPageHeaderTitle|escape}</h1></a>
+									<a href="{$homeUrl}" class="is_text"><h1>{$displayPageHeaderTitle|escape}<!--#2#--></h1></a>
 								{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_array($displayPageHeaderTitle)}
-									<a href="{$homeUrl}" class="is_img"><h1><span class="pkp_screen_reader">{$currentPageTitle}</span><img src="{$publicFilesDir}/{$displayPageHeaderTitle.uploadName|escape:"url"}" alt="{$displayPageHeaderTitle.altText|escape}" width="{$displayPageHeaderTitle.width|escape}" height="{$displayPageHeaderTitle.height|escape}" /></h1></a>
+									<a href="{$homeUrl}" class="is_img"><h1><span class="pkp_screen_reader">{$currentPageTitle}</span><img src="{$publicFilesDir}/{$displayPageHeaderTitle.uploadName|escape:"url"}" alt="{$displayPageHeaderTitle.altText|escape}" width="{$displayPageHeaderTitle.width|escape}" height="{$displayPageHeaderTitle.height|escape}" /><!--#3#--></h1></a>
 								{else}
-									<a href="{$homeUrl}" class="is_img"><h1><img src="{$baseUrl}/templates/images/structure/logo.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" width="180" height="90" /></h1></a>
+									<a href="{$homeUrl}" class="is_img"><h1><img src="{$baseUrl}/templates/images/structure/logo.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" width="180" height="90" /><!--#4#--></h1></a>
 								{/if}
 						{/if}
 					</div>
