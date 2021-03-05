@@ -1,0 +1,38 @@
+/**
+ * @file styles/head.less
+ *
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_structure_head
+ *
+ * @brief Classes for the page header structural elements
+ */
+
+// hide textual content of page header because logo is used with css bg
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name .is_text *  {
+    position: relative;
+    left: -9999px;}
+
+.pkp_site_name_wrapper::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    background-color: black;
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 36%, rgba(68, 60, 58, 1) 38%, rgba(68, 60, 58, 1) 40%, rgba(0, 0, 0, 1) 82%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+#headerNavigationContainer .pkp_site_name_wrapper {
+    position: relative;
+    background-image: url('/plugins/themes/professionsprofessionalism/img/pplogo-web-transp.svg');
+    background-size: contain;
+    background-position: center;
+}
