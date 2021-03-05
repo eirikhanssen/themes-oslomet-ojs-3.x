@@ -37,7 +37,6 @@ class MasterThemePlugin extends ThemePlugin {
 		$this->addScript('svgxuse', 'js/svgxuse.min.js');
 		$this->addStyle('mediaelementcss', 'js/mediaelement/mediaelementplayer.min.css');
 		$this->addScript('mediaelementjs', 'js/mediaelement/mediaelement.min.js');
-		$this->addScript('ojsenhancer', 'js/ojsenhancer.js');
 		$this->addStyle('masterbackend', 'styles/backend.less', array('contexts' => 'backend'));
 	}
 
