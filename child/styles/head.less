@@ -10,37 +10,11 @@
  * @brief Classes for the page header structural elements
  */
 
- .pkp_structure_head {
+#headerNavigationContainer .pkp_structure_head {}
+#headerNavigationContainer .pkp_head_wrapper {}
+#headerNavigationContainer .pkp_site_name_wrapper {}
+#headerNavigationContainer .pkp_site_name {}
 
-    .pkp_head_wrapper {
-
-        .pkp_site_name_wrapper {
-            @media (min-width: @screen-phone) {
-                //background-image: url("/plugins/themes/child/img/logo.svg");
-            }
-
-            @media (min-width: @screen-desktop) {}
-
-            .pkp_site_name {
-                .journal_main_title {
-                    position: relative;
-                    top: .125rem;
-                    font-size:1rem;
-                    line-height:1rem;
-                    @media (min-width: @screen-phone) {
-                        position: relative;
-                        left: -9999px;
-                    }
-                }
-
-                .journal_sub_title {
-                    font-size: .75rem;
-                    @media (min-width: @screen-phone) {
-                        position: relative;
-                        left: -9999px;
-                    }
-                }
-            }
-        }
-    }
+#headerNavigationContainer .pkp_site_name h1 {
+    position: relative; left: -9999px;
 }
