@@ -11,9 +11,10 @@
  */
 
 // hide textual content of page header because logo is used with css bg
-.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name .is_text *  {
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name .is_text * {
     position: relative;
-    left: -9999px;}
+    left: -9999px;
+}
 
 .pkp_site_name_wrapper::before {
     content: "";
@@ -33,6 +34,18 @@
 #headerNavigationContainer .pkp_site_name_wrapper {
     position: relative;
     background-image: url('/plugins/themes/professionsprofessionalism/img/pplogo-web-transp.svg');
-    background-size: contain;
-    background-position: center;
+    background-size: auto 100%;
+    background-position: left 3.5rem center;
+}
+
+@media screen and (min-width: @screen-xsmall-phone) {
+    #headerNavigationContainer .pkp_site_name_wrapper {
+        background-position: calc(50% + 2rem) 50%;
+    }
+}
+
+@media screen and (min-width: @screen-desktop) {
+    #headerNavigationContainer .pkp_site_name_wrapper {
+        background-position: 50% 50%;
+    }
 }
