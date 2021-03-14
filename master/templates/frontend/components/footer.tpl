@@ -22,6 +22,7 @@
                 {assign var=footerISSN value="`$footerIssnPrefix``$printIssn`"}
         {/if}
 {/strip}
+
 	</div><!-- pkp_structure_main -->
 
 	{* Sidebars *}
@@ -39,13 +40,14 @@
 {if $footerISSN}<aside class="issn"><p><strong>{$footerISSN}</strong></p></aside>{/if}
 	<footer class="pkp_structure_footer">
 		<div class="columns">
+			{translate key="plugins.themes.master.footer.publisher"}
 		    {if $pageFooter}{$pageFooter}{/if}			
 			<div class="column">
 				<h1>{translate|escape key="plugins.themes.master.hostedby.heading"}</h1>
 				<div class="inst-branding oslomet">
-					<p><a class="logotext" href="{translate|escape key="plugins.themes.master.hostedby.url"}" target="_blank" rel="noopener">{translate|escape key="plugins.themes.master.hostedby.name"}</a></p>
+					<p><a class="logotext" href="{translate|escape key="plugins.themes.master.hostedby.url"}" target="_blank" rel="noopener">{translate key="plugins.themes.master.hostedby.name"}</a></p>
 					<div class="info">
-						<p><a href="{translate|escape key="plugins.themes.master.cookieinfo.url"}">{translate|escape key="plugins.themes.master.cookieinfo.linktext"}</a></p>
+						<p><a href="{translate key="plugins.themes.master.cookieinfo.url"}">{translate key="plugins.themes.master.cookieinfo.linktext"}</a></p>
 					</div><!-- .info -->
 				</div><!-- .column.inst-branding -->
 			</div><!-- .column -->

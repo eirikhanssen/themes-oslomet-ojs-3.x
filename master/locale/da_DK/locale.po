@@ -34,3 +34,6 @@ msgstr "https://journals.oslomet.no/help/cookies-no_NO.html"
 
 msgid "plugins.themes.master.cookieinfo.linktext"
 msgstr "Om informasjonskapsler på journals.oslomet.no"
+
+msgid "plugins.themes.master.footer.publisher"
+msgstr "<!--master--footer--publisher--da_DK-->"

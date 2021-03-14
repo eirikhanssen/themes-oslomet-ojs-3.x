@@ -14,14 +14,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.9.1\n"
 
-msgid "plugins.themes.njcie.name"
-msgstr "NJCIE layout-tema"
+msgid "plugins.themes.sjvd.name"
+msgstr "SJVD layout-tema"
 
-msgid "plugins.themes.njcie.description"
-msgstr "Dette tema implementerer NJCIE layout-temaet."
+msgid "plugins.themes.sjvd.description"
+msgstr "Dette tema implementerer SJVD layout-temaet."
 
 msgid "plugins.themes.master.header.html"
 msgstr ""
-
-msgid "plugins.themes.master.footer.publisher"
-msgstr "--njcie--footer--publisher--da_DK"

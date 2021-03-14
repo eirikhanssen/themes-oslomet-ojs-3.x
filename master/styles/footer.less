@@ -48,22 +48,15 @@
     right: 100%;
     left: auto;
     z-index: -2;
-    background:@footer-wrapper-bg;
-}
-
-.pkp_structure_footer_wrapper::before,
-.pkp_structure_footer_wrapper::after {
-    border-top: @footer-wrapper-pseudo-content-border-top;
-    border-color: @footer-wrapper-pseudo-content-border-color;
+    background:inherit;
+    background-color: inherit;
+    border: inherit;
+    color: inherit;
 }
 
 .pkp_structure_footer::before,
 .pkp_structure_footer::after {
-    background: @footer-bg;
-    color: @footer-color;
     z-index: -1;
-    border-top: @footer-pseudo-content-border-top;
-    border-color: @footer-pseudo-content-border-color;
 }
 .pkp_structure_footer_wrapper::after,
 .pkp_structure_footer::after {
@@ -75,27 +68,32 @@
     border-top: @footer-border-top;
 }
 
-footer a.logotext {
+footer .logotext.logotext {
     text-decoration: none;
     position: relative;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    background-image: @footer-hosted-by-logo;
-    background-repeat: no-repeat, no-repeat;
-    background-position: left center, left 9999px center;
-    background-size: auto 4rem, auto 4rem;
+    background-repeat: no-repeat,no-repeat;
+    background-position: left center,left 9999px center;
+    background-size: auto 4rem,auto 4rem;
     background-origin: border-box;
     padding-left: 6rem;
-    min-height: 3rem;
+    min-height: 4rem;
     font-weight: bold;
     font-size: 1rem;
 }
 
+footer .oslomet .logotext {background-image: url(/plugins/themes/master/svg/OsloMet-logo-black.svg),url(/plugins/themes/master/svg/OsloMet-logo-white.svg);}
+
 footer a.logotext:hover,
 footer a.logotext:focus {
-    background-image: @footer-hosted-by-logo-hover;
+    background-position: left 9999px center, left center;
+}
+
+footer .columns .columns > div {
+    padding-top:0;
 }
 
 aside.issn {text-align: left; margin-left: .5rem; margin-bottom: .5rem;}
