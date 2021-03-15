@@ -9,19 +9,8 @@
  *
  * @brief Classes for the page header structural elements
  */
-/**
- * @file styles/head.less
- *
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
- *
- * @ingroup pkp_structure_head
- *
- * @brief Classes for the page header structural elements
- */
  
- .pkp_site_name_wrapper {
+.pkp_site_name_wrapper {
     position: relative;
 }
 
@@ -92,7 +81,6 @@
         font-size: 2rem;
         margin-left: 1em;
         line-height: 1.2em;
-        /*top: .5rem;*/
     }
 }
 
@@ -103,7 +91,7 @@
 }
 
 #headerNavigationContainer .pkp_site_name::before {
-    content: ""; //"SJVD" hvis vi bruker font
+    content: "SJVD"; //"SJVD" hvis vi bruker font
     font-family: 'Cormorant Unicase', serif; // google font
     z-index: -1;
     color: #3fcaee;
@@ -119,35 +107,13 @@
     top: 0;
     bottom: 0rem;
     font-size: 2.5rem; // "cormorant unicase"
-    // font-size: 2.12rem; // Corbel, Arial, sans-serif
-    // margin-top: .1rem; // Corbel, Arial, sans-serif
-    margin-left: 4.5rem; // "Cormorant Unicase" | logo
-    //margin-left: 4rem;
-    padding-left: 0rem;
-    width: 5.5rem;
-    background-image: url(/plugins/themes/sjvd/svg/sjvd.svg);
-    background-repeat: no-repeat;
-    background-size: auto 70%;
-    background-position: center 85%;
-    background-repeat: no-repeat;
+    margin-left: 4.5rem;
     @media screen and (min-width: @screen-desktop) {
         width: 15rem;
         margin-left: 1rem;
         font-size: 6rem; // "Cormorant Unicase"
-        font-size: 5.5rem; // Corbel, Arial, sans-serif
-        //margin-top: .5rem; // Corbel, Arial, sans-serif;
     }
 }
-
-
-.pkp_site_name h1 .re {}
-
-.pkp_site_name h1 .rm {}
-
-#headerNavigationContainer .pkp_site_name>a:hover,
-#headerNavigationContainer .pkp_site_name>a:focus {}
-
-#headerNavigationContainer .pkp_site_name>a:active {}
 
 #headerNavigationContainer .pkp_site_name_wrapper {
     position: relative;
@@ -161,14 +127,6 @@
         background-position: left 2rem center;
     }
 }
-
-#headerNavigationContainer .pkp_structure_head {}
-
-#headerNavigationContainer .pkp_head_wrapper {}
-
-#headerNavigationContainer .pkp_site_name_wrapper {}
-
-#headerNavigationContainer .pkp_site_name {}
 
 .pkp_navigation_primary_wrapper::before {
     @media screen and (min-width: @screen-desktop){
