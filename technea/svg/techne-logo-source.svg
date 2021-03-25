@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="160.74104"
-     inkscape:cy="143.52122"
+     inkscape:zoom="1.979899"
+     inkscape:cx="135.36624"
+     inkscape:cy="126.59868"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -92,7 +92,7 @@
            x="-43.308838"
            y="208.6877"
            style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:7.90222px;line-height:1;font-family:Lato;-inkscape-font-specification:'Lato, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:#135988;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-           id="tspan30">och slöydvetenskap</tspan></text>
+           id="tspan30">och slöjdvetenskap</tspan></text>
     </g>
     <g
        id="g142"
