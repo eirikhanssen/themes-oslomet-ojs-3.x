@@ -355,10 +355,10 @@ function Videoabstracts () {
 }
 
 var va = new Videoabstracts();
-va.has_id('2308');
+/*va.has_id('2308');
 va.has_id('1234');
 va.get_fid('2308');
-va.get_fid('1234');
+va.get_fid('1234');*/
 
 var videoAdder = function () {
     if (isAbstractPage()) {
