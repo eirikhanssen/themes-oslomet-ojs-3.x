@@ -34,6 +34,7 @@ class FormAkademiskThemePlugin extends ThemePlugin {
 		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_MANAGER, LOCALE_COMPONENT_APP_MANAGER);
 		$this->setParent('masterthemeplugin');
 		$this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
+		$this->addStyle('fa-custom-backend-stylesheet', 'styles/backend.less', array( 'contexts' => 'backend' ));
 	}
 
 	/**
