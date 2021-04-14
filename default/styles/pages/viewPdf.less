@@ -1,8 +1,8 @@
 /**
  * @file plugins/themes/default/styles/pages/viewPdf.less
  *
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
+ * Copyright (c) 2014-2021 Simon Fraser University
+ * Copyright (c) 2003-2021 John Willinsky
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * @brief Styles applying to the lightweight page for viewing PDFs
@@ -12,7 +12,7 @@
 .header_view {
 	z-index: 2;
 	position: relative;
-	background: @primary-lift;
+	background: @primary;
 
 	a {
 		line-height: @line-header;
@@ -27,7 +27,7 @@
 		height: @line-header;
 		line-height: @line-header;
 		background: @bg;
-		color: @primary-lift;
+		color: @primary;
 		text-align: center;
 
 		&:before {
@@ -37,7 +37,7 @@
 
 		&:hover,
 		&:focus {
-			background: @primary;
+			background: @primary-lift;
 			color: #fff;
 		}
 	}
@@ -54,7 +54,7 @@
 
 		&:hover,
 		&:focus {
-			background: @primary;
+			background: @primary-lift;
 		}
 	}
 
@@ -69,7 +69,7 @@
 
 		&:hover,
 		&:focus {
-			background: @primary;
+			background: @primary-lift;
 			color: #fff;
 		}
 
