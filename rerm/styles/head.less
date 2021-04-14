@@ -1,0 +1,77 @@
+/**
+ * @file styles/head.less
+ *
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_structure_head
+ *
+ * @brief Classes for the page header structural elements
+ */
+
+.pkp_site_name_wrapper {
+    position: relative;
+}
+
+.pkp_site_name_wrapper::before,
+.pkp_site_name_wrapper::after {
+    content: "";
+    display: block;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.pkp_site_name_wrapper::before {
+    z-index: -2;
+    background-image: url("/plugins/themes/rerm/img/rerm-bg.jpg");
+    background-position: center center;
+    background-size: auto 100%;
+}
+
+.pkp_site_name_wrapper::after {
+    z-index: -1;
+    box-shadow: inset 0 0 1.5rem rgba(12, 18, 49, 0.7),inset 0 0 1rem rgba(12, 18, 49, 0.9);
+    background: linear-gradient(0deg, rgba(12, 18, 49, 0.8) 0%, rgba(12, 18, 49, 0.3) 95%);
+}
+
+#headerNavigationContainer .pkp_site_name>a {
+    color: #0e1f42;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    justify-items: left;
+    text-decoration: none;
+    line-height: 1rem;
+    white-space: normal;
+    height: auto;
+}
+
+#headerNavigationContainer .pkp_site_name h1 {
+    position: relative; left: -9999px;
+}
+
+.pkp_site_name h1 .re {}
+.pkp_site_name h1 .rm {}
+
+#headerNavigationContainer .pkp_site_name>a:hover,
+#headerNavigationContainer .pkp_site_name>a:focus {}
+
+#headerNavigationContainer .pkp_site_name>a:active {}
+
+#headerNavigationContainer .pkp_site_name_wrapper {
+    position: relative;
+    background-image: url('/plugins/themes/rerm/svg/rerm-logo-white.svg');
+    background-size: auto 100%;
+    background-position: left 3.75rem center;
+
+    @media screen and (min-width: @screen-desktop) {
+        background-position: left 2rem center;
+    }
+}
+

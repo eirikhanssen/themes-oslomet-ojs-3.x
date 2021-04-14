@@ -1,0 +1,57 @@
+/**
+ * @file styles/backend.less
+ *
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ *
+ * @brief customize the editorial backend
+ */
+
+ /* increase the size of the journal selection menu in the editorial backend */
+ .pkp_nav_context .pkp_contexts {
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+  .pkp_nav_context .pkp_contexts li {
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+  .pkp_nav_context .pkp_contexts a {
+    overflow-x:visible;
+    white-space: normal;
+    line-height: 1.1em;
+    text-shadow: none;
+    color:white;
+  }
+  
+  .pkp_nav_context .pkp_contexts {
+    max-width: none;
+    width:100%;
+    margin-top:0rem;
+  }
+  
+  #navigationContextMenu {
+    width: 26rem;
+    max-width: 50vw;
+  }
+  
+  .pkp_nav_context .pkp_current_context {
+    text-shadow: none;
+    white-space: normal;
+    overflow-x:visible;
+    line-height:1em;
+    min-height: 32px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    color:white;
+    position: relative;
+  }
+  
+  .pkp_nav_context > [aria-expanded="true"] > a {
+    background-color: #002C40;
+  }
+
+  .pkp_nav_context .pkp_contexts li > a {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+  }

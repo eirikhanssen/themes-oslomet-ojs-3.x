@@ -1,0 +1,41 @@
+/**
+ * @file styles/head.less
+ *
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_structure_head
+ *
+ * @brief Classes for the page header structural elements
+ */
+
+ .pkp_structure_head {
+
+    .pkp_head_wrapper {
+        
+        .pkp_site_name_wrapper {
+            background-image: url("/plugins/themes/nat/img/nat-logo-sort-to-linjer.svg");
+            background-size: calc(~"100vw - " (@header-phone-height + 2rem)) auto, auto 100%;
+            
+            @media screen and (min-width: @screen-small-phone) {
+                background-image: url("/plugins/themes/nat/img/nat-logo-sort-en-linje.svg");
+            }
+
+            @media screen and (min-width: @screen-phone) {
+                background-size: auto 70%;
+            }
+
+            @media screen and (min-width: @screen-desktop) {
+                background-image: url("/plugins/themes/nat/img/nat-logo-sort-en-linje.svg");
+                
+            }
+
+            .pkp_site_name a h1 {
+                position: relative;
+                left: -9999px;
+            }
+            
+        }
+    }
+}

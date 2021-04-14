@@ -1,0 +1,135 @@
+/**
+ * @file styles/head.less
+ *
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_structure_head
+ *
+ * @brief Classes for the page header structural elements
+ */
+ 
+.pkp_site_name_wrapper {
+    position: relative;
+}
+
+.pkp_site_name_wrapper::before,
+.pkp_site_name_wrapper::after {
+    content: "";
+    display: block;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.pkp_site_name_wrapper::before {
+    z-index: -1;
+    background-image: url("/plugins/themes/sjvd/img/sjvd_aurora_borealis.png");
+    background-position: right -7rem center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    opacity: .9;
+    @media screen and (min-width: @screen-desktop) {
+        background-position: right -15rem center;
+    }
+}
+.pkp_site_name_wrapper::after {
+    background-color: black;
+    z-index: -2;
+    background-image: url("/plugins/themes/sjvd/img/sjvd_aurora_borealis.png");
+    background-position: left center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+
+#headerNavigationContainer .pkp_site_name > a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    line-height: 1rem;
+    white-space: normal;
+    height: auto;
+    padding-left: 8rem;
+
+    @media screen and (min-width: @screen-desktop) {
+        padding-left: 15rem;
+    }
+}
+
+#headerNavigationContainer .pkp_site_name h1 {
+    position: relative;
+    color: #3fcaee;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: flex-start;
+    max-width: 16em;
+    line-height: 1em;
+    font-size: 1rem;
+    text-shadow: 0 0 10px black, 0 0 5px black, 0 0 1px black;
+
+    @media screen and (min-width: @screen-desktop) {
+        font-size: 2rem;
+        margin-left: 1em;
+        line-height: 1.2em;
+    }
+}
+
+#headerNavigationContainer .pkp_site_name a:hover h1,
+#headerNavigationContainer .pkp_site_name a:focus h1 {
+    color: #c4f3ff;
+    text-shadow:0 0 1px black 0 0 10px black, 0 0 5px black, 0 0 2px black;
+}
+
+#headerNavigationContainer .pkp_site_name::before {
+    content: "SJVD"; //"SJVD" hvis vi bruker font
+    font-family: 'Cormorant Unicase', serif; // google font
+    z-index: -1;
+    color: #3fcaee;
+    background-color: transparent;
+    text-shadow: 0 0 10px #000,0 0 5px #000,0 0 1px #000;
+    position: absolute;
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column nowrap;
+    left: 0;
+    top: 0;
+    bottom: 0rem;
+    font-size: 2.5rem; // "cormorant unicase"
+    margin-left: 4.5rem;
+    @media screen and (min-width: @screen-desktop) {
+        width: 15rem;
+        margin-left: 1rem;
+        font-size: 6rem; // "Cormorant Unicase"
+    }
+}
+
+#headerNavigationContainer .pkp_site_name_wrapper {
+    position: relative;
+    background-image: url('/plugins/themes/sjvd/svg/njcie-logo-black.svg');
+    background-image:none;
+    background-size: auto 100%;
+    background-position: left 3.75rem center;
+    color: white;
+
+    @media screen and (min-width: @screen-desktop) {
+        background-position: left 2rem center;
+    }
+}
+
+.pkp_navigation_primary_wrapper::before {
+    @media screen and (min-width: @screen-desktop){
+       background:whitesmoke;
+    }
+   }

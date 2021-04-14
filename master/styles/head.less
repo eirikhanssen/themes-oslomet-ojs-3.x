@@ -1,0 +1,356 @@
+/**
+ * @file styles/head.less
+ *
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_structure_head
+ *
+ * @brief Classes for the page header structural elements
+ */
+ .pkp_structure_head {
+	min-height: @header-phone-height;
+	background: @header-bgcolor;
+	border-bottom: none; /*@bg-border;*/
+	position: relative;
+	z-index: 10;
+
+	&::after {
+		content:"";
+		position: absolute;
+		left:50%;
+		top:0;
+		bottom:0;
+		background:inherit;
+		z-index: -1;
+		width:100vw;
+		transform: translateX(-50%);
+	}
+
+	.pkp_head_wrapper {
+		position:relative;
+        z-index: 1;
+		margin:0;
+		width: 100%;
+		padding:0;
+		border-bottom: @header-bottom-border;
+
+		@media screen and (min-width: @screen-desktop) {
+			border-bottom: @screen-desktop-header-bottom-border;
+		}
+
+		&::after {
+			content:"";
+			position: absolute;
+			left:50%;
+			top:0;
+			bottom:0;
+			background:inherit;
+			z-index: -1;
+			width:100vw;
+			transform: translateX(-50%);
+			background: @header-gradient;
+		}
+
+		.pkp_site_name_wrapper {
+			display:flex;
+			height: @header-phone-height;
+			background-repeat: no-repeat;
+            background-size: auto 80%;
+            background-position: left calc(@header-phone-height ~" + .25rem") center;
+			
+			@media screen and (min-width: @screen-desktop) {
+				height: @header-height;
+			}
+			
+			@media screen and (min-width: @screen-desktop) {
+				background-position: left .75rem center;
+			}
+
+			.pkp_site_name {
+				position:static;
+				font-family: Corbel, Arial, sans-serif;
+                font-weight: bold;
+                font-size: 1.5rem;
+				flex-grow:1;
+				display:flex; 
+				flex-flow: row wrap;
+				margin:0;
+				padding:0;
+				overflow: visible;
+				@media (min-width: @screen-desktop) {
+					margin-bottom: @header-menu-height;
+					height: @header-inner-height + @header-menu-height;;
+					display:flex;
+					flex-flow: row wrap;
+					align-items:stretch;	
+				}
+                
+				& > a {
+					position:relative;
+					flex-grow:1;
+					display:flex;
+					flex: row wrap;
+					align-items:stretch;
+                    padding:0;
+                    margin:0;
+                    padding-left: .25rem;
+					margin-left: .25rem;
+					text-align: left;
+					color: @header-text-color;
+					&:hover, &:focus {
+						color: @header-text-color-hover;
+					}
+					
+					@media screen and (min-width: @screen-desktop) {
+						padding-left: .5rem;
+						margin-left: 0;
+					}
+
+                & h1 {
+					font-size: 1.25rem;
+					display:flex;
+					flex-flow: row wrap;
+                    padding:0;
+					margin:0;
+					align-items: center;
+                    }    
+				}
+			}
+		}
+	}
+}
+
+
+nav .pkp_navigation_usernav .pkp_navigation_user.pkp_navigation_user {
+	margin-bottom: 1rem;
+	
+	@media screen and (min-width: @screen-desktop) {
+		margin-top: .5rem;
+		padding-right: .5rem;
+		border-radius: .25rem;
+		background: @pkp-navigation-user-bg;
+	}
+}
+
+@media screen and (min-width: @screen-desktop) {
+	.pkp_navigation_user.pkp_navigation_user a {
+		padding-right: .5rem;
+	}
+	.pkp_nav_list ul {
+		margin-right: 0;
+	}
+}
+
+.pkp_navigation_primary > li > a {
+	color: @primary-nav-text-color;
+	background: @primary-nav-text-bg;
+	border-bottom: none;
+	position: relative;
+	z-index: 1;
+}
+
+@media screen and (min-width:@screen-desktop) {
+	.pkp_navigation_primary > li > a {
+		color: @screen-desktop-primary-nav-text-color;
+		background: @screen-desktop-primary-nav-text-bg;
+	}
+}
+
+.pkp_navigation_primary > li > a:hover,
+.pkp_navigation_primary > li > a:focus {
+	color: @primary-nav-text-color-hover;
+}
+
+@media screen and (min-width:@screen-desktop) {
+	.pkp_navigation_primary > li > a:hover,
+	.pkp_navigation_primary > li > a:focus {
+		color: @screen-desktop-primary-nav-text-color-hover;
+		background: @screen-desktop-primary-nav-text-bg-hover;
+	}
+}
+
+
+
+@media screen and (min-width: @screen-desktop) {
+	.pkp_navigation_primary > li > a:hover::before,
+	.pkp_navigation_primary > li > a:focus::before {
+		content: "";
+		position: absolute;
+		display: block;
+		left: -.5rem;
+		right:-.5rem;
+		bottom: -2px;
+		height: 4px;
+		background: @screen-desktop-primary-nav-text-color;
+		border-radius: 2px;
+		z-index: -1;
+	}
+}
+
+.pkp_navigation_primary_row {
+    @media screen and (min-width: @screen-desktop) {
+		padding: 0 0.5*@colgap;
+        background: @screen-desktop-primary-nav-bg;
+    }
+}
+.pkp_navigation_user_wrapper,
+.pkp_navigation_primary_row {
+	z-index: 10;
+
+	.pkp_nav_list {
+		li {
+			font-weight: bold;
+			.dropdown-menu li {
+				text-shadow: none;
+			}
+		}
+	} 
+}
+
+@media screen and (min-width: @screen-desktop) {
+	.pkp_navigation_primary_wrapper {
+		position:relative;
+	}
+	.pkp_navigation_primary_wrapper::before {
+		position:absolute;
+		top:0;
+		bottom:-2px;
+		left: -100vw;
+		right: -100vw;
+		background: @screen-desktop-primary-nav-bg;
+		content:"";
+		border-top:@primary-nav-border-top;
+		border-bottom: @primary-nav-border-bottom;
+		display: block;
+	}
+
+	.pkp_navigation_user_wrapper {
+		z-index: 1;
+		height: @header-menu-height;
+		background-color: @usermenu-tint;
+		right:0;
+		left:auto;
+		transform: translate(-.75rem,.5rem);
+		.pkp_nav_list {
+			padding:0;
+		}
+		.pkp_nav_list > li:hover ul {
+			right: 0;
+			left:auto;
+		}
+	}
+}
+
+@media screen and (min-width: @screen-desktop) {
+	.pkp_site_name > a::before,
+	.pkp_site_name > a::after {
+		content: "";
+		display: block;
+		height: 100%;
+		width: 50vw;
+		position: absolute;
+		top:0;
+		right: 100%;
+		left: auto;
+	}
+	.pkp_site_name > a::after {
+		right: auto;
+		left: 100%;
+	}
+
+	.pkp_site_name > a::before,
+	.pkp_site_name > a::after {
+		z-index: 10;
+	}
+}
+
+@media screen and (min-width: @screen-desktop) {
+
+	.pkp_site_name a > * {
+		height: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: left;
+		align-content: center;
+	}
+}
+
+.pkp_navigation_user > li > ul a .task_count,
+.pkp_navigation_user > li > ul a .task_count,
+.pkp_navigation_user .task_count {
+	background-color: @tint;
+}
+
+@media screen and (min-width:@screen-desktop) {
+
+	.pkp_navigation_user ul {
+		width: auto;
+		min-width: 10rem;
+	}
+	.pkp_navigation_user.pkp_navigation_user > .profile > a {
+		border-radius: .25rem;
+		color: @profilebutton-color;
+		background-color: @profilebutton-bg;
+		padding-right: .5rem;
+		border: @profilebutton-border;
+	}
+	
+	.pkp_navigation_user.pkp_navigation_user > .profile > a:focus, 
+	.pkp_navigation_user.pkp_navigation_user > .profile > a:hover {
+		border: @profilebutton-border-hover;
+		color: @profilebutton-color-hover;
+		background-color: @profilebutton-bg-hover;
+	} 
+}
+
+
+
+.pkp_navigation_user > li > ul a:hover .task_count,
+.pkp_navigation_user > li > ul a:focus .task_count,
+.pkp_navigation_user a:hover .task_count,
+.pkp_navigation_user a:focus .task_count {
+	background-color: @tint;
+	color: inherit;
+}
+
+.pkp_navigation_user > li > a:hover,
+.pkp_navigation_user > li > a:focus {
+	color: @menu-text-hover-color;
+}
+
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a {
+    color: @head-color;
+}
+
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a:hover,
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a:focus {
+    background:@head-hover-bg;
+}
+
+@media screen and (min-width: @screen-desktop) {
+	ul.dropdown-menu,
+	ul.dropdown-menu.show {
+			top: calc(~"100% + .5rem") !important;
+			right:0!important;
+			left:auto!important;
+		}
+	ul.dropdown-menu.show {
+			transform:translate(0rem,0rem) !important;
+	 }
+.dropdown-menu::after {
+	content:"";
+	top: -.5rem;
+	left:0;
+	bottom:0;
+	right:0;
+	background-color:transparent;
+	display: block;
+	position: absolute;
+	z-index: -1;
+	border-bottom: inherit;
+  }
+  
+
+}
