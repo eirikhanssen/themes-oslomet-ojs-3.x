@@ -229,7 +229,8 @@
 		<div class="entry_details">
 
 			{* Article/Issue cover image *}
-			{if $publication->getLocalizedData('coverImage') || ($issue && $issue->getLocalizedCoverImage())}
+			{* {if $publication->getLocalizedData('coverImage') || ($issue && $issue->getLocalizedCoverImage())} *}
+			{if $publication->getLocalizedData('coverImage')} {* only insert cover image if the publication has one. don't fallback on issue's cover image *}
 				<div class="item cover_image">
 					<div class="sub_item">
 						{if $publication->getLocalizedData('coverImage')}
