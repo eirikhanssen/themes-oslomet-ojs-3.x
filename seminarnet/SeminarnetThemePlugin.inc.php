@@ -34,7 +34,7 @@ class SeminarnetThemePlugin extends ThemePlugin {
 		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_MANAGER, LOCALE_COMPONENT_APP_MANAGER);
 		$this->setParent('masterthemeplugin');
 		$this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
-		$this->addScript('seminarvideoabstracts', 'js/videoabstracts.js');
+        $this->addScript('seminarvideoabstracts', 'js/seminar.net-videoabstracts-2021-09-08-1119.js');
 	}
 
 	/**
