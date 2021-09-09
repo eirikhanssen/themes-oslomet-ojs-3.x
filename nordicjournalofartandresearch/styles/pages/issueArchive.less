@@ -8,3 +8,20 @@
  * @brief Styles applying to issue archive page
  * @link templates/frontend/pages/issueArchive.tpl
  */
+
+[class*=_issue] .obj_issue_toc .heading a.cover {
+  width: 100%;
+  display:block;
+  margin-bottom: 1em;
+}
+
+.heading > a.cover > img {
+  width: 100vw;
+  max-width: 100%;
+  
+}
+
+[class*=_issue] .obj_issue_toc .heading > .cover + *,
+[class*=_issue] .obj_issue_toc .heading > .cover + * + * {
+  margin-left: 0;
+}

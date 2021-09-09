@@ -13,8 +13,8 @@
 <version>
 	<application>nordicjournalofartandresearch</application>
 	<type>plugins.themes</type>
-	<release>3.2.1.0</release>
-	<date>2020-12-16</date>
+	<release>3.2.1.1</release>
+	<date>2021-05-09</date>
 	<lazy-load>1</lazy-load>
 	<class>NordicJournalofArtandResearchThemePlugin</class>
 </version>
