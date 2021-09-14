@@ -13,7 +13,7 @@ function Videoabstracts () {
         {
             journal: "seminar",
             year: 2021,
-            vol: 7,
+            vol: 17,
             issue: 2,
             article_id: 4493,
             fid: 70373317,
@@ -22,7 +22,7 @@ function Videoabstracts () {
         {
             journal: "seminar",
             year: 2021,
-            vol: 7,
+            vol: 17,
             issue: 2,
             article_id: 4224,
             fid: 69731132,
@@ -31,7 +31,7 @@ function Videoabstracts () {
         {
             journal: "seminar",
             year: 2021,
-            vol: 7,
+            vol: 17,
             issue: 2,
             article_id: 4268,
             fid: 69731269,
@@ -40,7 +40,7 @@ function Videoabstracts () {
         {
             journal: "seminar",
             year: 2021,
-            vol: 7,
+            vol: 17,
             issue: 2,
             article_id: 4280,
             fid: 69731324,
@@ -49,7 +49,7 @@ function Videoabstracts () {
         {
             journal: "seminar",
             year: 2021,
-            vol: 7,
+            vol: 17,
             issue: 2,
             article_id: 4291,
             fid: 69731500,
@@ -58,7 +58,7 @@ function Videoabstracts () {
         {
             journal: "seminar",
             year: 2021,
-            vol: 7,
+            vol: 17,
             issue: 2,
             article_id: 4232,
             fid: 69731369,
@@ -67,7 +67,7 @@ function Videoabstracts () {
         {
             journal: "seminar",
             year: 2021,
-            vol: 7,
+            vol: 17,
             issue: 2,
             article_id: 4397,
             fid: 70632849,
@@ -76,7 +76,7 @@ function Videoabstracts () {
         {
             journal: "seminar",
             year: 2021,
-            vol: 7,
+            vol: 17,
             issue: 2,
             article_id: 4281,
             fid: 69731514,
@@ -85,7 +85,7 @@ function Videoabstracts () {
         {
             journal: "seminar",
             year: 2021,
-            vol: 7,
+            vol: 17,
             issue: 2,
             article_id: 4254,
             fid: 69731339,
@@ -94,12 +94,21 @@ function Videoabstracts () {
         {
             journal: "seminar",
             year: 2021,
-            vol: 7,
+            vol: 17,
             issue: 2,
             article_id: 4303,
             fid: 69731207,
             title: "Technology giants, educational policy and a preliminary mapping of networks and channels of influence in a Norwegian context"
         },
+	{
+	    journal: "seminar",
+	    year: 2021,
+	    vol: 17,
+	    issue: 1,
+	    article_id: 3828,
+	    fid: 67955426,
+	    title: "Perceived adequate education in ethics: A way to tap into ethical Social Networking Sites awareness?",
+	}, 
         {
             journal: "seminar",
             year: 2020,
