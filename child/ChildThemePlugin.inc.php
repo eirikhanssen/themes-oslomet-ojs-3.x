@@ -3,8 +3,8 @@
 /**
  * @file plugins/themes/child/ChildThemePlugin.inc.php
  *
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
+ * Copyright (c) 2014-2021 Simon Fraser University
+ * Copyright (c) 2003-2021 John Willinsky
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * @class ChildThemePlugin
@@ -34,6 +34,7 @@ class ChildThemePlugin extends ThemePlugin {
 		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_MANAGER, LOCALE_COMPONENT_APP_MANAGER);
 		$this->setParent('masterthemeplugin');
 		$this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
+		$this->addStyle('childbackend', 'styles/backend.less', array('contexts' => 'backend'));
 	}
 
 	/**
