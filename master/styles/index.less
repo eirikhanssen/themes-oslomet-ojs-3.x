@@ -1,16 +1,18 @@
 /**
- * @file styles/index.less
+ * @file plugins/themes/default/index.less
  *
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
+ * Copyright (c) 2014-2021 Simon Fraser University
+ * Copyright (c) 2003-2021 John Willinsky
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
- * @brief Master theme stylesheet
+ * @brief Default theme stylesheet
  *
  */
 
-// Styles unique to this theme
-//@import "debug.less";
+// Import the default theme
+@import "../../default/styles/index.less";
+
+// master overrides default
 @import "reset.less";
 @import "variables.less";
 @import "components.less";
@@ -18,7 +20,6 @@
 @import "head.less";
 @import "main.less";
 @import "components/nav-toggle.less";
-@import "components/search-form.less";
 @import "pages/indexSite.less";
 @import "pages/indexJournal.less";
 @import "pages/category.less";
