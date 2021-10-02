@@ -7,7 +7,7 @@ html {
     font-weight: bold;
 }
 
-.profile > a {
+#navigationUser > .profile > a {
     font-weight: bold;
     border-radius: 5px;
     font-size: 1rem;
@@ -15,7 +15,7 @@ html {
 
 @media screen and (min-width: @screen-desktop){
 
-    .profile > a {
+    #navigationUser > .profile > a {
         background: @header-button-bg;
         color: @header-button-fg;
         border: 1px solid @header-button-fg;
@@ -24,9 +24,9 @@ html {
     
     }
     
-    .profile > a:hover,
-    .profile > a:focus,
-    .profile > a:active {
+    #navigationUser > .profile > a:hover,
+    #navigationUser > .profile > a:focus,
+    #navigationUser > .profile > a:active {
         background: @header-button-bg-hover;
         color: @header-button-fg-hover;
         border-color: @header-button-bg;
@@ -469,4 +469,77 @@ display: inline;
     .pkp_page_index .journals .description > p {
 
     }
+  }
+/* site nav menu */
+  .pkp_site_nav_menu--isOpen {
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+  }
+
+  [data-toggle="dropdown"]:hover + .dropdown-menu, 
+  .dropdown-menu:hover {
+      font-weight: bold;
+    font-size: 1rem;
+    width: calc(100% + 4rem);
+    min-width: 15rem;
+    max-width: none;
+  }
+
+ [data-toggle="dropdown"] + .dropdown-menu li.profile a {
+  padding-top: .6rem;
+   padding-bottom: .6rem;
+}
+
+
+
+#navigationUser [data-toggle="dropdown"]:hover + .dropdown-menu,
+#navigationUser [data-toggle="dropdown"] + .dropdown-menu:hover{
+    left: auto;
+    right: -.7rem;
+    margin-top: 1.2rem;
+}
+
+#navigationPrimary [data-toggle="dropdown"]:hover + .dropdown-menu,
+#navigationPrimary [data-toggle="dropdown"] + .dropdown-menu:hover {
+    left:0;
+    margin-top: .25rem;
+}
+
+#navigationUser .dropdown-menu::after,
+#navigationPrimary .dropdown-menu::after
+ {
+    content:"";
+    top: -1rem; left: -1rem;
+    right: -1rem; bottom: -1rem;
+    background-color: transparent;
+    display: block;
+    position:absolute;
+    z-index: -1;
+}
+
+.pkp_navigation_primary > li:last-child a {
+    margin-right:0;
+}
+
+@media screen and (min-width: @screen-desktop) {
+    .pkp_navigation_primary > li > a:focus,
+    .pkp_site_nav_menu  a.pkp_search:focus {
+        border-radius: 5px;
+    }
+}
+
+.pkp_site_nav_toggle:focus {
+    background:black;
+  }
+  
+  .pkp_site_nav_toggle:focus > span::before, 
+  .pkp_site_nav_toggle:focus > span::after {
+    background:white;
+  }
+  
+  .pkp_site_nav_toggle:focus > span {
+    border-bottom-color: white;
+  }
+
+  .pkp_navigation_user .task_count {
+      top:0;
   }
