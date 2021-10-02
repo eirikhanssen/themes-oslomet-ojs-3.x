@@ -22,7 +22,7 @@
 			<img src="{$issueCover|escape}" alt="{$issue->getLocalizedCoverImageAltText()|escape|default:''}">
 		</a>
 	{/if}
-
+	<div class="text_content">
 	<h2>
 		<a class="title" href="{url op="view" path=$issue->getBestIssueId()}">
 			{if $issueTitle}
@@ -41,4 +41,5 @@
 	<div class="description">
 		{$issue->getLocalizedDescription()|strip_unsafe_html}
 	</div>
+	</div><!-- .text_content -->
 </div><!-- .obj_issue_summary -->

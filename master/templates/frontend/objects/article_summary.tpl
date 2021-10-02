@@ -37,7 +37,7 @@
 			</a>
 		</div>
 	{/if}
-
+	<div class="text_content">
 	<{$heading} class="title">
 		<a id="article-{$article->getId()}" {if $journal}href="{url journal=$journal->getPath() page="article" op="view" path=$articlePath}"{else}href="{url page="article" op="view" path=$articlePath}"{/if}>
 			{$article->getLocalizedTitle()|strip_unsafe_html}
@@ -92,6 +92,6 @@
 			{/foreach}
 		</ul>
 	{/if}
-
+	</div><!-- .text_content -->
 	{call_hook name="Templates::Issue::Issue::Article"}
 </div>
