@@ -48,6 +48,16 @@ html {
 .page_index_journal h2,
 .pkp_page_article .page_title {
     font-size: 2rem;
+    line-height: 1.3em;
+}
+
+.page_index_journal {
+    margin-top: 2rem;
+  }
+@media screen and (min-width: @screen-desktop) {
+    .page_index_journal {
+        margin-top: 1rem;
+      }
 }
 
 /* hader and nav menu */
@@ -120,6 +130,12 @@ a.read_more.read_more.read_more,
     color: @primary;
     border:1px solid #333;
     border-radius: @action-border-radius;
+}
+
+@media screen and (min-width: @screen-desktop) {
+    .pkp_structure_content {
+        padding-top: 1rem;
+    }
 }
 
 #login button.submit:hover,
@@ -255,6 +271,7 @@ display: inline;
 @media screen and (min-width: @screen-tablet) {
     .cover + .text_content {
         margin-left: 33%;
+        padding-left: .8rem;
       }
 }
 
@@ -324,7 +341,7 @@ display: inline;
 
 @media screen and (min-width: @screen-desktop) {
     .pkp_structure_sidebar {
-        margin-top:0;
+        margin-top:1.2rem;
         padding:1rem;
         border: @sidebar-border;
         background: @sidebar-bg;
@@ -370,6 +387,7 @@ display: inline;
         padding-right: 2rem;
     }
   }
+
 
   .block_language li[lang] a {
       position: relative;
@@ -470,6 +488,24 @@ display: inline;
 
     }
   }
+
+  .pkp_structure_main.pkp_structure_main section {
+    margin-top: 1rem;
+    padding-top: 0 ;
+    padding-bottom: 0rem ;
+  }
+  .pkp_structure_main section + section {
+    margin-top: 1rem ;
+    padding-top: 0 ;
+  }
+  
+  .pkp_structure_main section h2 {
+    margin-bottom: 0rem;
+  }
+  .pkp_structure_main.pkp_structure_main.pkp_structure_main section h2 + * {
+    margin-top: .5rem;
+  }
+
 /* site nav menu */
   .pkp_site_nav_menu--isOpen {
     box-shadow: 0 5px 5px rgba(0,0,0,0.5);
@@ -484,11 +520,17 @@ display: inline;
     max-width: none;
   }
 
- [data-toggle="dropdown"] + .dropdown-menu li.profile a {
+ [data-toggle="dropdown"] + .dropdown-menu li > a {
   padding-top: .6rem;
    padding-bottom: .6rem;
+   
 }
 
+[data-toggle="dropdown"] + .dropdown-menu li > a:hover,
+[data-toggle="dropdown"] + .dropdown-menu li > a:focus,
+[data-toggle="dropdown"] + .dropdown-menu li > a:active {
+    background-color: #eee;
+}
 
 
 #navigationUser [data-toggle="dropdown"]:hover + .dropdown-menu,
@@ -505,8 +547,7 @@ display: inline;
 }
 
 #navigationUser .dropdown-menu::after,
-#navigationPrimary .dropdown-menu::after
- {
+#navigationPrimary .dropdown-menu::after {
     content:"";
     top: -1rem; left: -1rem;
     right: -1rem; bottom: -1rem;
@@ -542,4 +583,86 @@ display: inline;
 
   .pkp_navigation_user .task_count {
       top:0;
+  }
+  .pkp_page_article .cover_image .sub_item a:hover,
+  .pkp_page_article .cover_image .sub_item a:focus,
+  .pkp_page_article .cover_image .sub_item a:active {
+    outline:none;
+    background:transparent;
+  }
+  a.cover:hover,
+  a.cover:focus,
+  a.cover:active {
+      background-color: transparent;
+      
+  }
+
+  a:hover img,
+a:focus img,
+a:active img {
+  outline-color: @primary;
+  outline-width: 4px;
+  outline-style: solid;
+}
+
+/* breadcrumbs */
+.cmp_breadcrumbs ol {
+    font-size: 1rem;
+}
+.cmp_breadcrumbs .current {
+    color: black;
+}
+
+/* abstract page */
+
+.pkp_page_article .entry_details img {
+    border: 1px solid black;
+  }
+
+.pkp_page_article  .obj_article_details .item {
+    padding-top:0rem;
+    padding-bottom:0rem;
+}
+
+.pkp_page_article.pkp_page_article .main_entry section .label {
+  margin-top: 1em;
+  margin-bottom: 0rem;
+}
+
+
+.pkp_page_article .obj_article_details .entry_details .label {
+    font-weight: bold;
+    color:black;
+    font-size: 1rem;
+  }
+
+  .pkp_page_article .obj_article_details .item + .item {
+    margin-top: 1rem;
+  }
+
+  .obj_article_details .citation_display .citation_formats {
+    font-size: 1rem;
+  }
+  
+  .obj_article_details .citation_display .citation_formats_button {
+    color:black;
+    font-size: 1.2rem;
+  }
+
+  .obj_article_details .citation_display .value {
+    font-size: .9rem;
+  }
+
+  .obj_article_details .citation_display .value {
+    font-size: .9rem;
+  }
+  
+  .obj_article_details .copyright.copyright {
+    font-size: .9rem;
+  }
+  
+  .obj_article_details .copyright .label + p {
+    margin-top:0;
+    margin-bottom: .5rem;
+    font-size: .9rem;
   }
