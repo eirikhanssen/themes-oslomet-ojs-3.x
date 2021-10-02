@@ -238,7 +238,11 @@
 		<div class="entry_details">
 
 			{* Article/Issue cover image *}
-			{if $publication->getLocalizedData('coverImage') || ($issue && $issue->getLocalizedCoverImage())}
+			{* {if $publication->getLocalizedData('coverImage') || ($issue && $issue->getLocalizedCoverImage())} *}
+			
+			{if $publication->getLocalizedData('coverImage')} {* insert only publication's cover image, not the issue's cover image  *}
+
+
 				<div class="item cover_image">
 					<div class="sub_item">
 						{if $publication->getLocalizedData('coverImage')}
@@ -259,7 +263,7 @@
 			{* Article Galleys *}
 			{if $primaryGalleys}
 				<div class="item galleys">
-					<h2 class="pkp_screen_reader">
+					<h2 class="label">
 						{translate key="submission.downloads"}
 					</h2>
 					<ul class="value galleys_links">
