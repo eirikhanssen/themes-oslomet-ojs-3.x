@@ -1,1 +1,168 @@
 /*master overrides default*/
+
+/**
+ * @file styles/head.less
+ *
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_structure_head
+ *
+ * @brief Classes for the page header structural elements
+ */
+ .pkp_structure_head {
+	min-height: @header-phone-height;
+	background: @header-bg;
+	border-bottom: none; /*@bg-border;*/
+	position: relative;
+	z-index: 10;
+
+	&::after {
+		content:"";
+		position: absolute;
+		left:50%;
+		top:0;
+		bottom:0;
+		background:inherit;
+		z-index: -1;
+		width:100vw;
+		transform: translateX(-50%);
+	}
+
+	.pkp_head_wrapper {
+		position:relative;
+        z-index: 1;
+		margin:0;
+		width: 100%;
+		padding:0;
+		border-bottom: @header-bottom-border;
+
+		&::after {
+			content:"";
+			position: absolute;
+			left:50%;
+			top:0;
+			bottom:0;
+			background:inherit;
+			z-index: -1;
+			width:100vw;
+			transform: translateX(-50%);
+			background: @header-gradient;
+		}
+
+		.pkp_site_name_wrapper {
+			display:flex;
+			height: @header-phone-height;
+			background-repeat: no-repeat;
+            background-size: auto 80%;
+            background-position: left calc(@header-phone-height ~" + .25rem") center;
+			
+			@media screen and (min-width: @screen-desktop) {
+				height: @header-height;
+			}
+			
+			@media screen and (min-width: @screen-desktop) {
+				background-position: left .75rem center;
+			}
+
+			.pkp_site_name {
+				position:static;
+				font-family: Corbel, Arial, sans-serif;
+                font-weight: bold;
+                font-size: 1.5rem;
+				flex-grow:1;
+				display:flex; 
+				flex-flow: row wrap;
+				margin:0;
+				padding:0;
+				overflow: visible;
+				@media (min-width: @screen-desktop) {
+					margin-bottom: @header-menu-height;
+					height: @header-inner-height + @header-menu-height;;
+					display:flex;
+					flex-flow: row wrap;
+					align-items:stretch;	
+				}
+                
+				& > a {
+					position:relative;
+					flex-grow:1;
+					display:flex;
+					flex: row wrap;
+					align-items:stretch;
+                    padding:0;
+                    margin:0;
+                    padding-left: .25rem;
+					margin-left: .25rem;
+					text-align: left;
+					color: @header-color;
+					&:hover, &:focus {
+						color: @header-color-hover;
+					}
+					
+					@media screen and (min-width: @screen-desktop) {
+						padding-left: .5rem;
+						margin-left: 0;
+					}
+
+                & h1 {
+					font-size: 1.25rem;
+					display:flex;
+					flex-flow: row wrap;
+                    padding:0;
+					margin:0;
+					align-items: center;
+                    padding-left: 1.5rem;
+                    }    
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: @screen-tablet) {
+    .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a h1 {
+        margin-left: 1rem;
+    }
+}
+
+
+@media screen and (min-width: @screen-desktop) {
+    .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a h1 {
+        margin-left:0;
+        padding-left: 0;
+    }
+}
+
+@media screen and (min-width: @screen-desktop) {
+	.pkp_site_name > a::before,
+	.pkp_site_name > a::after {
+		content: "";
+		display: block;
+		height: 100%;
+		width: 50vw;
+		position: absolute;
+		top:0;
+		right: 100%;
+		left: auto;
+	}
+	.pkp_site_name > a::after {
+		right: auto;
+		left: 100%;
+	}
+
+	.pkp_site_name > a::before,
+	.pkp_site_name > a::after {
+		z-index: 10;
+	}
+}
+
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a {
+    color: @header-color;
+}
+
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a:hover,
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a:focus {
+    background:@header-bg-hover;
+}
