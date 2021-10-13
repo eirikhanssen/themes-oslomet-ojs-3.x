@@ -9,7 +9,7 @@ var master = function () {
      * It will trigger on each click, directly after the default behaviour, invisible to the user.
      */
         function fixDropdownMenuStyle(e) {
-            document.querySelector('.dropdown-menu[aria-labelledby=' + e.target.id + ']').setAttribute('style','top:100%');
+            document.querySelector('.dropdown-menu[aria-labelledby=' + e.target.id + ']').setAttribute('style','transform:translateX(0)');
         }
         var d0 = document.querySelector('#pkpDropdown0');
         var d1 = document.querySelector('#pkpDropdown1');
