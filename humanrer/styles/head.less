@@ -1,0 +1,40 @@
+/*humanrer overrides master*/
+
+.pkp_structure_head {
+    background-image: url("/plugins/themes/humanrer/img/hrer-left-corner.png"), url("/plugins/themes/humanrer/img/hrer-right-corner.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left @header-phone-height center, right center;
+    background-size: auto 100%, auto 100%;
+
+    @media screen and (min-width: @screen-desktop) {
+        background-position: left center, right center;
+    }
+}
+
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name a {
+    background-image: @journal-logo, @journal-logo-hover;
+    background-position: center center, -9999px -9999px;
+    background-repeat: no-repeat;
+    background-size: auto 90%;
+    @media screen and (min-width: @screen-desktop) {
+       background-image: @journal-logo-screen-desktop, @journal-logo-screen-desktop-hover;
+   }
+}
+
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name a:hover,
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name a:focus {
+   background-image: @journal-logo-hover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: auto 90%;
+
+   @media screen and (min-width: @screen-desktop) {
+       background-image: @journal-logo-screen-desktop-hover;
+   }
+}
+
+
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name h1 {
+    position: relative;
+    left: -9999px;
+}
