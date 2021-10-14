@@ -99,7 +99,7 @@ footer .logotext.logotext {
     font-size: 1rem;
 }
 
-footer .oslomet .logotext {background-image: url(/plugins/themes/master/svg/OsloMet-logo-black.svg),url(/plugins/themes/master/svg/OsloMet-logo-white.svg);}
+footer .oslomet .logotext {background-image: @footer-hosted-by-logo;}
 
 footer a.logotext:hover,
 footer a.logotext:focus {
@@ -108,6 +108,10 @@ footer a.logotext:focus {
 
 footer .columns .columns > div {
     padding-top:0;
+}
+
+aside.issn {
+    margin-bottom: 1rem;
 }
 
 .pkp_structure_footer,
@@ -130,7 +134,20 @@ footer .column h1 {margin-top: 0; margin-bottom: .5rem;}
 
 .pkp_structure_footer_wrapper h1 {
     font-size: 1.25rem;
+    margin-bottom:0;
 }
+
+.pkp_structure_footer_wrapper h2 {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.pkp_structure_footer_wrapper h1 + p,
+.pkp_structure_footer_wrapper h2 + p,
+.pkp_structure_footer_wrapper h1 + div > p {
+    margin-top:0;
+}
+
 
 .pkp_structure_footer_wrapper a {
    border-radius: .25rem;
@@ -144,20 +161,22 @@ footer .column h1 {margin-top: 0; margin-bottom: .5rem;}
      background-color:@footer-link-bg-hover;
  }
 
-footer .columns .column {
-    width:auto;
-    min-width: calc(~"100vw - 1rem");
-}
 
-
-@media screen and (min-width: @screen-tablet) {
-    footer .columns .column {
-        min-width: calc(~"50vw - .75rem");
-    }
-}
-
-@media screen and (min-width: @screen-desktop) {
-    footer .columns .column {
-       min-width: auto;
-    }
-}
+ @media screen and (min-width: @screen-tablet) {
+    .columns {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+      
+      .columns > .column {
+        flex:1;
+        margin-left: 2%;
+      }
+      
+      .columns > .column:first-child {
+        margin-left: 0;
+      }
+      
+     
+ }
