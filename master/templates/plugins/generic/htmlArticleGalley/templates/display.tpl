@@ -29,7 +29,7 @@
 		</a>
 	</header>
 
-	<div id="htmlContainer" class="galley_view{if !$isLatestPublication} galley_view_with_notice{/if}" style="overflow:visible;-webkit-overflow-scrolling:touch">
+	<div id="htmlContainer" class="galley_view{if !$isLatestPublication} galley_view_with_notice{/if}">
 		{if !$isLatestPublication}
 			<div class="galley_view_notice">
 				<div class="galley_view_notice_message" role="alert">
