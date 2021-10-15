@@ -17,6 +17,18 @@ body::after {
 
 }
 
+@media screen and (min-width:@screen-xsmall-phone) {
+  body::after {
+    content:"@screen-xsmall-phone";
+  }
+}
+
+@media screen and (min-width:@screen-small-phone) {
+  body::after {
+    content:"@screen-small-phone";
+  }
+}
+
 @media screen and (min-width:@screen-phone) {
   body::after {
     content:"@screen-phone";
