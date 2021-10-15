@@ -1,6 +1,8 @@
 /*master overrides default*/
 @bg-border-color: transparent;
 @header-border: 1px solid black;
+
+@header-border-desktop: 1px solid white;
 @side-border: 1px solid #ccc;
 @theme-button-bg: black;
 @action-bg-compat: rgb(250,250,250);
@@ -10,10 +12,16 @@
 @action-box-shadow: none;
 @index-journal-bg: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%);
 @action-bg-hfa: @primary;
-@header-button-bg:rgba(255,255,255,0.8);
-@header-button-fg: black;
-@header-button-bg-hover: rgba(0,0,0,0.8);
+
 @header-button-fg-hover: white;
+@header-button-fg: black;
+
+@header-button-bg:rgba(255,255,255,0.9);
+@header-button-bg-hover: rgba(0,0,0,0.9);
+@header-button-decoration: none;
+@header-button-decoration-hover: none;
+
+
 @action-border-radius: 5px;
 @sidebar-border: 1px solid #aaa;
 
@@ -30,9 +38,7 @@
 @footer-bg: transparent;
 @footer-border-top: 1px solid @footer-border-color; // Do not change. Instead change the color of @footer-border-color
 @footer-border-color: transparent; // black | transparent | white
-/*@footer-pseudo-content-bg: inherit; // inherit | transparent
-@footer-pseudo-content-border-top: @footer-border-top; // none | @footer-border-top
-@footer-pseudo-content-border-color: transparent; // transparent | inherit | @footer-border-color*/
+
 
 @footer-link-color:white;
 @footer-link-hover-color:black;
@@ -58,3 +64,12 @@
 
 @header-height: 8rem;
 @header-phone-height: 3rem;
+
+@site_nav_toggle_color: black;
+@site_nav_toggle_color_hover: white;
+@site_nav_toggle_border: 1px solid @site_nav_toggle_color;
+@site_nav_toggle_border_hover: 1px solid @site_nav_toggle_color_hover;
+@site_nav_toggle_bg: rgba(255,255,255,0.7);
+@site_nav_toggle_bg_hover: rgba(0,0,0,0.7);
+@site_nav_toggle_bg_transform: @site_nav_toggle_bg_hover;
+@site-nav-bottom-border: 1px solid gray;

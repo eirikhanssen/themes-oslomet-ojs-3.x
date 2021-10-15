@@ -13,6 +13,41 @@ html {
   margin-bottom: .5rem;
 }
 
+.obj_issue_toc .section {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* SIDEBAR */
+.pkp_structure_sidebar {
+  margin: 1rem 0;
+  margin-top: 3rem;
+  padding-left: 0;
+}
+
+
+.pkp_structure_sidebar .pkp_block {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.pkp_structure_sidebar .pkp_block+.pkp_block {
+  margin-top: 1rem;
+}
+
+.pkp_block {
+  padding: 0;
+}
+
+@media screen and (min-width: @screen-desktop) {
+  .pkp_structure_sidebar {
+    margin-top: 1.2rem;
+    padding: 1rem;
+    border: @sidebar-border;
+    background: @sidebar-bg;
+  }
+}
+
 .page_issue h1,
 .page_issue_archive h1,
 .page_about h1,
@@ -179,6 +214,27 @@ html .block_make_submission_link.block_make_submission_link {
   padding: 0 0.5rem;
 }
 
+.obj_issue_toc .galleys_links,
+.obj_article_summary .galleys_links {
+  margin-top:0;
+}
+
+.obj_issue_toc .galleys_links li {
+margin-left:0; margin-right:0;
+margin-top: .25rem; margin-bottom: .25rem;
+}
+
+.obj_issue_toc .galleys_links li + li {
+margin-left: .25rem;
+}
+
+.galleys_links li {
+  margin: .25rem .125rem;
+}
+.obj_galley_link {
+ font-size: .9rem;
+}
+
 html .block_make_submission_link.block_make_submission_link,
 a.read_more.read_more.read_more,
 a.read_more.read_more.read_more::after {
@@ -196,14 +252,19 @@ a.read_more.read_more.read_more {
 
   a.read_more.read_more.read_more {
     margin-top: 1rem;
+  }
+
+}
+
+
+@media screen and (min-width: @screen-desktop) {
+
+  a.read_more.read_more.read_more {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
 
-  .pkp_structure_sidebar {
-    padding-left: .5rem;
-    padding-right: .5rem;
-  }
+
 
 }
 
@@ -329,32 +390,8 @@ a.read_more.read_more.read_more::after {
   }
 }
 
-.pkp_structure_sidebar {
-  margin: 1rem 0;
-  margin-top: 3rem;
-}
 
-.pkp_structure_sidebar .pkp_block {
-  margin-bottom: 0;
-  margin-top: 0;
-}
 
-.pkp_structure_sidebar .pkp_block+.pkp_block {
-  margin-top: 1rem;
-}
-
-.pkp_block {
-  padding: 0;
-}
-
-@media screen and (min-width: @screen-desktop) {
-  .pkp_structure_sidebar {
-    margin-top: 1.2rem;
-    padding: 1rem;
-    border: @sidebar-border;
-    background: @sidebar-bg;
-  }
-}
 
 .page_issue_archive .issues_archive {
   margin-left: 0;
@@ -633,3 +670,6 @@ a:active img {
 .references a {
   word-break: break-word;
 }
+
+/*-----------*/
+
