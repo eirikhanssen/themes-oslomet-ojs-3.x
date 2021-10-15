@@ -1,0 +1,40 @@
+/*pp overrides master*/
+
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name .is_text * {
+    position: relative;
+    left: -9999px;
+}
+
+.pkp_site_name_wrapper::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    background-color: black;
+    background: linear-gradient(0deg, #000 0%, #000 36%, #443c3a 38%, #443c3a 40%, #000 82%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+#headerNavigationContainer .pkp_site_name_wrapper {
+    position: relative;
+    background-image: @journal-logo;
+    background-size: auto 100%;
+    background-position: left 3.5rem center;
+}
+
+@media screen and (min-width: @screen-tablet) {
+    #headerNavigationContainer .pkp_site_name_wrapper {
+        background-position: calc(50% + 2rem) 50%;
+    }
+}
+
+@media screen and (min-width: @screen-desktop) {
+    #headerNavigationContainer .pkp_site_name_wrapper {
+        background-position: 50% 50%;
+    }
+}
