@@ -75,6 +75,11 @@
 .pkp_structure_footer::before {z-index: -2;}
 .pkp_structure_footer::after {z-index: -1;} 
 
+.pkp_structure_footer_wrapper::after {
+    background: @footer-bg-overlay;
+    box-shadow: @footer-box-shadow;
+}
+
 .pkp_structure_footer_wrapper footer {
     border-top: @footer-border-top;
 }
