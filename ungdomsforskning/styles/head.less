@@ -1,0 +1,40 @@
+/*ungdomsforskning overrides master*/
+
+.tfuheading {
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 1rem;
+    line-height: .75em;
+}
+.tidsskriftfor {
+    color: yellow;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight:normal;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    letter-spacing: .17em;
+    position: relative;
+    bottom: -.2em;
+}
+.ungdomsforskning {
+    position: relative;
+    top: -.2em;
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (min-width: @screen-tablet) {
+    .tfuheading {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width: @screen-tablet) {
+    .tfuheading {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+}
