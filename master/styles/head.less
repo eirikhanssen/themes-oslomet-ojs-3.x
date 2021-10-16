@@ -34,11 +34,18 @@
    left: 50%;
    top: 0;
    bottom: 0;
-   background: inherit;
+   background: @header-bg-overlay;
    z-index: -1;
    width: 100vw;
    transform: translateX(-50%);
 }
+
+@media screen and (min-width: @screen-desktop) {
+    .pkp_structure_head::after {
+        bottom: 3rem;
+    }
+}
+
 .pkp_structure_head .pkp_head_wrapper {
    position: relative;
    z-index: 1;
@@ -80,7 +87,7 @@
 }
 
 .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name {
-   position: static;
+   position: relative;
    font-family: Corbel, Arial, sans-serif;
    font-weight: bold;
    font-size: 1.5rem;
@@ -90,14 +97,39 @@
    margin: 0;
    padding: 0;
    overflow: visible;
+   display:flex;
+	   flex-flow: row wrap;
+	   align-items:stretch;
 }
+
+.pkp_site_name::before,
+.pkp_site_name::after {
+    content:"";
+    display: block;
+    height: 100%;
+    width: 50vw;
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:auto;
+    left:50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    border: inherit;
+    color: inherit;
+}
+
+.pkp_site_name::before {z-index: -2; background-color: inherit;}
+.pkp_site_name::after {z-index: -1; background:inherit;}
+
+
 @media (min-width: @screen-desktop) {
    .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name {
 	   margin-bottom: @header-menu-height;
-	   height: @header-inner-height + @header-menu-height;;
-	   display:flex;
+	   height: @header-inner-height + @header-menu-height;
+	   /*display:flex;
 	   flex-flow: row wrap;
-	   align-items:stretch;
+	   align-items:stretch;*/
   }
 }
 .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a {
@@ -128,25 +160,23 @@
   }
 }
 
-.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a h1 {
+#headerNavigationContainer h1 {
    font-size: 1.25rem;
    display: flex;
    flex-flow: row wrap;
    padding: 0;
    margin: 0;
    align-items: center;
-   padding-left: 1.5rem;
 }
-@media screen and (min-width: @screen-tablet) {
-   .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a h1 {
-	   margin-left: 1rem;
-  }
-}
+
 @media screen and (min-width: @screen-desktop) {
-   .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a h1 {
-	   margin-left: 0;
-	   padding-left: 0;
+	#headerNavigationContainer h1 {
+		font-size: 4rem;
+	}
   }
+ 
+
+@media screen and (min-width: @screen-desktop) {
 
    .pkp_site_name > a::before, .pkp_site_name > a::after {
 	   content: "";
@@ -167,15 +197,6 @@
   }
 }
 
-#headerNavigationContainer h1 {
-   padding-left: 2.5rem;
- }
- 
- @media screen and (min-width: @screen-desktop) {
-   #headerNavigationContainer h1 {
-	 padding-left: 0;
-   }
- }
 
 /* Link to journal index page */ 
  #headerNavigationContainer .pkp_site_name_wrapper a {
