@@ -1,0 +1,30 @@
+/*technea overrides master*/
+
+
+#headerNavigationContainer .pkp_site_name>a {
+    background-image: url("/plugins/themes/technea/img/techne-graphics-transp.png"), url("/plugins/themes/technea/svg/techne-logo-se.svg");
+
+    background-position: left .25rem bottom,left 5rem bottom 30%;
+    background-size: auto 80%,auto 70%;
+
+    
+    background-repeat: no-repeat, no-repeat;
+
+    @media screen and (min-width: @screen-tablet) {
+        background-position: left .5rem bottom,left 5.5rem bottom 30%;
+    }
+
+    @media screen and (min-width: @screen-desktop) {
+        background-position: left .25rem bottom,right bottom 1rem;
+        background-size: auto 90%,auto 60%;
+    }
+}
+
+html[lang="en-US"] #headerNavigationContainer .pkp_site_name>a {
+    background-image: url("/plugins/themes/technea/img/techne-graphics-transp.png"), url("/plugins/themes/technea/svg/techne-logo-en.svg");
+}
+
+#headerNavigationContainer h1 {
+    position: relative;
+    left: -9999px;
+}
