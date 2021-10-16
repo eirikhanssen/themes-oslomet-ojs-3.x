@@ -1,0 +1,92 @@
+/*sjvd overrides master*/
+
+.pkp_structure_head {
+    background-position: right -5rem top, left top;
+}
+
+@media screen and (min-width: @screen-desktop) {
+    .pkp_structure_head {
+        background-position: right -30rem top, left -10rem top;
+    }   
+}
+
+#headerNavigationContainer .pkp_site_name > a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    line-height: 1rem;
+    white-space: normal;
+    height: auto;
+    padding-left: 6.5rem;
+
+    @media screen and (min-width: @screen-tablet) {
+        padding-left: 7.5rem;
+    }
+
+    @media screen and (min-width: @screen-desktop) {
+        padding-left: 15rem;
+    }
+}
+
+#headerNavigationContainer .pkp_site_name h1 {
+    position: relative;
+    color: #3fcaee;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: flex-start;
+    max-width: 16em;
+    line-height: 1em;
+    font-size: 1rem;
+    text-shadow: 0 0 10px black, 0 0 5px black, 0 0 1px black;
+
+    @media screen and (min-width: @screen-tablet) {
+
+    }
+
+    @media screen and (min-width: @screen-desktop) {
+        font-size: 2rem;
+    }
+}
+
+#headerNavigationContainer .pkp_site_name a:hover h1,
+#headerNavigationContainer .pkp_site_name a:focus h1 {
+    color: #c4f3ff;
+    text-shadow:0 0 1px black 0 0 10px black, 0 0 5px black, 0 0 2px black;
+}
+
+#headerNavigationContainer .pkp_site_name a::before {
+    content: "SJVD"; //"SJVD" hvis vi bruker font
+    font-family: 'Cormorant Unicase', serif; // google font
+    z-index: -1;
+    color: #3fcaee;
+    background-color: transparent;
+    text-shadow: 0 0 10px #000,0 0 5px #000,0 0 1px #000;
+    position: absolute;
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column nowrap;
+    left: 0;
+    top: 0;
+    bottom: 0rem;
+    font-size: 2.5rem; // "cormorant unicase"
+    margin-left: 4.5rem;
+    margin-left:0;
+
+    @media screen and (min-width: @screen-tablet) {
+        margin-left: 1rem;
+    }
+
+
+    @media screen and (min-width: @screen-desktop) {
+        width: 15rem;
+        margin-left: 0;
+        font-size: 6rem; // "Cormorant Unicase"
+    }
+}
