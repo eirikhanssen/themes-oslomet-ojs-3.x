@@ -7,6 +7,7 @@
         .pkp_site_name_wrapper {
             background-image: url("/plugins/themes/nat/svg/nat-logo-sort-to-linjer.svg");
             background-size: calc(~"100vw - " (@header-phone-height + 2rem)) auto, auto 100%;
+            background-position: left 1rem center;
             
             @media screen and (min-width: @screen-small-phone) {
                 background-image: url("/plugins/themes/nat/svg/nat-logo-sort-en-linje.svg");
@@ -14,6 +15,10 @@
 
             @media screen and (min-width: @screen-phone) {
                 background-size: auto 70%;
+            }
+
+            @media screen and (min-width: @screen-tablet) {
+                background-position: left center;
             }
 
             @media screen and (min-width: @screen-desktop) {
