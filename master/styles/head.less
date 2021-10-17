@@ -233,6 +233,10 @@
 	 z-index: 1;
  }
 
+ .pkp_navigation_primary_wrapper {
+	 z-index: 1;
+ }
+
 /* Primary Navigation and User Navigation */
 
 /* Primary Navigation */
@@ -428,7 +432,7 @@
   .pkp_site_nav_toggle:focus>span::after,
   .pkp_site_nav_toggle:active>span::before,
   .pkp_site_nav_toggle:active>span::after {
-	background: @site_nav_toggle-color_hover;
+	background: @site_nav_toggle-color-hover;
   }
 
 
@@ -439,7 +443,7 @@
   .pkp_site_nav_toggle:hover>span,
   .pkp_site_nav_toggle:focus>span,
   .pkp_site_nav_toggle:active>span {
-	border-bottom-color: @site_nav_toggle-color_hover;
+	border-bottom-color: @site_nav_toggle-color-hover;
   }
   
   .pkp_navigation_user .task_count.task_count {
@@ -468,6 +472,7 @@
 	.pkp_site_nav_menu a:focus,
 	.pkp_site_nav_menu a:active {
 	color:black;
+	background:transparent;
 	}
 	
 	.pkp_navigation_primary > li > a,
@@ -484,5 +489,6 @@
 	.pkp_search.pkp_search:focus,
 	.pkp_search.pkp_search:active {
 	  	border-bottom: 3px solid black;
+		background:transparent;
 		}
 	}
