@@ -2,6 +2,10 @@
 
 .pkp_site_name_wrapper {
     position: relative;
+    background-image: url("/plugins/themes/njcie/img/header-bg-1px.jpg");
+    background-position: center center;
+    background-size: auto 100%;
+    background-repeat: repeat-x;
 }
 
 .pkp_site_name_wrapper::before,
@@ -59,11 +63,11 @@
 #headerNavigationContainer .pkp_site_name_wrapper {
     position: relative;
     background-image: url('/plugins/themes/njcie/svg/njcie-logo-black.svg');
-    //background-image:none;
-    background-size: auto 100%;
-    background-position: left 3.75rem center;
+    background-size: auto 45%;
+    background-position: left 1rem center;
 
-    @media screen and (min-width: @screen-desktop) {
+    @media screen and (min-width: @screen-tablet) {
+        background-size: auto 70%;
         background-position: left center;
     }
 }

@@ -5,26 +5,18 @@
     .pkp_head_wrapper {
         
         .pkp_site_name_wrapper {
-            height: 4rem;
-            @media (min-width: @screen-phone) {
-                //background-image: url("/plugins/themes/njsr/img/logo.svg");
-            }
-
-            @media (min-width: @screen-desktop) {
-                height: 8rem;
-            }
 
             .pkp_site_name {
 
                 .headertext {
                     font-family: Corbel,Arial,sans-serif;
                     display: flex;
-                    font-size: .4rem;
+                    font-size: .7rem;
 
                     justify-content: center;
                     align-items: center;
                     line-height: 1em;
-                    margin-left: 1rem;
+                    margin-left: 0;
                     text-decoration: none;
 
                         flex-flow: column nowrap;
@@ -32,7 +24,7 @@
 
                         @media screen and (min-width: @screen-desktop) {
                             margin-left: 0rem;
-                            font-size: .9rem;
+                            font-size: 1.1rem;
                         }
 
                     
@@ -79,39 +71,24 @@
     position: relative;
 }
 
-.pkp_site_name,
-.pkp_site_name > a::before,
-.pkp_site_name > a::after {
-    background: linear-gradient(to bottom, #f5f6f6 0%, #dbdce2 21%, #b8bac6 74%, #dddfe3 88%, #dddfe3 88%, #f5f6f6 100%);
-    border-bottom: 2px solid black;
+.pkp_head_wrapper,
+.pkp_head_wrapper::before,
+.pkp_head_wrapper::after {
     @media screen and (min-width: @screen-desktop) {
-        height:8rem;
+
     }
 }
 
-
-  .pkp_site_nav_toggle {
-    margin-top: .35rem;
-  }
-
-
-  .pkp_site_name > a::before,
-  .pkp_site_name > a::after {
+  .pkp_head_wrapper::before,
+  .pkp_head_wrapper::after {
     position: absolute;
     content:"";
     display: block;
-    top:0px;
-    bottom:-2px;
+    top:0;
+    bottom: 0;
     right:100%;
     width: 100vw;
-  }
-  
-  .pkp_site_name.pkp_site_name > a::after {
-      left:100%;
-  }
-
-  .pkp_navigation_primary > li > a:focus {
-      background-color: transparent;
+    height: 100%;
   }
 
   .headertext span + span{
