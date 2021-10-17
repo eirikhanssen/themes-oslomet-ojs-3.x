@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32.0001"
+   height="32.0001"
+   viewBox="0 0 8.46664 8.46668"
+   version="1.1"
+   id="svg8"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2" />
+   <g
+     id="layer1"
+     transform="translate(197.643,-239.061)">
+    <rect
+       ry="0"
+       y="239.061"
+       x="-197.643"
+       height="8.46668"
+       width="8.46668"
+       id="rect993"
+       style="opacity:1;vector-effect:none;fill:#993842;fill-opacity:1;stroke:none;stroke-width:1.138376;paint-order:fill markers stroke" />
+    <g
+       id="g2218">
+      <path
+         id="path2210"
+         d="m -190.764,240.526 h -5.292 v 5.516 h 5.292 v -3.384"
+         style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.529166;stroke-opacity:1;paint-order:fill markers stroke" />
+      <path
+         id="path2212"
+         d="m -196.106,243.29 h 2.696"
+         style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.529166;stroke-opacity:1;paint-order:fill markers stroke" />
+    </g>
+    <path
+       id="path1029"
+       d="m 6.861,594.343 v -29.501 h 89.297 89.297 v 29.501 29.501 H 96.158 6.861 Z"
+       style="fill:#ffffff;stroke-width:0.264584" />
+  </g>
+</svg>
