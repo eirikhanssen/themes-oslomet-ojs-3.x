@@ -660,3 +660,10 @@ a:active img {
 
   }
 }
+
+/* fix problem with navigation_primary_wrapper width being set to auto when using site logo */
+@media screen and (min-width: @screen-desktop) {
+  .has_site_logo .pkp_navigation_primary_wrapper {
+    width: @screen-desktop-container;
+  }
+}
