@@ -25,7 +25,7 @@
 			</a>
 		</div>
 	</div>
-	<div class="citations-list"></div>
+	<ul class="citations-list"></div>
     {if $citationsMaxHeight && intval($citationsMaxHeight)>0}
 		<style>
 			.citations-container {

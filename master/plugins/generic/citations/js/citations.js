@@ -18,11 +18,41 @@ fetch(citationUrl, {
 }).then((data) => {
 	displayTotalContent(data.content);
 	displayListContent(data.content);
+	sortReferenceList();
 	citationsLoader.style.display = 'none';
 }).catch(error => {
 	citationsLoader.style.display = 'none';
 	console.log(error);
 });
+
+function sortReferenceList() {
+	var refs = [];
+	var reflist_elements = document.querySelectorAll('.citations-list li.ref')
+	var reflist_container = document.querySelector('.citations-list');
+
+	for(var i = 0; i < reflist_elements.length; i++) {
+		refs.push(reflist_elements[i]);
+	}
+	
+	// sort the array of reference entries
+	refs.sort(function(a,b) {
+		var a_year = a.getAttribute('data-year') + 0;
+		var b_year = b.getAttribute('data-year') + 0;
+	
+		if (a_year < b_year) {
+			return 1;
+		}
+		if (a_year > b_year) {
+	  		return -1;
+		}
+		return 0;
+		});
+
+	// append the reference entries to the reference list in sorted order
+	for(var i = 0; i < refs.length; i++) {
+		reflist_container.appendChild(refs[i]);
+	}
+}
 
 function displayTotalContent(data) {
 	if (citationProvider && citationShowTotal) {
@@ -65,27 +95,31 @@ function displayTotalContent(data) {
 function displayListContent(data) {
 	if (citationShowList) {
 		let list = data[citationProvider + '_list'];
-		if (list && list.length > 0)
+		if (list && list.length > 0) {
 			for (let item of list) {
 				document.querySelector('.citations-list').appendChild(createListElement(item));
 			}
+		}
+	
 	}
 }
 
 function createListElement(item) {
-	let outerDiv = document.createElement('div');
+	let reference = document.createElement('li');
+	reference.classList = "ref";
 	let img = document.createElement("img");
 	img.src = citationsImagePath + '/' + item['type'] + '.png';
 	img.alt = item['type'] + " Logo";
-	/*outerDiv.appendChild(img);*/
+	/*reference.appendChild(img);*/
 	let authors_year = document.createElement('span');
 	authors_year.classList = "authors year";
 	authors_year.innerHTML = item['authors'] + ' (' + item['year'] + '). ';
-	outerDiv.appendChild(authors_year);
+	reference.setAttribute('data-year', item['year']);
+	reference.appendChild(authors_year);
 	let title = document.createElement('strong');
 	//title.style.fontWeight = 'bold';
 	title.innerHTML = item['article_title'] + '. ';
-	outerDiv.append(title);
+	reference.append(title);
 
 	let journal_and_volume = document.createElement('em');
 	journal_and_volume.classList = "journal volume";
@@ -94,25 +128,25 @@ function createListElement(item) {
 	let journal_pages = document.createElement('span');
 	journal_pages.classList = "pages";
 	if (item['journal_title'] && item['journal_title'] !== '')
-		//outerDiv.append(item['journal_title'] + ', ');
+		//reference.append(item['journal_title'] + ', ');
 		journal_and_volume.append(item['journal_title'] + ', ');
 	if (item['volume'] && item['volume'] !== '') {
-		//outerDiv.append(" " + item['volume']);
+		//reference.append(" " + item['volume']);
 		journal_and_volume.append(" " + item['volume']);
 		if (item['issue'] && item['issue'] !== '')
-			//outerDiv.append("(" + item['issue'] + '), ');
+			//reference.append("(" + item['issue'] + '), ');
 			journal_issue.append("(" + item['issue'] + '), ');
 		else
-			//outerDiv.append(", ");
+			//reference.append(", ");
 			journal_issue.append(", ");
 	}
 	if (item['first_page'] && item['first_page'] !== ' :')
-		//outerDiv.append(item['first_page'] + '.');
+		//reference.append(item['first_page'] + '.');
 		journal_pages.append(item['first_page'] + '.');
-		outerDiv.appendChild(journal_and_volume);
-		outerDiv.appendChild(journal_issue);
-		outerDiv.appendChild(journal_pages);
-	//outerDiv.appendChild(document.createElement('br'));
+		reference.appendChild(journal_and_volume);
+		reference.appendChild(journal_issue);
+		reference.appendChild(journal_pages);
+	//reference.appendChild(document.createElement('br'));
 	let doi = document.createElement('a');
 	doi.classList = "doi";
 	doi.href = "https://doi.org/" + item['doi'];
@@ -120,8 +154,8 @@ function createListElement(item) {
 	doi.rel = "noreferrer";
 	//doi.innerText = item['doi'];
 	doi.innerText = doi.href;
-	outerDiv.innerHTML = outerDiv.innerHTML + " ";
-	outerDiv.append(doi);
-	return outerDiv;
+	reference.innerHTML = reference.innerHTML + " ";
+	reference.append(doi);
+	return reference;
 }
 
