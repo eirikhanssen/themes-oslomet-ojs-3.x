@@ -1,6 +1,7 @@
 <div class="item citations-container" data-image-path="{$citationsImagePath}" data-citations-url="{url page="citations" op="get" params=$citationsArgsList}"
      data-citations-provider="{$citationsProvider}" data-citations-total="{$citationsShowTotal}" data-citations-list="{$citationsShowList}"
      data-show-google="{$citationsShowGoogle}" data-show-pmc="{$citationsShowPmc}">
+	 <h2 class="label">Cited by</h2>
 	<div id="citations-loader"></div>
 	<div class="citations-count">
 		<div class="citations-count-crossref">
