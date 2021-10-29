@@ -675,6 +675,11 @@ a:active img {
 
 /* references on abstract page */
 
+/* when the doi link is displayed after a doi link by the referenceLinker plugin, don't display it */
+.references a[href*=doi\.org] + a.reference_doi {
+  display:none;
+}
+
 /* hanging indent */
 
 .page_article .references p {
@@ -716,3 +721,4 @@ ul.citations-list a {
 .copyright ol li + li{
   margin-top: 1rem;
 }
+
