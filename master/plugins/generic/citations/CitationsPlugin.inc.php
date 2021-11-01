@@ -65,7 +65,7 @@ class CitationsPlugin extends GenericPlugin
 			));
 			$smarty->addJavaScript(
 				'citations',
-				$request->getBaseUrl() . '/' . $this->getPluginPath() . '/js/citations.js'
+				$request->getBaseUrl() . '/' . $this->getPluginPath() . '/js/citations.js?v=1.1'
 			);
 			$output .= $smarty->fetch($this->getTemplateResource('citations.tpl'));
 		}
