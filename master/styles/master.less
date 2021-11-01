@@ -577,7 +577,7 @@ a:active img {
 .pkp_page_article .obj_article_details .entry_details .label {
   font-weight: bold;
   color: black;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .pkp_page_article .obj_article_details .item {
@@ -696,29 +696,32 @@ a.doi {
 
 /* cited by citations on abstract page from modified Crossref/Scopus plugin */
 
-ul.citations-list {
-  padding:0;
-  margin:0;
-  margin-top:1rem;
-  list-style-type: none;
-  white-space: pre-wrap;
+.citations-list {
   
 }
 
-ul.citations-list li + li {
+.citations-list dt {
+  font-weight: bold;
+  font-size: 1.125rem;
+  border-bottom: 1px solid gray;
+}
+
+.citations-list dd {
+  margin:0;
+}
+
+.citations-list dd {
   margin-top: 1rem;
 }
 
-ul.citations-list a {
+.citations-list dd + dt {
+  margin-top: 1.5rem;
+} 
+
+.citations-list dt + dd {
+  margin-top:.5rem;
+}
+
+.citations-list a.doi {
   white-space: pre-wrap;
 }
-
-.copyright ol {
-  padding:0;
-  padding-left: 1rem;
-}
-
-.copyright ol li + li{
-  margin-top: 1rem;
-}
-

@@ -19,15 +19,91 @@ fetch(citationUrl, {
 	displayTotalContent(data.content);
 	displayListContent(data.content);
 	sortReferenceList();
+	reorganizeCitationListWithYearAndCountsHeadings();
 	citationsLoader.style.display = 'none';
 }).catch(error => {
 	citationsLoader.style.display = 'none';
 	console.log(error);
 });
 
+function updateCitationListCounters(){
+
+	var citations_list = document.querySelector('.citations-list'); 
+	var citations = document.querySelectorAll('.citations-list .ref'); // array with citation list items
+	var citation_headings = document.querySelectorAll('.citations-list dt'); // array with citation dt elements
+	
+	for (var a=0; a<citation_headings.length; a++) {
+		let current_node = citation_headings[a];
+		let current_year = citation_headings[a].getAttribute('data-year');
+		//console.log("1, current_year: " + current_year);
+		let current_year_counter = 0;
+		for (var b=0; b<citations.length; b++) {
+			if(citations[b].getAttribute('data-year') == current_year) {
+				current_year_counter ++;
+			}
+		}
+		current_node.setAttribute('data-count', current_year_counter);
+	}
+
+	var counters = document.querySelectorAll('.citations-list dt .counter');
+
+	// display the counters
+	for(var c=0; c<counters.length; c++) {
+		let current = counters[c];
+		current.innerHTML = current.parentElement.getAttribute('data-count');
+		current.parentElement.setAttribute('title','In ' + current.parentElement.getAttribute('data-year') + ' this article was cited ' + current.parentElement.getAttribute('data-count') + ' times.');
+
+	}
+}
+
+function createCitationYearHeading(year) {
+	var el = document.createElement('dt');
+	el.setAttribute('data-year',year);
+	el.innerHTML = "<span>" + year + "</span> (<span class=\"counter\"></span>)";
+	return el;
+}
+
+function reorganizeCitationListWithYearAndCountsHeadings(){
+	var citation_years = [];
+	var reorganized_citations_list = [];
+	var citations_list = document.querySelector('.citations-list'); 
+	var citations = document.querySelectorAll('.citations-list .ref'); // array with citation list items
+
+	// find all citation years for the article OK
+	for(let a=0; a<citations.length; a++) {
+		let current_year = citations[a].getAttribute('data-year');
+		if(!citation_years.includes(current_year)) {
+			citation_years.push(current_year);
+		}
+	}
+
+	// for each year, create the heading and push it and all citations matching this year to the array "reorganized_citations_list"
+	for(var b=0; b<citation_years.length; b++) {
+		// create the citation year heading and push it to "reorganized_citations_list" array
+		reorganized_citations_list.push(createCitationYearHeading(citation_years[b]));
+
+		for(var c=0; c<citations.length; c++) {
+			if(citations[c].getAttribute('data-year') == citation_years[b]) {
+				reorganized_citations_list.push(citations[c]);
+			}
+		}
+	}
+
+	// append all items in "reorganized_citations_list" to citations_list
+	for(var e=0; e<reorganized_citations_list.length; e++) {
+		citations_list.appendChild(reorganized_citations_list[e]);
+	}
+
+	updateCitationListCounters();
+
+	// debug:
+	//console.log(citation_years);
+	// console.log(reorganized_citations_list);
+}
+
 function sortReferenceList() {
 	var refs = [];
-	var reflist_elements = document.querySelectorAll('.citations-list li.ref')
+	var reflist_elements = document.querySelectorAll('.citations-list dd.ref')
 	var reflist_container = document.querySelector('.citations-list');
 
 	for(var i = 0; i < reflist_elements.length; i++) {
@@ -100,22 +176,27 @@ function displayListContent(data) {
 				document.querySelector('.citations-list').appendChild(createListElement(item));
 			}
 		}
-	
 	}
 }
 
 function createListElement(item) {
-	let reference = document.createElement('li');
+	let reference = document.createElement('dd');
 	reference.classList = "ref";
 	let img = document.createElement("img");
 	img.src = citationsImagePath + '/' + item['type'] + '.png';
 	img.alt = item['type'] + " Logo";
 	/*reference.appendChild(img);*/
-	let authors_year = document.createElement('span');
-	authors_year.classList = "authors year";
-	authors_year.innerHTML = item['authors'] + ' (' + item['year'] + '). ';
+	let authors = document.createElement('span');
+	authors.classList = "authors";
+	authors.innerHTML = item['authors'];
+
+	let year = document.createElement('span');
+	year.classList = "year";
+	year.innerHTML = ' (' + item['year'] + '). ';
+	
 	reference.setAttribute('data-year', item['year']);
-	reference.appendChild(authors_year);
+	reference.appendChild(authors);
+	reference.appendChild(year);
 	let title = document.createElement('strong');
 	//title.style.fontWeight = 'bold';
 	title.innerHTML = item['article_title'] + '. ';
