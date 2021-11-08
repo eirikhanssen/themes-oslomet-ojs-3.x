@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="50"
+   width="100"
+   version="1.1"
+   viewBox="0 0 100 50"
+   data-name="Layer 1"
+   id="Layer_1"
+   sodipodi:docname="njcie-thumb.svg"
+   inkscape:version="1.1 (c4e8f9e, 2021-05-24)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview109807"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="3.82"
+     inkscape:cx="109.81675"
+     inkscape:cy="48.036649"
+     inkscape:window-width="1920"
+     inkscape:window-height="1176"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1"
+     inkscape:snap-text-baseline="true" />
+  <metadata
+     id="metadata197">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Nordic Journal of Art and Research</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs195">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient52736">
+      <stop
+         style="stop-color:#c0cb9c;stop-opacity:1"
+         offset="0"
+         id="stop52732" />
+      <stop
+         style="stop-color:#d0eff0;stop-opacity:1"
+         offset="1"
+         id="stop52734" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient52736"
+       id="linearGradient52738"
+       x1="57.542347"
+       y1="50.173805"
+       x2="57.542347"
+       y2="-0.41682059"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <title
+     id="title130">Nordic Journal of Art and Research</title>
+  <rect
+     style="fill:#0012f0;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:#000000;font-variation-settings:normal;opacity:1;vector-effect:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-opacity:1"
+     id="rect81709"
+     width="90"
+     height="40"
+     x="5"
+     y="5"
+     rx="0" />
+  <rect
+     style="fill:url(#linearGradient52738);fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:#000000"
+     id="rect2744"
+     width="100"
+     height="50"
+     x="0"
+     y="0"
+     rx="0" />
+  <g
+     aria-label="NJCIE"
+     id="text1529"
+     style="font-weight:bold;font-size:31.9003px;line-height:0.76;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0px;word-spacing:0px">
+    <path
+       d="M 5.0000173,36.417442 V 13.58256 H 9.4859968 L 18.831788,28.831776 V 13.58256 h 4.283487 V 36.417442 H 18.489109 L 9.2835047,21.526482 v 14.89096 z"
+       id="path56811" />
+    <path
+       d="m 36.230535,13.58256 h 4.595014 v 14.454823 q 0,2.83489 -0.498442,4.361369 -0.669782,1.993769 -2.429906,3.208722 -1.760124,1.199376 -4.641743,1.199376 -3.380061,0 -5.20249,-1.884734 -1.822429,-1.900311 -1.838005,-5.560746 l 4.345792,-0.498442 q 0.07788,1.962616 0.576324,2.772585 0.747663,1.230529 2.274142,1.230529 1.542056,0 2.180685,-0.872274 0.638629,-0.88785 0.638629,-3.660435 z"
+       id="path56813" />
+    <path
+       d="m 60.342675,28.021807 4.470404,1.417445 q -1.028037,3.738316 -3.42679,5.560745 -2.383177,1.806853 -6.059188,1.806853 -4.548285,0 -7.476632,-3.099687 -2.928348,-3.115264 -2.928348,-8.50467 0,-5.700932 2.943924,-8.847348 2.943924,-3.161993 7.74143,-3.161993 4.190029,0 6.806851,2.476635 1.557632,1.464174 2.336447,4.205606 l -4.563861,1.090342 q -0.404984,-1.7757 -1.697818,-2.803737 -1.277258,-1.028037 -3.115264,-1.028037 -2.53894,0 -4.127724,1.822429 -1.573208,1.822429 -1.573208,5.903424 0,4.330217 1.557632,6.168222 1.557631,1.838006 4.049842,1.838006 1.838006,0 3.161993,-1.168224 1.323987,-1.168224 1.90031,-3.676011 z"
+       id="path56815" />
+    <path
+       d="M 68.629279,36.417442 V 13.58256 h 4.61059 v 22.834882 z"
+       id="path56817" />
+    <path
+       d="M 77.632388,36.417442 V 13.58256 h 16.931458 v 3.862927 H 82.242978 v 5.062303 h 11.46417 v 3.847351 h -11.46417 v 6.214951 h 12.757005 v 3.84735 z"
+       id="path56819" />
+  </g>
+</svg>
