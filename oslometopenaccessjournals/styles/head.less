@@ -1,0 +1,78 @@
+/*oslometopenaccessjournals overrides master*/
+
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper {
+    background-image: url("/plugins/themes/master/svg/OsloMet-logo-white-left.svg");
+    background-position: left 1rem center;
+    background-size: auto 50%;
+}
+
+@media (min-width: @screen-tablet) {
+    .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper{
+        background-position: left center;
+    }
+}
+
+#headerNavigationContainer .screenreader {
+    position: absolute;
+    left: -9999px;
+}
+
+#headerNavigationContainer .oajtext {
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: bold;
+    padding-left: 5.5rem;
+}
+
+@media screen and (min-width: @screen-phone) {
+    #headerNavigationContainer .oajtext {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: @screen-tablet) {
+    #headerNavigationContainer .oajtext {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+        white-space: pre;
+        
+    }
+}
+
+@media screen and (min-width: @screen-desktop) {
+    .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper {
+        background-size: auto 70%;
+    }
+    #headerNavigationContainer .oajtext {
+        font-size: 3rem;
+        padding-left: 12rem;
+        padding-top: 2.5rem;
+    }
+}
+
+#headerNavigationContainer .openaccess {
+    line-height: 1.25em;
+}
+#headerNavigationContainer .journals {
+    line-height: 1.25em;
+    font-weight: bold;
+    letter-spacing: .06em;
+    margin:0;
+}
+@media screen and (min-width: @screen-desktop) {
+    #headerNavigationContainer .journals {
+        letter-spacing:normal;
+    }
+}
+
+@media screen and (min-width: @screen-tablet) {
+    #headerNavigationContainer .oajtext {
+        margin-left: 1rem;
+
+        margin-left: 0;
+    }
+}

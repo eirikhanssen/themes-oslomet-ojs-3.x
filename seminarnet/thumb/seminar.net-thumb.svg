@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="50"
+   width="100"
+   version="1.1"
+   viewBox="0 0 100 50"
+   data-name="Layer 1"
+   id="Layer_1"
+   sodipodi:docname="seminar.net-thumb.svg"
+   inkscape:version="1.1 (c4e8f9e, 2021-05-24)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview32937"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="5.4022958"
+     inkscape:cx="49.053219"
+     inkscape:cy="38.687256"
+     inkscape:window-width="1815"
+     inkscape:window-height="1009"
+     inkscape:window-x="1949"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_1" />
+  <metadata
+     id="metadata197">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Nordic Journal of Art and Research</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs195">
+    <radialGradient
+       gradientTransform="matrix(2.54097,0,0,2.54097,-27.693,-38.2065)"
+       gradientUnits="userSpaceOnUse"
+       r="7.5219898"
+       fy="33.034901"
+       fx="41.805801"
+       cy="33.034901"
+       cx="41.805801"
+       id="radialGradient963"
+       xlink:href="#linearGradient961" />
+    <linearGradient
+       id="linearGradient961">
+      <stop
+         id="stop957"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1" />
+      <stop
+         id="stop959"
+         offset="1"
+         style="stop-color:#ff8100;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient961"
+       id="radialGradient43140"
+       cx="-340.66798"
+       cy="23.142741"
+       fx="-340.66798"
+       fy="23.142741"
+       r="19.11305"
+       gradientTransform="matrix(1,0,0,1.0000026,0,-6.0481185e-5)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <title
+     id="title130">Nordic Journal of Art and Research</title>
+  <rect
+     style="fill:#324819;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:#000000"
+     id="rect2744"
+     width="100"
+     height="50"
+     x="0"
+     y="0"
+     rx="0" />
+  <rect
+     style="fill:#324819;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:#000000;font-variation-settings:normal;opacity:1;vector-effect:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-opacity:1"
+     id="rect81709"
+     width="90"
+     height="40"
+     x="5"
+     y="5"
+     rx="0" />
+  <path
+     id="path867"
+     d="m 33.89474,33.947366 v 1.578947 h 1.57894 v -1.578947 z m 54.63158,-0.05643 V 45 H 95 V 43.421052 H 90.10526 V 38.68421 H 95 V 37.105263 H 90.10526 V 33.890936 Z M 69.26316,37.105263 V 45 h 1.57894 v -6.31579 h 4.89474 V 45 h 1.57895 v -7.894737 z m -64.26316,0 v 4.736842 h 6.47368 v 1.578947 H 5 V 45 h 8.05263 V 40.263158 H 6.57894 V 38.68421 h 6.47369 v -1.578947 z m 9.63158,0 V 45 h 8.05263 v -1.578948 h -6.47369 v -1.578947 h 6.47369 v -4.736842 z m 9.63158,0 V 45 h 1.57894 v -6.31579 h 1.73685 V 45 h 1.57894 v -6.31579 h 1.57895 V 45 h 1.57895 v -7.894737 z m 9.63158,0 V 45 h 1.57894 v -7.894737 z m 3.31579,0 V 45 h 1.57894 v -6.31579 h 4.73684 V 45 h 1.57895 v -7.894737 z m 9.63157,0 v 1.578947 h 6.31579 v 1.578948 H 46.8421 V 45 h 8.05264 v -7.894737 z m 9.63158,0 V 45 h 1.57895 v -6.31579 h 6.47369 v -1.578947 z m 22.42106,0 V 45 h 8.05263 v -1.578948 h -6.47369 v -1.578947 h 6.47369 V 37.105263 Z M 16.21052,38.68421 h 4.89474 v 1.578948 h -4.89474 z m 64.26316,0 h 4.89474 v 1.578948 h -4.89474 z m -32.05263,3.157895 h 4.73684 v 1.578947 h -4.73684 z m 17.68421,1.578947 V 45 h 1.57895 v -1.578948 z"
+     style="fill:#ffffff;stroke:none;stroke-width:2.54503px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <g
+     id="g43414"
+     transform="matrix(0.50564138,0,0,0.50564138,221.9664,6.0612426)"
+     style="stroke-width:1.97769">
+    <path
+       d="m -327.15303,36.657741 -13.515,5.5981 -13.515,-5.5981 -5.598,-13.515 5.598,-13.5149999 13.515,-5.5981 13.515,5.5981 5.5981,13.5149999 z"
+       id="path955"
+       style="vector-effect:none;fill:url(#radialGradient43140);fill-opacity:1;stroke:none;stroke-width:5.02524px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill" />
+    <path
+       id="path950"
+       d="m -400.35403,-1.2340589 -18.849,24.5063999 18.849,23.4936 h 7.062 c 0,0 -6.68,-15.9994 -10.025,-23.4637 1.783,-7.9337 9.901,-24.5362999 9.901,-24.5362999 z m 27.057,0 -18.844,24.5063999 18.844,23.4936 h 7.062 c 0,0 -6.68,-15.9994 -10.025,-23.4637 1.783,-7.9337 9.901,-24.5362999 9.901,-24.5362999 z m 59.4648,0 c 0,0 8.1179,16.6025999 9.9008,24.5362999 -3.3448,7.4643 -10.0248,23.4637 -10.0248,23.4637 h 7.0619 l 18.844,-23.4936 -18.844,-24.5063999 z m 27.0571,0 c 0,0 8.1182,16.6025999 9.9008,24.5362999 -3.3448,7.4643 -10.0248,23.4637 -10.0248,23.4637 h 7.0621 l 18.8489,-23.4936 -18.8489,-24.5063999 z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:48.2704px;line-height:1.2;font-family:'Liberation Sans Narrow';-inkscape-font-specification:'Liberation Sans Narrow, Condensed';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.02524px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill" />
+  </g>
+</svg>

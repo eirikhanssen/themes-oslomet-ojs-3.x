@@ -1,0 +1,727 @@
+html,body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+[class*=pkp] * {
+  line-height: 1.5em;
+}
+
+.pkp_structure_main h1,
+.pkp_structure_main h2,
+.pkp_structure_main h3,
+.pkp_structure_main h4 {
+  margin-bottom: .5rem;
+}
+
+.obj_issue_toc .section {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* SIDEBAR */
+.pkp_structure_sidebar {
+  margin: 1rem 0;
+  margin-top: 3rem;
+  padding-left: 0;
+}
+
+
+.pkp_structure_sidebar .pkp_block {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.pkp_structure_sidebar .pkp_block+.pkp_block {
+  margin-top: 1rem;
+}
+
+.pkp_block {
+  padding: 0;
+}
+
+@media screen and (min-width: @screen-desktop) {
+  .pkp_structure_sidebar {
+    margin-top: 1.2rem;
+    padding: 1rem;
+    border: @sidebar-border;
+    background: @sidebar-bg;
+  }
+}
+
+.page_issue h1,
+.page_issue_archive h1,
+.page_about h1,
+.page_index_journal h2,
+.pkp_page_article .page_title {
+  font-size: 2rem;
+  line-height: 1.3em;
+}
+
+.page_index_journal {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: @screen-desktop) {
+  .page_index_journal {
+    margin-top: 1rem;
+  }
+}
+
+
+.obj_article_details .entry_details {
+  margin-right: 0;
+}
+
+@media screen and (min-width: @screen-tablet) {
+  .obj_article_details .row {
+    margin-right: 0;
+  }
+}
+
+html .pkp_structure_main {
+  padding: 0;
+}
+
+@media screen and (min-width: @screen-desktop) {
+  html .pkp_structure_main {
+    padding: 1rem;
+  }
+}
+
+.obj_article_details .authors .affiliation,
+.pkp_block .title {
+  color: black;
+}
+
+.pkp_block a {
+  font-size: inherit;
+}
+
+/* Typography */
+.obj_issue_toc .galleys>h2,
+.obj_issue_toc .section>h2,
+.obj_issue_toc .galleys>h3,
+.obj_issue_toc .section>h3,
+.pkp_page_article.pkp_page_article.pkp_page_article .main_entry h2,
+.pkp_page_index .journals>h2 {
+  color: black;
+  font-size: 1.75rem;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+.obj_issue_toc .title,
+.obj_article_summary .title,
+.obj_issue_summary h2,
+.journals.journals a[rel=bookmark] {
+  font-size: 1.3rem;
+
+}
+
+.obj_issue_summary h2 a {
+  line-height: 1.4em;
+}
+
+.pkp_structure_content a:link,
+.journals.journals a[rel=bookmark]:link {
+  text-decoration: underline;
+}
+
+/* front end action buttons and button-like action links */
+
+/* inset | offset-x | offset-y | color */
+/* inset | offset-x | offset-y | blur-radius | color */
+/* inset | offset-x | offset-y | blur-radius | spread-radius | color */
+
+#login button.submit,
+html .block_make_submission_link,
+#login .submit,
+#register .submit {
+  background: @action-bg-compat;
+  background: @action-bg;
+  box-shadow: @action-box-shadow;
+  color: @primary;
+  border: 1px solid #333;
+  border-radius: @action-border-radius;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-decoration: none;
+}
+
+#register .login,
+#login a.register,
+#navigationUser>.profile>a {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media screen and (min-width: @screen-desktop) {
+
+  #register .login,
+  #login a.register,
+  #navigationUser>.profile>a {
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
+}
+
+#register .login {
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+}
+
+
+
+@media screen and (min-width: @screen-desktop) {
+  .pkp_structure_content {
+    padding-top: 1rem;
+  }
+}
+
+
+
+.read_more.read_more.read_more:hover,
+.read_more.read_more.read_more:focus,
+.read_more.read_more.read_more:active
+#login button.submit:hover,
+#login button.submit:focus,
+#login button.submit:active,
+#register button.submit:hover,
+#register button.submit:focus,
+#register button.submit:active,
+#login a.register:hover,
+#login a.register:focus,
+#login a.register:active,
+.pkp_structure_content a:hover,
+.pkp_structure_content a:focus,
+.pkp_structure_content a:active {
+  background: @action-bg-hfa;
+  color: @bg;
+  border-radius: @action-border-radius;
+}
+
+.pkp_structure_content a:hover:not([class]),
+.pkp_structure_content a:focus:not([class]),
+.pkp_structure_content a:active:not([class]) {
+  outline-color: @action-bg-hfa;
+  outline-width: 4px;
+  outline-style: solid;
+  outline-offset: -1px;
+}
+
+
+html .cmp_button_wire.cmp_button_wire,
+html .obj_galley_link.obj_galley_link,
+html .block_make_submission_link.block_make_submission_link {
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 2.25rem;
+  text-decoration: none;
+  padding: 0 0.5rem;
+}
+
+.obj_issue_toc .galleys_links,
+.obj_article_summary .galleys_links {
+  margin-top:0;
+}
+
+.obj_issue_toc .galleys_links li {
+margin-left:0; margin-right:0;
+margin-top: .25rem; margin-bottom: .25rem;
+}
+
+.obj_issue_toc .galleys_links li + li {
+margin-left: .25rem;
+}
+
+.galleys_links li {
+  margin: .25rem .125rem;
+}
+.obj_galley_link {
+ font-size: .9rem;
+}
+
+.read_more.read_more.read_more {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.obj_issue_toc + .read_more {
+  margin-top: 2rem;
+}
+
+html .block_make_submission_link.block_make_submission_link {
+  line-height: 2em;
+  font-size: @make-submission-link-font-size;
+  width: 100%;
+  text-align: center;
+}
+
+.block_language a,
+.block_information a {
+  display: block;
+}
+
+.obj_article_summary {
+  position: relative;
+}
+
+.obj_article_summary .title {
+  display: block;
+}
+
+.obj_article_summary .subtitle {
+  color: inherit;
+  background-color: inherit;
+  font-size: .8em;
+  display: inline;
+  text-decoration: inherit;
+  outline: none;
+}
+
+.obj_issue_toc .section {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0
+}
+
+@media screen and (min-width: @screen-tablet) {
+
+  .obj_issue_summary .cover,
+  .obj_article_summary .cover {
+    width: 30%;
+  }
+}
+
+.obj_issue_toc .cover {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.obj_issue_summary .cover img,
+.obj_article_summary .cover img,
+.obj_issue_toc .cover img {
+  border: 1px solid black;
+}
+
+.text_content .title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: @screen-tablet) {
+  .cover+.text_content {
+    margin-left: 33%;
+    padding-left: .8rem;
+  }
+}
+
+.obj_issue_summary .description,
+.obj_article_summary .meta {
+  font-size: 1rem;
+}
+
+.obj_issue_toc .articles {
+  margin-top: 0;
+}
+
+.cmp_article_list.articles li+li {
+  margin-top: 1rem;
+}
+
+.obj_issue_toc>.heading>.cover {
+  width: 100%;
+  float: none;
+  display: inline;
+  margin-bottom: 0.5rem;
+}
+
+.obj_issue_toc .cover {
+  margin-bottom: .5rem;
+}
+
+.obj_issue_toc>.heading>a.cover img {
+  width: calc(100% - 1rem);
+  max-width: calc(100% - 1rem);
+  height: auto;
+  max-height: none;
+  margin: 0;
+  display: inline;
+}
+
+.obj_issue_toc .cover+.description {
+  margin-top: .5rem;
+}
+
+@media screen and (max-width: calc(@screen-tablet - 1px)) {
+
+  .obj_article_summary>.cover img,
+  .obj_issue_summary a.cover img {
+    width: calc(100% - 1rem);
+    max-width: calc(100% - 1rem);
+    height: auto;
+    max-height: none;
+  }
+}
+
+.page_issue_archive .issues_archive {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.page_issue_archive .issues_archive>li {
+  padding: 0;
+}
+
+.page_issue_archive .issues_archive>li+li {
+  margin-top: 1.5rem;
+}
+
+.page_issue_archive .issues_archive {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.page_issue_archive .issues_archive>li {
+  padding: 0;
+}
+
+.page_issue_archive .issues_archive>li+li {
+  margin-top: 2rem;
+}
+
+.obj_issue_summary .cover {
+  margin-bottom: .5rem;
+}
+
+.pkp_page_index .additional_content {
+  padding-top: 0;
+
+}
+
+@media screen and (min-width: @screen-tablet) {
+  .pkp_page_index .additional_content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.block_language li[lang] a {
+  position: relative;
+}
+
+html[lang=nb-NO] .block_language li[lang="nb-NO"] a::after,
+html[lang=da-DK] .block_language li[lang="da-DK"] a::after,
+html[lang=en-US] .block_language li[lang="en-US"] a::after,
+html[lang=sv-SE] .block_language li[lang="sv-SE"] a::after {
+  position: absolute;
+  content: "✓";
+  display: inline-block;
+  text-decoration: none;
+  color: @yes;
+  font-weight: bold;
+  font-size: 2em;
+  padding-left: .5rem;
+}
+
+html[lang] .block_language li[lang] a:hover::after,
+html[lang] .block_language li[lang] a:focus::after,
+html[lang] .block_language li[lang] a:active::after {
+  color: white;
+}
+
+.pkp_page_index .journals>h2 {
+  position: static !important;
+}
+
+.pkp_page_index .journals .thumb {
+  margin-bottom: 1rem;
+}
+
+.journals .thumb a {
+  display: block;
+}
+
+.journals .thumb a img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+}
+
+.pkp_page_index .journals>ul>li {
+  background: @index-journal-bg;
+  border: @sidebar-border;
+  padding: 1rem;
+}
+
+@media screen and (min-width: @screen-tablet) {
+  .pkp_page_index .journals>ul {
+    margin: 0 1.3rem;
+  }
+
+  .pkp_page_index .journals .thumb {
+    width: 33%;
+    box-sizing: border-box;
+    padding-right: 1rem;
+  }
+
+  .pkp_page_index .journals .thumb+.body {
+    width: 67%;
+  }
+}
+
+@media screen and (min-width: @screen-desktop) {
+  .pkp_page_index .journals>ul {
+    margin: 0 2rem;
+  }
+}
+
+.pkp_page_index .journals>ul>li+li {
+  margin-top: 1rem;
+}
+
+.pkp_page_index .journals .links li {
+  margin-bottom: 0;
+}
+
+.pkp_page_index .journals img {
+  max-height: 30em;
+}
+
+.pkp_page_index .journals h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: @screen-tablet) {
+  .pkp_page_index .journals .description {
+    max-height: 20rem;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+  }
+
+  .pkp_page_index .journals .description>p {}
+}
+
+.pkp_structure_main.pkp_structure_main section {
+  margin-top: 1rem;
+  padding-top: 0;
+  padding-bottom: 0rem;
+}
+
+.pkp_structure_main section+section {
+  margin-top: 1rem;
+  padding-top: 0;
+}
+
+.pkp_structure_main section h2 {
+  margin-bottom: 0rem;
+}
+
+.pkp_structure_main.pkp_structure_main.pkp_structure_main section h2+* {
+  margin-top: .5rem;
+}
+
+.pkp_page_article .cover_image .sub_item a:hover,
+.pkp_page_article .cover_image .sub_item a:focus,
+.pkp_page_article .cover_image .sub_item a:active {
+  outline: none;
+  background: transparent;
+}
+
+a.cover:hover,
+a.cover:focus,
+a.cover:active {
+  background-color: transparent;
+
+}
+
+a:hover img,
+a:focus img,
+a:active img {
+  outline-color: @primary;
+  outline-width: 4px;
+  outline-style: solid;
+}
+
+/* breadcrumbs */
+.cmp_breadcrumbs ol {
+  font-size: 1rem;
+}
+
+.cmp_breadcrumbs .current {
+  color: black;
+}
+
+/* abstract page */
+
+.pkp_page_article .entry_details img {
+  border: 1px solid black;
+}
+
+.pkp_page_article .obj_article_details .item {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.pkp_page_article.pkp_page_article .main_entry section .label {
+  margin-top: 1em;
+  margin-bottom: 0rem;
+}
+
+
+.pkp_page_article .obj_article_details .entry_details .label {
+  font-weight: bold;
+  color: black;
+  font-size: 1.25rem;
+}
+
+.pkp_page_article .obj_article_details .item {
+  margin-top: 0;
+}
+
+.pkp_page_article .obj_article_details .item+.item {
+  margin-top: 1rem;
+}
+
+.obj_article_details .citation_display .citation_formats,
+.obj_article_details .authors .affiliation,
+.obj_article_details .authors .name {
+  font-size: 1rem;
+}
+
+.obj_article_details .citation_display .citation_formats_button {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.obj_article_details .citation_display .value,
+.obj_article_details .copyright.copyright {
+  font-size: .9rem;
+}
+
+.obj_article_details .copyright .label+p {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-size: .9rem;
+}
+
+.obj_article_details .main_entry .authors {
+  margin-top: -.5rem;
+}
+
+.obj_article_details .subtitle {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* citation formats */
+
+.obj_article_details .citation_display .citation_formats_styles a {
+  padding: .25rem 1em;
+  outline: none;
+  border-radius: 0;
+}
+
+.obj_article_details .citation_display .citation_formats_styles li:nth-child(2n+1) {
+  background-color: aliceblue;
+}
+
+.obj_article_details .citation_display .citation_formats_button {
+  font-weight: bold;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  background: @action-bg;
+  box-shadow: @action-box-shadow;
+}
+
+/* make sure really long links won't break the layout */
+.references a {
+  word-break: break-word;
+}
+
+/* show Announcements heading on index page */
+
+.pkp_page_index .cmp_announcements h2 {
+  position: static !important;
+  margin-left: .75rem;
+  margin-top:0;
+}
+
+@media screen and (min-width: @screen-phone) {
+  .pkp_page_index .cmp_announcements h2 {
+    margin-left: 1.5rem;
+
+  }
+}
+
+@media screen and (min-width: @screen-desktop) {
+  .pkp_page_index .cmp_announcements h2 {
+    margin-left: 2rem;
+
+  }
+}
+
+/* fix problem with navigation_primary_wrapper width being set to auto when using site logo */
+@media screen and (min-width: @screen-desktop) {
+  .has_site_logo .pkp_navigation_primary_wrapper {
+    width: @screen-desktop-container;
+  }
+}
+
+/* references on abstract page */
+
+/* when the doi link is displayed after a doi link by the referenceLinker plugin, don't display it */
+.references a[href*=doi] + a[href*=doi] {
+  display:none;
+}
+
+/* hanging indent */
+
+.page_article .references p {
+  padding-left: @references-hanging-indent;
+  text-indent: 0 - @references-hanging-indent;
+}
+
+/* let doi-links break over lines if they get too long*/
+
+a.doi {
+  white-space: pre-wrap;
+}
+
+
+/* cited by citations on abstract page from modified Crossref/Scopus plugin */
+
+.citations-list {
+  
+}
+
+.citations-list dt {
+  font-weight: bold;
+  font-size: 1.125rem;
+  border-bottom: 1px solid gray;
+}
+
+.citations-list dd {
+  margin:0;
+}
+
+.citations-list dd {
+  margin-top: 1rem;
+}
+
+.citations-list dd + dt {
+  margin-top: 1.5rem;
+} 
+
+.citations-list dt + dd {
+  margin-top:.5rem;
+}
+
+.citations-list a.doi {
+  white-space: pre-wrap;
+}

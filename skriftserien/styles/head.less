@@ -1,0 +1,66 @@
+/*skriftserien overrides master*/
+
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper {
+    background-image: url("/plugins/themes/master/svg/OsloMet-logo-yellow-left.svg");
+    background-position: left 1rem center;
+    background-size: auto 50%;
+}
+
+@media (min-width: @screen-tablet) {
+    .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper{
+        background-position: left center;
+    }
+}
+
+#headerNavigationContainer .screenreader {
+    position: absolute;
+    left: -9999px;
+}
+
+#headerNavigationContainer h1 {
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    font-weight: bold;
+    padding-left: 5.5rem;
+}
+
+@media screen and (min-width: @screen-phone) {
+    #headerNavigationContainer h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: @screen-tablet) {
+    #headerNavigationContainer h1 {
+
+        margin-left: 1rem;
+
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: @screen-desktop) {
+    .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper  {
+        background-size: auto 70%;
+    }
+    #headerNavigationContainer h1 {
+        font-size: 3rem;
+        padding-left: 12rem;
+        padding-top: 2.5rem;
+    }
+}
+
+#headerNavigationContainer h1 {
+    line-height: 1.25em;
+    font-weight: bold;
+    letter-spacing: .06em;
+    margin:0;
+}
+@media screen and (min-width: @screen-desktop) {
+    #headerNavigationContainer h1 {
+    }
+}
+

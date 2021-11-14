@@ -1,0 +1,25 @@
+/*jea overrides master*/
+
+.pkp_structure_head {
+    background-position: right center;
+}
+
+#headerNavigationContainer .pkp_site_name h1 {
+    position: relative; left: -9999px;
+}
+
+#headerNavigationContainer .pkp_site_name_wrapper a {
+    background-image: url('/plugins/themes/jea/svg/JEA-logo.svg'), url('/plugins/themes/jea/svg/JEA-logo-dark.svg');
+    background-size: auto 40%;
+    background-position: left center, right -9999px center;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: @screen-tablet) {
+        background-size: auto 70%;
+        background-position: left center;
+    }
+}
+
+#headerNavigationContainer .pkp_site_name_wrapper a:hover {
+    background-image: url('/plugins/themes/jea/svg/JEA-logo-dark.svg'), url('/plugins/themes/jea/svg/JEA-logo.svg');
+}

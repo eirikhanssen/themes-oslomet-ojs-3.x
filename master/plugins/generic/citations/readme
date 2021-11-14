@@ -1,0 +1,5 @@
+This version of CitationsPlugin.inc.php adds a url arameter with version when loading js/citations.js to force the browser to reload the script when after making modifications.
+
+To use this, 
+rename:  plugins/generic/citations/CitationsPlugin.inc.php -> plugins/generic/citations/CitationsPlugin.inc.php.original
+create a symlink: plugins/generic/citations/CitationsPlugin.inc.php --> ../../themes/master/plugins/generic/citations/CitationsPlugin.inc.php

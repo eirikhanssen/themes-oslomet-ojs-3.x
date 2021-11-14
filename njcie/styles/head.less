@@ -1,0 +1,82 @@
+/*njcie overrides master*/
+
+.pkp_site_name_wrapper {
+    position: relative;
+    background-image: url("/plugins/themes/njcie/img/header-bg-1px.jpg");
+    background-position: center center;
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+}
+
+.pkp_site_name_wrapper::before,
+.pkp_site_name_wrapper::after {
+    content: "";
+    display: block;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.pkp_site_name_wrapper::before {
+    z-index: -2;
+    background-image: url("/plugins/themes/njcie/img/header-bg-1px.jpg");
+    background-position: center center;
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+}
+
+@media screen and (min-width: @screen-tablet) {
+    .pkp_site_name_wrapper::after {
+        z-index: -1;
+        background-image: url("/plugins/themes/njcie/img/header-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+}
+
+#headerNavigationContainer .pkp_site_name > a {
+    color: #0e1f42;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    text-decoration: none;
+    line-height: 1rem;
+    white-space: normal;
+    height: auto;
+}
+
+#headerNavigationContainer .pkp_site_name h1 {
+    position: relative;
+    left: -9999px;
+}
+
+
+#headerNavigationContainer .pkp_site_name>a:hover,
+#headerNavigationContainer .pkp_site_name>a:focus {}
+
+#headerNavigationContainer .pkp_site_name>a:active {}
+
+#headerNavigationContainer .pkp_site_name_wrapper {
+    position: relative;
+    background-image: url('/plugins/themes/njcie/svg/njcie-logo-black.svg');
+    background-size: auto 45%;
+    background-position: left 1rem center;
+
+    @media screen and (min-width: @screen-tablet) {
+        background-size: auto 70%;
+        background-position: left center;
+    }
+}
+
+#headerNavigationContainer .pkp_structure_head {}
+
+#headerNavigationContainer .pkp_head_wrapper {}
+
+#headerNavigationContainer .pkp_site_name_wrapper {}
+
+#headerNavigationContainer .pkp_site_name {}
+

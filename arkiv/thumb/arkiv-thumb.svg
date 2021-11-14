@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="50"
+   width="100"
+   version="1.1"
+   viewBox="0 0 100 50"
+   data-name="Layer 1"
+   id="Layer_1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata
+     id="metadata197">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Nordic Journal of Art and Research</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs195">
+    <linearGradient
+       id="linearGradient30693">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0"
+         offset="0"
+         id="stop30689" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0.17897806"
+         offset="0.20822917"
+         id="stop31115" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0.11302998"
+         offset="0.77517527"
+         id="stop31245" />
+      <stop
+         style="stop-color:#00ffff;stop-opacity:0;"
+         offset="1"
+         id="stop30691" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath914">
+      <rect
+         style="fill:#1b7bbb;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:#000000"
+         id="rect916"
+         width="100"
+         height="50"
+         x="-40.90443"
+         y="53.724766"
+         rx="0" />
+    </clipPath>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter22311"
+       x="-0.25112083"
+       y="-282.13242"
+       width="1.5022417"
+       height="565.26435">
+      <feGaussianBlur
+         stdDeviation="3.3560751"
+         id="feGaussianBlur22313" />
+    </filter>
+    <linearGradient
+       xlink:href="#linearGradient30693"
+       id="linearGradient30695"
+       x1="39.274166"
+       y1="49.540726"
+       x2="39.274166"
+       y2="-0.35279018"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <title
+     id="title130">Nordic Journal of Art and Research</title>
+  <rect
+     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:#000000"
+     id="rect12174"
+     width="100"
+     height="50"
+     x="0"
+     y="0"
+     rx="0" />
+  <rect
+     style="font-variation-settings:normal;opacity:0;vector-effect:none;fill:#ffff00;fill-opacity:0.866667;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:stroke fill markers;stop-color:#000000"
+     id="rect81709"
+     width="90"
+     height="40"
+     x="5"
+     y="5.0000005"
+     rx="0" />
+  <g
+     aria-label="Arkiv"
+     id="text2836"
+     style="font-weight:bold;font-stretch:condensed;font-size:49.2966px;line-height:1.25;font-family:'Bodoni MT';-inkscape-font-specification:'Bodoni MT, Bold Condensed';letter-spacing:0px;word-spacing:0px;stroke-width:1.00001"
+     transform="matrix(0.99998897,0,0,0.99998897,5.5172444e-5,9.8304015e-5)">
+    <path
+       d="m 14.435679,8.9087999 h 1.757155 L 24.280557,39.91174 h 2.021931 v 0.79433 H 16.192834 v -0.842471 h 1.925648 l -2.070072,-7.9433 h -5.921369 l -1.2276008,5.488098 q -0.096282,0.38513 -0.096282,0.673977 0,1.829366 1.7812248,1.829366 h 0.842471 v 0.79433 H 5.0000021 v -0.842471 h 0.79433 q 1.6368012,0 2.1182133,-2.166355 z M 12.84702,19.812784 10.295535,31.101898 h 5.56031 L 12.943302,19.812784 Z"
+       style="stroke-width:0.4024"
+       id="path11148" />
+    <path
+       d="m 35.834447,19.451725 v 2.286708 h 0.09628 q 1.035037,-2.479273 3.755015,-2.479273 1.636801,0 2.647767,1.059107 1.035036,1.035036 1.035036,2.744049 0,1.251672 -0.818401,2.094143 -0.79433,0.8184 -2.021931,0.8184 -1.155389,0 -1.877507,-0.746188 -0.698048,-0.746189 -0.698048,-1.925649 0,-1.083177 0.698048,-1.781225 0.722118,-0.722118 0.722118,-1.035036 0,-0.336988 -0.577694,-0.336988 -1.15539,0 -2.070073,1.58866 -0.890612,1.564589 -0.890612,3.682802 v 14.442364 h 2.358919 V 40.70607 H 28.131853 v -0.842471 h 1.97379 V 20.294196 h -2.021931 v -0.842471 z"
+       style="stroke-width:0.4024"
+       id="path11150" />
+    <path
+       d="m 44.716498,9.3420708 h 7.798876 V 39.863599 h 1.97379 V 40.70607 H 44.668357 V 39.863599 H 46.78657 V 10.184542 H 44.716498 Z M 56.607377,19.451725 h 5.752875 v 0.842471 h -0.722118 q -0.649907,0 -1.107248,0.312918 -0.433271,0.312918 -1.17946,1.275742 l -2.118213,2.695908 5.391815,15.284835 H 64.2859 v 0.842471 h -8.713559 v -0.842471 h 1.372024 L 53.044927,28.76705 58.123825,21.979139 q 0.457342,-0.601765 0.457342,-1.083177 0,-0.601766 -0.79433,-0.601766 h -1.17946 z"
+       style="stroke-width:0.4024"
+       id="path11152" />
+    <path
+       d="m 67.029952,12.711956 q 0,-1.323884 0.938754,-2.262637 0.938753,-0.938754 2.262637,-0.938754 1.323883,0 2.262636,0.938754 0.962825,0.938753 0.962825,2.262637 0,1.323883 -0.962825,2.262637 -0.938753,0.938753 -2.262636,0.938753 -1.323884,0 -2.262637,-0.938753 -0.938754,-0.938754 -0.938754,-2.262637 z m -1.420166,6.739769 h 7.847018 v 20.411874 h 1.901578 V 40.70607 H 65.561645 V 39.863599 H 67.728 V 20.294196 h -2.118214 z"
+       style="stroke-width:0.4024"
+       id="path11154" />
+    <path
+       d="m 76.850761,19.451725 h 9.55603 v 0.842471 h -2.118213 l 3.899438,12.276009 h 0.09628 l 2.864402,-9.363465 q 0.192565,-0.79433 0.192565,-1.323884 0,-0.625835 -0.457342,-1.107248 -0.433271,-0.481412 -1.010965,-0.481412 H 88.83792 v -0.842471 h 6.162075 v 0.842471 q -1.203531,0.07221 -1.829366,0.553624 -0.601766,0.457342 -1.227601,2.503343 L 86.503074,41.0912 H 85.468038 L 78.583845,20.294196 h -1.733084 z"
+       style="stroke-width:0.4024"
+       id="path11156" />
+  </g>
+</svg>

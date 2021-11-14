@@ -1,0 +1,25 @@
+/*arkiv overrides master*/
+
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper {
+    background-image: url("/plugins/themes/arkiv/svg/tidsskriftet-arkiv-logo-compact.svg");
+    background-position: left center;
+    background-size: auto 95%;
+}
+
+@media (min-width: @screen-tablet) {
+    .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper{
+        background-image: url("/plugins/themes/arkiv/svg/tidsskriftet-arkiv-logo-white-w-black-stroke.svg");
+        background-position: left center;
+    }
+}
+
+@media (min-width: @screen-desktop) {
+    .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper {
+        background-size: auto 90%;
+        background-position: left -1rem center;
+   }
+}
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name a > h1 {
+    position: relative;
+    left: -9999px;
+}

@@ -1,0 +1,96 @@
+/*njsr overrides master*/
+
+.pkp_structure_head {
+
+    .pkp_head_wrapper {
+        
+        .pkp_site_name_wrapper {
+
+            .pkp_site_name {
+
+                .headertext {
+                    font-family: Corbel,Arial,sans-serif;
+                    display: flex;
+                    font-size: .7rem;
+
+                    justify-content: center;
+                    align-items: center;
+                    line-height: 1em;
+                    margin-left: 0;
+                    text-decoration: none;
+
+                        flex-flow: column nowrap;
+
+
+                        @media screen and (min-width: @screen-desktop) {
+                            margin-left: 0rem;
+                            font-size: 1.1rem;
+                        }
+
+                    
+                    .abbrev {
+                        line-height: 1em;
+                        font-size: 4em;
+                        color: #fff;
+                        text-shadow: 1px 1px 0px #000,0 0 .2em #111;
+                        
+                        padding-bottom: .05em;
+                        margin-bottom: .05em;
+                            border-bottom: 1px solid #000;
+                            @media screen and (min-width: @screen-desktop) {
+                                border-bottom: 3px solid #000;
+                            }
+
+                    }
+                    .nordic {
+                        color: black;
+    
+                    }
+                    .social {
+                        color: black;
+                        font-size: 1.07em;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a:focus,
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a:hover {
+    text-decoration: none;
+}
+
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name :hover .headertext .abbrev,
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name :focus .headertext .abbrev {
+    color: #fff38a;
+}
+
+.pkp_site_name {
+    position: relative;
+}
+
+.pkp_head_wrapper,
+.pkp_head_wrapper::before,
+.pkp_head_wrapper::after {
+    @media screen and (min-width: @screen-desktop) {
+
+    }
+}
+
+  .pkp_head_wrapper::before,
+  .pkp_head_wrapper::after {
+    position: absolute;
+    content:"";
+    display: block;
+    top:0;
+    bottom: 0;
+    right:100%;
+    width: 100vw;
+    height: 100%;
+  }
+
+  .headertext span + span{
+    line-height: 1em;
+  }

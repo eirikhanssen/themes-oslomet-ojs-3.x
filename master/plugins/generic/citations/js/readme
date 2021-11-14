@@ -1,0 +1,5 @@
+This version of citations.js is a slight modifications of plugins/generic/citations/js/citations.js 
+which changes the html code used to display the references a bit.
+
+To use this, rename plugins/generic/citations/js/citations.js to plugins/generic/citations/js/citations.js.original
+and create a symlink from plugins/generic/citations/js/citations.js -> plugins/themes/master/plugins/generic/citations/citations.js

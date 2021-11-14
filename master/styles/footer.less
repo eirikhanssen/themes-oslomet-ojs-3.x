@@ -1,0 +1,193 @@
+/*master overrides default*/
+
+@media screen and (min-width: @screen-tablet) {
+    aside.issn {
+        width: 728px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: @screen-desktop) {
+    aside.issn {
+        width: 952px;
+    }
+}
+
+@media screen and (min-width: @screen-lg-desktop) {
+    aside.issn {
+        width: 1160px;
+    }
+}
+
+.pkp_structure_footer {
+    text-align: left;
+}
+.pkp_structure_footer_wrapper {
+    background: @footer-wrapper-bg;
+    color: @footer-wrapper-color;
+    border-top: @footer-wrapper-border-top;
+    margin-top:1rem;
+}
+
+.pkp_structure_footer_wrapper.pkp_structure_footer_wrapper  {
+    border-top-color: @footer-wrapper-border-color;
+}
+
+.pkp_structure_footer_wrapper,
+.pkp_structure_footer {
+    position: relative;
+    z-index: 1;
+}
+
+.pkp_structure_footer {
+    background: @footer-bg;
+    color: @footer-color;
+    border-top: @footer-border-top;
+}
+
+.pkp_structure_footer.pkp_structure_footer {
+    border-top-color: @footer-border-color;
+}
+
+.pkp_structure_footer_wrapper::before,
+.pkp_structure_footer_wrapper::after,
+.pkp_structure_footer::before,
+.pkp_structure_footer::after  {
+    content:"";
+    display: block;
+    height: 100%;
+    width: 50vw;
+    position: absolute;
+    top:-1px;
+    bottom:0;
+    right:auto;
+    left:50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    background:inherit;
+    background-color: inherit;
+    border: inherit;
+    color: inherit;
+}
+
+.pkp_structure_footer_wrapper::before {z-index: -4;}
+.pkp_structure_footer_wrapper::after {z-index: -3;}
+.pkp_structure_footer::before {z-index: -2;}
+.pkp_structure_footer::after {z-index: -1;} 
+
+.pkp_structure_footer_wrapper::after {
+    background: @footer-bg-overlay;
+    box-shadow: @footer-box-shadow;
+}
+
+.pkp_structure_footer_wrapper footer {
+    border-top: @footer-border-top;
+}
+
+footer .logotext.logotext {
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-repeat: no-repeat,no-repeat;
+    background-position: left center,left 9999px center;
+    background-size: auto 4rem,auto 4rem;
+    background-origin: border-box;
+    padding-left: 6rem;
+    min-height: 4rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+footer .oslomet .logotext {
+    background-image: @footer-hosted-by-logo;
+    background-size: 6rem auto;
+    line-height: 1.25em;
+
+}
+
+footer a.logotext:hover,
+footer a.logotext:focus {
+    background-position: left 9999px center, left center;
+}
+
+footer .columns .columns > div {
+    padding-top:0;
+}
+
+aside.issn {
+    margin-bottom: 1rem;
+}
+
+.pkp_structure_footer,
+aside.issn {
+    padding-left: 1rem;
+}
+
+@media screen and (min-width: @screen-tablet) {
+    #pkp_content_main,
+    .pkp_structure_footer,
+    aside.issn {
+        padding-left: 0;
+    }    
+}
+
+
+aside.issn p {margin-bottom: 0;}
+
+.pkp_structure_footer .column > *:first-child {
+    margin-top: 0;
+}
+
+footer .column h1 {margin-top: 0; margin-bottom: .5rem;}
+
+.pkp_structure_footer_wrapper h1 {
+    font-size: 1.25rem;
+    margin-bottom:0;
+}
+
+.pkp_structure_footer_wrapper h2 {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.pkp_structure_footer_wrapper h1 + p,
+.pkp_structure_footer_wrapper h2 + p,
+.pkp_structure_footer_wrapper h1 + div > p {
+    margin-top:0;
+}
+
+
+.pkp_structure_footer_wrapper a {
+   border-radius: .25rem;
+   color: @footer-link-color;
+   background-color: @footer-link-bg;
+ }
+
+ .pkp_structure_footer_wrapper a:hover,
+ .pkp_structure_footer_wrapper a:focus {
+     color:@footer-link-hover-color;
+     background-color:@footer-link-bg-hover;
+ }
+
+
+ @media screen and (min-width: @screen-tablet) {
+    .columns {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+      
+      .columns > .column {
+        flex:1;
+        margin-left: 2%;
+      }
+      
+      .columns > .column:first-child {
+        margin-left: 0;
+      }
+      
+     
+ }
