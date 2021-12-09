@@ -1,1 +1,10 @@
 /*formakademisk overrides master*/
+
+a[id^=newRoundTabContainer-newRound-button] {pointer-events: none; position: relative; color: gray;}
+a[id^=newRoundTabContainer-newRound-button]::after {
+    content: " (Deactivated in theme)";
+}
+
+html[lang=nb-NO] a[id^=newRoundTabContainer-newRound-button]::after {
+    content: " (Deaktivert i theme)";
+}
