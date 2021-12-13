@@ -35,6 +35,7 @@ class FormAkademiskThemePlugin extends ThemePlugin {
 		$this->setParent('masterthemeplugin');
 		$this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
 		$this->addStyle('formakademiskbackend', 'styles/backend.less', array('contexts' => 'backend'));
+		$this->addScript('formakademiskbackendjs', 'js/backend.js?v=1', array('contexts' => 'backend'));
 	}
 
 	/**
