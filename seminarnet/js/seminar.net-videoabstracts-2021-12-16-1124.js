@@ -6,7 +6,7 @@ function Videoabstracts () {
 
 
     if(debug) {
-        console.log('seminar-video-abstracts running (tampermonkey)...');
+        console.log('seminar-video-abstracts running ...');
     }
 
     this.data=[
@@ -35,7 +35,7 @@ function Videoabstracts () {
             issue: 2,
             article_id: 4268,
             filmet_id: 69731269,
-            title: "Refocusing Zuboff's â€˜division of learning' on Education"
+            title: "Refocusing Zuboff's 'division of learning' on Education"
         },
         {
             journal: "seminar",
@@ -161,7 +161,7 @@ function Videoabstracts () {
             issue: 2,
             article_id: 4046,
             filmet_id: 65481665,
-	        title: "Education, Change and the Longue DurÃ©e: The Fate of the Book"
+	        title: "Education, Change and the Longue Dureé: The Fate of the Book"
         },
         {
             journal: "seminar",
@@ -179,7 +179,7 @@ function Videoabstracts () {
             issue: 2,
             article_id: 4048,
             filmet_id: 65654933,
-            title: "â€œBack to the futureâ€ : Socio-technical imaginaries in 50 years of school digitalization curriculum reforms"
+            title: "Back to the future : Socio-technical imaginaries in 50 years of school digitalization curriculum reforms"
         },
         {
             journal: "seminar",
