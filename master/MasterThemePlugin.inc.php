@@ -37,7 +37,11 @@ class MasterThemePlugin extends ThemePlugin {
 		$this->addScript('svgxuse', 'js/svgxuse.min.js');
 		$this->addScript('master', 'js/master.js');
 		$this->addStyle('mediaelementcss', 'js/mediaelement/mediaelementplayer.min.css');
+		$this->addStyle('lightboxcss', 'lib/lightbox2-2.11.3/dist/css/lightbox.min.css');
 		$this->addScript('mediaelementjs', 'js/mediaelement/mediaelement.min.js');
+		$this->addScript('opendetailsidjs','js/open_details_id.js');
+		$this->addScript('lightboxdistjs','lib/lightbox2-2.11.3/dist/js/lightbox.js');
+		$this->addScript('lightboxcustomjs','js/lightboxcustom.js');
 		$this->addStyle('masterbackend', 'styles/backend.less', array('contexts' => 'backend'));
 	}
 
