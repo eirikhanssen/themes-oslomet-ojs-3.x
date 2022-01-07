@@ -37,6 +37,19 @@ function faq() {
             add_backlink(all_details[i]);
         }
     }
+
+    var lightbox_links = document.querySelectorAll('a[data-lightbox]');
+    if (lightbox_links.length > 0) {
+        for (var j = 0; j < lightbox_links.length; j++) {
+            if(lightbox_links[j].getAttribute('data-title') == null) {
+                let lightbox_link_img = lightbox_links[j].querySelector('img');
+                lightbox_link_img_alt = lightbox_link_img.getAttribute('alt');
+                if(lightbox_link_img_alt != null) {
+                    lightbox_links[j].setAttribute("data-title",lightbox_link_img_alt);
+                }
+            }
+        }
+    }
 }
 
 window.addEventListener('load',faq,false);

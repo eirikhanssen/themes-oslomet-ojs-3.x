@@ -42,7 +42,7 @@ class MasterThemePlugin extends ThemePlugin {
 		$this->addScript('opendetailsidjs','js/open_details_id.js');
 		$this->addScript('lightboxdistjs','lib/lightbox2-2.11.3/dist/js/lightbox.js');
 		$this->addScript('lightboxcustomjs','js/lightboxcustom.js');
-		$this->addScript('faqjs','js/faq.js');
+		$this->addScript('faqjs','js/faq.js?v=2');
 		$this->addStyle('masterbackend', 'styles/backend.less', array('contexts' => 'backend'));
 	}
 
