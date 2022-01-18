@@ -1842,7 +1842,7 @@ var isAbstractPage = function () {
 
 function getFilmetVideoEmbedCode(filmet_id) {
     // based on the filmet_id code, create the HTML embed code to inject to the abstract page
-    var embedcode = '<div class="abstract_video_container" style="width:100%; height:0; position: relative; padding-bottom:56.25%"><iframe src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5filmet_id=' + filmet_id + '" style="width:100%; height:100%; position: absolute; top: 0; left: 0;" frameborder="0" border="0" scrolling="no" mozallowfullscreen="1" webkitallowfullscreen="1" allowfullscreen="1" allow="fullscreen"></iframe></div>';
+    var embedcode = '<div class="abstract_video_container" style="width:100%; height:0; position: relative; padding-bottom:56.25%"><iframe src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=' + filmet_id + '" style="width:100%; height:100%; position: absolute; top: 0; left: 0;" frameborder="0" border="0" scrolling="no" mozallowfullscreen="1" webkitallowfullscreen="1" allowfullscreen="1" allow="fullscreen"></iframe></div>';
     return embedcode;
 }
 
