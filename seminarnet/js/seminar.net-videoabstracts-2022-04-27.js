@@ -8,7 +8,7 @@
         }
     
         this.data = [
-            { journal: "seminar", year: 2022, vol: 18, issue: 1, article_id: 4686, token: "3a31c10505d6ae5c1d1f68c85c3dbb1f", filmet_id: 74638981, title: "Learning analytics and flipped learning in online teaching for supporting preservice teachers’ learning of quantitative research methods" },
+            { journal: "seminar", year: 2022, vol: 18, issue: 1, article_id: 4686, token: "3a31c10505d6ae5c1d1f68c85c3dbb1f", filmet_id: 74638981, title: "Learning analytics and flipped learning in online teaching for supporting preservice teachers' learning of quantitative research methods" },
             { journal: "seminar", year: 2022, vol: 18, issue: 1, article_id: 4689, token: "42d11d69ba6164e76a0016213b882b4a", filmet_id: 75594922, title: "Fact-checking as digital media literacy in higher education" },
             { journal: "seminar", year: 2022, vol: 18, issue: 1, article_id: 4701, token: "b926191ab65eea51baafcbcba8926d70", filmet_id: 74639166, title: "Digital Youth Work in Flanders: practices, challenges, and the impact of COVID-19" },
             { journal: "seminar", year: 2021, vol: 17, issue: 2, article_id: 4493, token: "d45a7f983726c8737900a9d8fcfff49d", filmet_id: 70373317, title: "Digital Capitalism, Datafication, and Media Education: Critical Perspectives" },
