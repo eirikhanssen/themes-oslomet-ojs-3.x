@@ -35,6 +35,7 @@ class InformationThemePlugin extends ThemePlugin {
 		$this->setParent('masterthemeplugin');
 		$this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
 		$this->addStyle('informationbackend', 'styles/backend.less', array('contexts' => 'backend'));
+		$this->addScript('seminarvideoabstracts', 'js/information-videoabstracts-2022-09-30.js');
 	}
 
 	/**
