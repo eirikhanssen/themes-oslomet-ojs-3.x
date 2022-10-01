@@ -1,0 +1,29 @@
+.abstract-toc {
+ counter-reset: abstract-toc-headings;
+}
+
+.abstract-toc h2 + h3 {
+  margin-top: 1rem;
+}
+
+.abstract-toc ul {
+  padding-left:0rem;
+  
+  list-style-type: none;
+}
+
+.abstract-toc a {
+  font-weight: bold;
+  
+}
+
+.abstract-toc li + li {
+  margin-top:.5rem;
+  
+}
+
+.abstract-toc h3::before {
+  counter-increment: abstract-toc-headings;
+  content: counter(abstract-toc-headings) ". ";
+}
+
