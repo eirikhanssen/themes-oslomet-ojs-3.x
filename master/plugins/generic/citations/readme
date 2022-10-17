@@ -1,5 +1,9 @@
-This version of CitationsPlugin.inc.php adds a url arameter with version when loading js/citations.js to force the browser to reload the script when after making modifications.
+This version of CitationsPlugin.inc.php adds a url parameter with version when loading js/citations.js to force the browser to reload the script when after making modifications.
 
 To use this, 
 rename:  plugins/generic/citations/CitationsPlugin.inc.php -> plugins/generic/citations/CitationsPlugin.inc.php.original
 create a symlink: plugins/generic/citations/CitationsPlugin.inc.php --> ../../themes/master/plugins/generic/citations/CitationsPlugin.inc.php
+
+Use the following scripts to install/uninstall this mod:
+installCitationsPluginMod.sh 
+uninstallCitationsPluginMod.sh

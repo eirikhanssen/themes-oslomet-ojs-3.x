@@ -3,3 +3,8 @@ which changes the html code used to display the references a bit.
 
 To use this, rename plugins/generic/citations/js/citations.js to plugins/generic/citations/js/citations.js.original
 and create a symlink from plugins/generic/citations/js/citations.js -> plugins/themes/master/plugins/generic/citations/citations.js
+
+Go up one folder and use the following scripts to install/uninstall this mod:
+installCitationsPluginMod.sh
+uninstallCitationsPluginMod.sh
+
