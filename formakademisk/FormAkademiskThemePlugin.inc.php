@@ -34,10 +34,10 @@ class FormAkademiskThemePlugin extends ThemePlugin {
 		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_MANAGER, LOCALE_COMPONENT_APP_MANAGER);
 		$this->setParent('masterthemeplugin');
 		$this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
-		$this->addStyle('formakademiskbackend', 'styles/backend.less', array('contexts' => 'backend'));
-		$this->addScript('formakademiskbackendjs', 'js/backend.js?v=1', array('contexts' => 'backend'));
-	}
+	        $this->addStyle('formakademiskbackend-20221201-14:05', 'styles/backend.less', array('contexts' => 'backend'));
+		$this->addScript('formakademiskbackendjs', 'js/backend.js?t=20221201-14:09', array('contexts' => 'backend'));
 
+	}
 	/**
 	 * Get the name of the settings file to be installed on new journal
 	 * creation.

@@ -8,3 +8,9 @@ a[id^=newRoundTabContainer-newRound-button]::after {
 html[lang=nb-NO] a[id^=newRoundTabContainer-newRound-button]::after {
     content: " (Deaktivert i theme)";
 }
+
+/* hide two of the reviewer.article.decision options which the journal doesn't want to use */
+#recommendation option[value="4"], #recommendation option[value="6"] { 
+    display: none;
+}
+

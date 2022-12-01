@@ -49,6 +49,11 @@ function deactivateNewRoundLinkInBackend(start) {
     }
 }
 
+function helloBackend() {
+	/* if debugging is needed...*/
+	console.log('hello backend formakademisk');
+}
+
 window.addEventListener('load', deactivateNewRoundLinkInBackendInit, false);
 
-//deactivateNewRoundLinkInBackend();
+//window.addEventListener('load', helloBackend, false);
