@@ -33,8 +33,8 @@ class FormAkademiskThemePlugin extends ThemePlugin {
 	public function init() {
 		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_MANAGER, LOCALE_COMPONENT_APP_MANAGER);
 		$this->setParent('masterthemeplugin');
-		$this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
-	        $this->addStyle('formakademiskbackend-20221201-14:05', 'styles/backend.less', array('contexts' => 'backend'));
+        $this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
+	    $this->addStyle('formakademiskbackend-20221201-14:05', 'styles/backend.less', array('contexts' => 'backend'));
 		$this->addScript('formakademiskbackendjs', 'js/backend.js?t=20221201-14:09', array('contexts' => 'backend'));
 
 	}
