@@ -9,6 +9,7 @@
     
         this.data = [
             /*{ journal: "seminar", year: 2023, vol: 19, issue: 1, article_id: , token: "", filmet_id: , title: "" },*/
+            { journal: "seminar", year: 2023, vol: 19, issue: 1, article_id: 5257, token: "c770d616f24728e581d1a53427a5bc09", filmet_id: 89436732, title: "Experiences of technostressors during the Covid-19 pandemic among Finnish comprehensive school teachers" },
             { journal: "seminar", year: 2023, vol: 19, issue: 1, article_id: 5243, token: "362140a52bc72aa0328ff45631dbf2ed", filmet_id: 89370435, title: "A part of the problem:  An exploration of  YouTube videos about depression" },
             { journal: "seminar", year: 2023, vol: 19, issue: 1, article_id: 5121, token: "bd25c048b44b0aeeb0ed8bc554ba2fe6", filmet_id: 89369996, title: "What can be learned about a positive relationship with food in food blogs? A nethnographic analysis of Finnish food bloggers’ posts on social media" },
 	    { journal: "seminar", year: 2023, vol: 19, issue: 1, article_id: 4762, token: "c5c395f05fdfda3d2edd8dc7dcfbd0cb", filmet_id: 89179833, title: "“Going hybrid on a dime”: Insights for transformation in education toward sustainable quality development" },

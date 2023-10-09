@@ -37,7 +37,7 @@ class SeminarnetThemePlugin extends ThemePlugin {
 		$this->addStyle('seminarnetbackend', 'styles/backend.less', array('contexts' => 'backend'));
 		//$this->addScript('seminarvideoabstracts', 'js/seminar.net-videoabstracts-2022-04-27.js'); // previous version
 		//$this->addScript('seminarvideoabstracts', 'js/seminar.net-videoabstracts-2022-07-01.js'); // previous version
-		$this->addScript('seminarvideoabstracts', 'js/seminar.net-videoabstracts-2023-vol19-no1.js?v=2023-10-06');
+		$this->addScript('seminarvideoabstracts', 'js/seminar.net-videoabstracts-2023-vol19-no1.js?v=2023-10-09');
 
 	}
 
