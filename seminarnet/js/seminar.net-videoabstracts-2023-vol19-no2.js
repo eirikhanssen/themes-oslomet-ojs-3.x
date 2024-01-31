@@ -9,7 +9,7 @@
     
         this.data = [
             /*{ journal: "seminar", year: 2023, vol: 19, issue: 2, article_id: , token: "", filmet_id: , title: "" },*/
-	    { journal: "seminar", year: 2023, vol: 19, issue: 2, article_id: 5503, token: "a3716364809bc30d4f4191031df70175", filmet_id: 94018818, title: "The students like me less in digital lectures" },
+	    { journal: "seminar", year: 2023, vol: 19, issue: 2, article_id: 5503, token: "a6fcc5553f4948f5a329026ac0988c43", filmet_id: 94019970, title: "The students like me less in digital lectures" },
 	    { journal: "seminar", year: 2023, vol: 19, issue: 2, article_id: 5321, token: "c5715b93e03a87baf4710f4a968f60c2", filmet_id: 93118506, title: "From black screens to mediating means" },
 	    /*{ journal: "seminar", year: 2023, vol: 19, issue: 2, article_id: 5506, token: "", filmet_id: , title: "There's no place like campus" },*/
 	    { journal: "seminar", year: 2023, vol: 19, issue: 2, article_id: 5494, token: "05d9654fffac5a1b7a9b9e91b6baf005", filmet_id: 93131267, title: "Black Screens: From problem to something useful? " },
