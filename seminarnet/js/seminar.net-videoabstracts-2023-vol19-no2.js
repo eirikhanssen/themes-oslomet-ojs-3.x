@@ -11,7 +11,7 @@
             /*{ journal: "seminar", year: 2023, vol: 19, issue: 2, article_id: , token: "", filmet_id: , title: "" },*/
 	    { journal: "seminar", year: 2023, vol: 19, issue: 2, article_id: 5503, token: "a6fcc5553f4948f5a329026ac0988c43", filmet_id: 94019970, title: "The students like me less in digital lectures" },
 	    { journal: "seminar", year: 2023, vol: 19, issue: 2, article_id: 5321, token: "c5715b93e03a87baf4710f4a968f60c2", filmet_id: 93118506, title: "From black screens to mediating means" },
-	    /*{ journal: "seminar", year: 2023, vol: 19, issue: 2, article_id: 5506, token: "", filmet_id: , title: "There's no place like campus" },*/
+	    { journal: "seminar", year: 2023, vol: 19, issue: 2, article_id: 5506, token: "46fc35a06be3f3f6d52f64ee79b00c06", filmet_id: 94483642, title: "There's no place like campus" },
 	    { journal: "seminar", year: 2023, vol: 19, issue: 2, article_id: 5494, token: "05d9654fffac5a1b7a9b9e91b6baf005", filmet_id: 93131267, title: "Black Screens: From problem to something useful? " },
             { journal: "seminar", year: 2023, vol: 19, issue: 1, article_id: 5257, token: "c770d616f24728e581d1a53427a5bc09", filmet_id: 89436732, title: "Experiences of technostressors during the Covid-19 pandemic among Finnish comprehensive school teachers" },
             { journal: "seminar", year: 2023, vol: 19, issue: 1, article_id: 5243, token: "362140a52bc72aa0328ff45631dbf2ed", filmet_id: 89370435, title: "A part of the problem:  An exploration of  YouTube videos about depression" },
